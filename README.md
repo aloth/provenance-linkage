@@ -31,6 +31,39 @@ and 7 in full. Step 5, which reconstructs the realized composition of the
 external draws, additionally requires authorized local copies of the raw
 corpora; `t5_corpus_composition.py` documents the expected paths.
 
+## A note on Step 5: which RAID split was drawn from
+
+`t5_corpus_composition.py` loads RAID with `DEFAULT_SPLIT = "extra"`. This is
+load-bearing for how the RAID numbers read, and it was not recorded alongside the
+corpus name in the original evaluation, so it is stated here explicitly.
+
+RAID ships two splits under the `raid` config, and they hold different material:
+
+| Split | Rows | Domains |
+|---|---:|---|
+| `train` | 2,270,000 | books 748,020 · news 747,600 · abstracts 741,720 · poetry 32,660 |
+| `extra` | 2,039,100 | german 827,400 · czech 825,300 · code 386,400 |
+
+Two consequences follow, and neither is a discovery about the sample:
+
+- **No English news.** English news is not under-sampled in the 500-item draw; it
+  is absent from the population that was drawn from. It sits entirely in `train`.
+- **91.8% adversarially attacked.** Within `extra` all twelve attack categories
+  are equally populated at 169,925 rows each, so `none` is exactly 8.33% and any
+  draw from this split is attacked at approximately that rate.
+
+The interpretive consequence in the manuscript is unchanged: the RAID column
+measures robustness to adversarial perturbation and cross-lingual transfer, not
+English-domain transfer. What changes is the warrant. Both facts follow from a
+documented property of the split that was loaded and would have been visible
+before any evaluation was run had the split been recorded with the corpus name.
+
+The M4/MAGE overlap (62.2%) is a different case: no split selection produces it,
+and it is not recoverable from the label *M4* alone. That one is a finding.
+
+Split counts above were verified against the Hugging Face datasets-server
+statistics endpoint for `liamdugan/raid`, not from the loader's own comments.
+
 ## A note on Step 1
 
 `t1_mage_labels.py` returns **REFUTED** when run against this bundle, and that is
@@ -84,7 +117,7 @@ prints a verdict.
 | `t1_fix_mage_labels.py` | Step 1 disposition, corrected-key derivation |
 | `t2_detection_checks.py` | Steps 2 and 3, split integrity and cheap baselines |
 | `logo_identifiability.py` | Step 4, leave-one-group-out identifiability |
-| `t5_corpus_composition.py` | Step 5, realized composition (needs raw corpora) |
+| `t5_corpus_composition.py` | Step 5, realized composition (needs raw corpora; draws RAID's `extra` split, see above) |
 | `t3_statistics_checks.py` | Step 4 and analytical-set derivation |
 | `auroc_audit.py` | Step 7, threshold-free discrimination |
 | `judgegpt_analytical_set.py` | analytical-set filtering, reported in Limitations |
