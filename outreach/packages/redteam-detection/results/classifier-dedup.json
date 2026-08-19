@@ -1,0 +1,2943 @@
+{
+ "all_seed_evaluation": {
+  "bert-base": {
+   "before_archived_metric_family": {
+    "123": {
+     "accuracy": 0.9939024390243902,
+     "f1_machine": 0.9962168978562421,
+     "f1_macro": 0.9902550457867598,
+     "f1_weighted": 0.9938903214388831,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9949622166246851,
+     "precision_macro": 0.9922179504176056,
+     "recall_machine": 0.9974747474747475,
+     "recall_macro": 0.9883207070707071
+    },
+    "2024": {
+     "accuracy": 0.991869918699187,
+     "f1_machine": 0.9949494949494949,
+     "f1_macro": 0.9870580808080808,
+     "f1_weighted": 0.991869918699187,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9949494949494949,
+     "precision_macro": 0.9870580808080808,
+     "recall_machine": 0.9949494949494949,
+     "recall_macro": 0.9870580808080808
+    },
+    "42": {
+     "accuracy": 0.991869918699187,
+     "f1_machine": 0.9949748743718593,
+     "f1_macro": 0.9868491393135892,
+     "f1_weighted": 0.9918038558125343,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.99,
+     "precision_macro": 0.995,
+     "recall_machine": 1.0,
+     "recall_macro": 0.9791666666666667
+    }
+   },
+   "before_mean_sd": {
+    "accuracy": {
+     "mean": 0.9925474254742547,
+     "sample_sd": 0.0011734761568895056,
+     "values": [
+      0.991869918699187,
+      0.9939024390243902,
+      0.991869918699187
+     ]
+    },
+    "f1_machine": {
+     "mean": 0.9953804223925321,
+     "sample_sd": 0.0007245201376163083,
+     "values": [
+      0.9949748743718593,
+      0.9962168978562421,
+      0.9949494949494949
+     ]
+    },
+    "f1_macro": {
+     "mean": 0.9880540886361433,
+     "sample_sd": 0.0019089456307521482,
+     "values": [
+      0.9868491393135892,
+      0.9902550457867598,
+      0.9870580808080808
+     ]
+    },
+    "f1_weighted": {
+     "mean": 0.9925213653168681,
+     "sample_sd": 0.00118601084491247,
+     "values": [
+      0.9918038558125343,
+      0.9938903214388831,
+      0.991869918699187
+     ]
+    },
+    "precision_machine": {
+     "mean": 0.99330390385806,
+     "sample_sd": 0.002861271743077328,
+     "values": [
+      0.99,
+      0.9949622166246851,
+      0.9949494949494949
+     ]
+    },
+    "precision_macro": {
+     "mean": 0.9914253437418955,
+     "sample_sd": 0.0040298497638905795,
+     "values": [
+      0.995,
+      0.9922179504176056,
+      0.9870580808080808
+     ]
+    },
+    "recall_machine": {
+     "mean": 0.9974747474747475,
+     "sample_sd": 0.0025252525252525415,
+     "values": [
+      1.0,
+      0.9974747474747475,
+      0.9949494949494949
+     ]
+    },
+    "recall_macro": {
+     "mean": 0.9848484848484849,
+     "sample_sd": 0.004960932337595187,
+     "values": [
+      0.9791666666666667,
+      0.9883207070707071,
+      0.9870580808080808
+     ]
+    }
+   },
+   "cleaned_mean_sd": null,
+   "cleaned_prediction_family": {
+    "123": null,
+    "2024": null,
+    "42": {
+     "accuracy": 0.9877450980392157,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        37,
+        4
+       ],
+       [
+        1,
+        366
+       ]
+      ],
+      "tn": 37,
+      "tp": 366
+     },
+     "f1_human": 0.9367088607594938,
+     "f1_machine": 0.9932157394843961,
+     "f1_macro": 0.964962300121945,
+     "f1_weighted": 0.9875373521615506,
+     "label_counts": {
+      "human": 41,
+      "machine": 367
+     },
+     "n": 408,
+     "precision_human": 0.9736842105263158,
+     "precision_machine": 0.9891891891891892,
+     "precision_macro": 0.9814366998577525,
+     "recall_human": 0.9024390243902439,
+     "recall_machine": 0.997275204359673,
+     "recall_macro": 0.9498571143749585
+    }
+   }
+  },
+  "bigbird": {
+   "before_archived_metric_family": {
+    "123": {
+     "accuracy": 0.9857723577235772,
+     "f1_machine": 0.9911949685534591,
+     "f1_macro": 0.9770789657582111,
+     "f1_weighted": 0.9856862845358014,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9874686716791979,
+     "precision_macro": 0.9829816476675559,
+     "recall_machine": 0.9949494949494949,
+     "recall_macro": 0.9714330808080808
+    },
+    "2024": {
+     "accuracy": 0.9878048780487805,
+     "f1_machine": 0.992462311557789,
+     "f1_macro": 0.9802737089703839,
+     "f1_weighted": 0.9877057837188016,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9875,
+     "precision_macro": 0.9883152173913043,
+     "recall_machine": 0.9974747474747475,
+     "recall_macro": 0.9726957070707071
+    },
+    "42": {
+     "accuracy": 0.9898373983739838,
+     "f1_machine": 0.9937106918238994,
+     "f1_macro": 0.9836278326844364,
+     "f1_weighted": 0.9897759175255724,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9899749373433584,
+     "precision_macro": 0.9896111245856577,
+     "recall_machine": 0.9974747474747475,
+     "recall_macro": 0.9779040404040404
+    }
+   },
+   "before_mean_sd": {
+    "accuracy": {
+     "mean": 0.9878048780487805,
+     "sample_sd": 0.002032520325203291,
+     "values": [
+      0.9898373983739838,
+      0.9857723577235772,
+      0.9878048780487805
+     ]
+    },
+    "f1_machine": {
+     "mean": 0.9924559906450492,
+     "sample_sd": 0.0012578735464314553,
+     "values": [
+      0.9937106918238994,
+      0.9911949685534591,
+      0.992462311557789
+     ]
+    },
+    "f1_macro": {
+     "mean": 0.9803268358043438,
+     "sample_sd": 0.003274756685574831,
+     "values": [
+      0.9836278326844364,
+      0.9770789657582111,
+      0.9802737089703839
+     ]
+    },
+    "f1_weighted": {
+     "mean": 0.9877226619267251,
+     "sample_sd": 0.002044868737396788,
+     "values": [
+      0.9897759175255724,
+      0.9856862845358014,
+      0.9877057837188016
+     ]
+    },
+    "precision_machine": {
+     "mean": 0.9883145363408521,
+     "sample_sd": 0.00143803476410132,
+     "values": [
+      0.9899749373433584,
+      0.9874686716791979,
+      0.9875
+     ]
+    },
+    "precision_macro": {
+     "mean": 0.986969329881506,
+     "sample_sd": 0.00351369477099029,
+     "values": [
+      0.9896111245856577,
+      0.9829816476675559,
+      0.9883152173913043
+     ]
+    },
+    "recall_machine": {
+     "mean": 0.9966329966329966,
+     "sample_sd": 0.0014579552252263692,
+     "values": [
+      0.9974747474747475,
+      0.9949494949494949,
+      0.9974747474747475
+     ]
+    },
+    "recall_macro": {
+     "mean": 0.9740109427609428,
+     "sample_sd": 0.0034301185422355223,
+     "values": [
+      0.9779040404040404,
+      0.9714330808080808,
+      0.9726957070707071
+     ]
+    }
+   },
+   "cleaned_mean_sd": null,
+   "cleaned_prediction_family": {
+    "123": null,
+    "2024": null,
+    "42": {
+     "accuracy": 0.9877450980392157,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        37,
+        4
+       ],
+       [
+        1,
+        366
+       ]
+      ],
+      "tn": 37,
+      "tp": 366
+     },
+     "f1_human": 0.9367088607594938,
+     "f1_machine": 0.9932157394843961,
+     "f1_macro": 0.964962300121945,
+     "f1_weighted": 0.9875373521615506,
+     "label_counts": {
+      "human": 41,
+      "machine": 367
+     },
+     "n": 408,
+     "precision_human": 0.9736842105263158,
+     "precision_machine": 0.9891891891891892,
+     "precision_macro": 0.9814366998577525,
+     "recall_human": 0.9024390243902439,
+     "recall_machine": 0.997275204359673,
+     "recall_macro": 0.9498571143749585
+    }
+   }
+  },
+  "longformer": {
+   "before_archived_metric_family": {
+    "123": {
+     "accuracy": 0.9939024390243902,
+     "f1_machine": 0.9962168978562421,
+     "f1_macro": 0.9902550457867598,
+     "f1_weighted": 0.9938903214388831,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9949622166246851,
+     "precision_macro": 0.9922179504176056,
+     "recall_machine": 0.9974747474747475,
+     "recall_macro": 0.9883207070707071
+    },
+    "2024": {
+     "accuracy": 0.9898373983739838,
+     "f1_machine": 0.9937106918238994,
+     "f1_macro": 0.9836278326844364,
+     "f1_weighted": 0.9897759175255724,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9899749373433584,
+     "precision_macro": 0.9896111245856577,
+     "recall_machine": 0.9974747474747475,
+     "recall_macro": 0.9779040404040404
+    },
+    "42": {
+     "accuracy": 0.9939024390243902,
+     "f1_machine": 0.9962168978562421,
+     "f1_macro": 0.9902550457867598,
+     "f1_weighted": 0.9938903214388831,
+     "n": 492,
+     "note": "Archived aggregate metrics do not identify row-level errors, so they cannot be filtered after deduplication.",
+     "precision_machine": 0.9949622166246851,
+     "precision_macro": 0.9922179504176056,
+     "recall_machine": 0.9974747474747475,
+     "recall_macro": 0.9883207070707071
+    }
+   },
+   "before_mean_sd": {
+    "accuracy": {
+     "mean": 0.9925474254742548,
+     "sample_sd": 0.002346952313778947,
+     "values": [
+      0.9939024390243902,
+      0.9939024390243902,
+      0.9898373983739838
+     ]
+    },
+    "f1_machine": {
+     "mean": 0.9953814958454612,
+     "sample_sd": 0.001446958727417751,
+     "values": [
+      0.9962168978562421,
+      0.9962168978562421,
+      0.9937106918238994
+     ]
+    },
+    "f1_macro": {
+     "mean": 0.988045974752652,
+     "sample_sd": 0.0038262232686034256,
+     "values": [
+      0.9902550457867598,
+      0.9902550457867598,
+      0.9836278326844364
+     ]
+    },
+    "f1_weighted": {
+     "mean": 0.9925188534677796,
+     "sample_sd": 0.0023754522069048107,
+     "values": [
+      0.9938903214388831,
+      0.9938903214388831,
+      0.9897759175255724
+     ]
+    },
+    "precision_machine": {
+     "mean": 0.9932997901975762,
+     "sample_sd": 0.002879407035597811,
+     "values": [
+      0.9949622166246851,
+      0.9949622166246851,
+      0.9899749373433584
+     ]
+    },
+    "precision_macro": {
+     "mean": 0.991349008473623,
+     "sample_sd": 0.00150505159580561,
+     "values": [
+      0.9922179504176056,
+      0.9922179504176056,
+      0.9896111245856577
+     ]
+    },
+    "recall_machine": {
+     "mean": 0.9974747474747475,
+     "sample_sd": 0.0,
+     "values": [
+      0.9974747474747475,
+      0.9974747474747475,
+      0.9974747474747475
+     ]
+    },
+    "recall_macro": {
+     "mean": 0.9848484848484849,
+     "sample_sd": 0.00601406530405858,
+     "values": [
+      0.9883207070707071,
+      0.9883207070707071,
+      0.9779040404040404
+     ]
+    }
+   },
+   "cleaned_mean_sd": null,
+   "cleaned_prediction_family": {
+    "123": null,
+    "2024": null,
+    "42": {
+     "accuracy": 0.9950980392156863,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 1,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        40,
+        1
+       ],
+       [
+        1,
+        366
+       ]
+      ],
+      "tn": 40,
+      "tp": 366
+     },
+     "f1_human": 0.975609756097561,
+     "f1_machine": 0.997275204359673,
+     "f1_macro": 0.9864424802286169,
+     "f1_weighted": 0.9950980392156863,
+     "label_counts": {
+      "human": 41,
+      "machine": 367
+     },
+     "n": 408,
+     "precision_human": 0.975609756097561,
+     "precision_machine": 0.997275204359673,
+     "precision_macro": 0.9864424802286169,
+     "recall_human": 0.975609756097561,
+     "recall_machine": 0.997275204359673,
+     "recall_macro": 0.9864424802286169
+    }
+   }
+  }
+ },
+ "all_seed_limitation": {
+  "finding": "Only seed-42 row-level prediction artifacts exist. Seeds 123 and 2024 are represented only by aggregate metric JSON files, which do not reveal whether each removed row was correct. Cleaned per-seed metrics and cleaned three-seed means/SDs therefore cannot be recomputed without rerunning those checkpoints or recovering their predictions.",
+  "no_imputation_performed": true,
+  "prediction_artifacts_available": {
+   "123": false,
+   "2024": false,
+   "42": true
+  },
+  "status": "not reconstructable"
+ },
+ "cause_audit": {
+  "dropped_exact_by_origin": {
+   "Human": 54,
+   "Machine": 17
+  },
+  "human_exact_format_counts": {
+   "unknown": 54
+  },
+  "human_exact_language_counts": {
+   "de": 6,
+   "en": 44,
+   "es": 2,
+   "fr": 2
+  },
+  "interpretation": "The source table contains repeated content under distinct fragment IDs. Human repeats are predominantly unformatted English scraper payloads or boilerplate; machine repeats are mostly short headlines generated under repeated prompts and sometimes by different model configurations. A row-level seeded split kept fragment IDs disjoint but did not group normalized content, so repeated content crossed split boundaries. This is a source-structure and split-design interaction, not an accidental reuse of the same fragment ID.",
+  "machine_exact_format_counts": {
+   "headline": 14,
+   "tweet": 2,
+   "unknown": 1
+  },
+  "machine_exact_rows_with_a_training_match_from_another_machine_model": 5,
+  "source_maximum_duplicate_group_size": 21,
+  "source_rows_in_any_exact_duplicate_group": 545,
+  "source_rows_in_duplicate_groups_by_origin": {
+   "Human": 394,
+   "Machine": 151
+  },
+  "source_unique_normalized_texts_with_duplicates": 196,
+  "test_rows_matching_validation_but_not_training": {
+   "count": 6,
+   "fragment_ids": [
+    "2e49367f213544babd34b93e7f27a3b7",
+    "67dddee281c04eef8e2cde00a6dff35b",
+    "9f213ea5d4ab42879043c5864ea76dc3",
+    "c32ace8f7b7c49c9879aacc948bcbaa6",
+    "c434df93f6744cdaa6f05a9bd0c64786",
+    "d170c66d84dc4bafba0df0021f44d933"
+   ],
+   "origin_counts": {
+    "Human": 4,
+    "Machine": 2
+   }
+  }
+ },
+ "cleaned_mcnemar_seed42": {
+  "comparisons": 3,
+  "correction": "Bonferroni",
+  "pairs": [
+   {
+    "a_right_b_wrong": 1,
+    "a_wrong_b_right": 1,
+    "continuity_corrected_chi2": 0.5,
+    "model_a": "bert-base",
+    "model_b": "bigbird",
+    "p_bonferroni": 1.0,
+    "p_value": 0.4795001221869535,
+    "significant_005_bonferroni": false
+   },
+   {
+    "a_right_b_wrong": 0,
+    "a_wrong_b_right": 3,
+    "continuity_corrected_chi2": 1.3333333333333333,
+    "model_a": "bert-base",
+    "model_b": "longformer",
+    "p_bonferroni": 0.7446392369697707,
+    "p_value": 0.2482130789899236,
+    "significant_005_bonferroni": false
+   },
+   {
+    "a_right_b_wrong": 1,
+    "a_wrong_b_right": 4,
+    "continuity_corrected_chi2": 0.8,
+    "model_a": "bigbird",
+    "model_b": "longformer",
+    "p_bonferroni": 1.0,
+    "p_value": 0.37109336952269756,
+    "significant_005_bonferroni": false
+   }
+  ],
+  "test": "paired McNemar with continuity correction"
+ },
+ "dataset": "Classifier artifacts",
+ "dropped_rows": [
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "72696571988dcc8acfac31bd2d84f021e807728c4d50fb7c420f666f38d7fd34",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "00df724143fe4160ae2fc904f21efbcf",
+   "text_preview": "34||h1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on(\"fetch-start\",function(t,e){this.",
+   "train_fragment_ids": [
+    "1b054bd83bc644bc8bafedf743fd7034",
+    "1c8c337686ab4c8a8b14e18c6cf39661",
+    "44b4c62d548b41a2886fd3d11e52639a",
+    "ae0ff34702cc4237a752fd783e5a47a2"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "dcc7ab850d8ff258c0faf8c6aa1ddf0368cdbd117a3f812a475624b9c9bb1a0f",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "018f67cd26004deebc882cca12c956ca",
+   "text_preview": "Investigations Analysis Cartoons Podcasts Videos Language \u4e2d\u6587 \u0440\u0443\u0441\u0441\u043a\u0438\u0439 Espa\u00f1ol Fran\u00e7ais \u0627\u064e\u0644\u0652\u0639\u064e\u0631\u064e\u0628\u0650\u064a\u064e\u0651\u0629\u064f Support MPN Watch ",
+   "train_fragment_ids": [
+    "a39d0b44f84347c6800c33d6f728e8b4",
+    "bd53f075cca14a2694c5a7183a23044d"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.902655 >= 0.90",
+   "similarity": 0.9026548672566371,
+   "test_fragment_id": "0a41b8bf49b84b93af44231a287d2972",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "15d0a34adc854c52bf105cfcdff4d865",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "48db7878acbd0db01f647b4b2c1de61c35b9c448c4e25cfed1f5364c74c8f552",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "0b783359bc044b50aec884a21aafc3b6",
+   "text_preview": "Natalie Sandoval Patriots Writer February 25, 2026 12:00 PM ET February 25, 2026 12:00 PM ET Natalie Sandoval Patriots W",
+   "train_fragment_ids": [
+    "060181c47c694809883a296a59d0ff32",
+    "78c032e7320e4375a3b23d99d76bacbd",
+    "a488f3f0280040508989c0c92d5efcb9"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "c5dd7dc1349e641d641ea0d4b1705114df77486aa8538f381cdcd4ea7fa5ba3e",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "11ee9db88d664fec8e8eefed36f555a5",
+   "text_preview": "Historically, the 50 percent approval mark has acted as a break-even point. Presidents below 50 percent have seen their ",
+   "train_fragment_ids": [
+    "9ff53792f5fd49abb22f1fb166b352fe"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "de",
+   "machine_model": "",
+   "normalized_sha256": "86f989db62169c3989c4876aceba2c755383f5eb0c04f9cf7d72fc513ad05226",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "12293f29b2584cef90b5d65492bdfc3a",
+   "text_preview": "NewstickerSecurityIT TechDeveloperKIEntertainmentWissenschaftBestenlistenDigital HealthForenAlle Themen AnzeigeSpecial: ",
+   "train_fragment_ids": [
+    "3e1d109a8631400d88bf48a7de9e1144"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "7c1843cbd379b80bd570b63e6536d1ab72fb4146481636e31676c15387592c18",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "12d8eecdde7b43ec8a9dc9c6c310e526",
+   "text_preview": "Investigations Analysis Cartoons Podcasts Videos Language \u4e2d\u6587 \u0440\u0443\u0441\u0441\u043a\u0438\u0439 Espa\u00f1ol Fran\u00e7ais \u0627\u064e\u0644\u0652\u0639\u064e\u0631\u064e\u0628\u0650\u064a\u064e\u0651\u0629\u064f Support MPN Watch ",
+   "train_fragment_ids": [
+    "37c90c1ae45646b19caab2630f2910f0",
+    "f0690801b626413daa991eac50a4b60b"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.969697 >= 0.90",
+   "similarity": 0.9696969696969697,
+   "test_fragment_id": "13ce5bd912f24a6baad7c45c44ced0c5",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "c82aec454bde43a69e3d5f38372f3a4a",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "unknown",
+   "language": "de",
+   "machine_model": "",
+   "normalized_sha256": "1b66e7c284e3c79a64c008e8a8e9ee3fa4a585618ac79927c79e14567fd06b57",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "1664d6d3bc8b4747894f6560b137df4e",
+   "text_preview": "');-webkit-background-position:right 16px top 16px;background-position:right 16px top 16px;background-repeat:no-repeat;m",
+   "train_fragment_ids": [
+    "06e25bba04d54b66b64a5c618ec8b0e6",
+    "0ed1c202b90e447fad9783d6a149d755",
+    "55956332b56d465bbc4aeaa80c2ce874",
+    "796e1611a76b40ef966814375084a986",
+    "84094673050c4565b29a6f3538dba48f",
+    "88f03ba5656744dc8feb3b4fa045b636",
+    "d6f2f04abb244b82b049af9533d0395c"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "en",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.936508 >= 0.90",
+   "similarity": 0.9365079365079365,
+   "test_fragment_id": "16db11401ac844f2b8c27a852fbf6714",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "199d2874d48c447ab75763f2853f59c8",
+   "train_machine_model": "mistralai_mistral-7b-instruct-v0.2"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "70f972016cc7a710031ac64fe03d987c74ee2b49439020aa8747698b5594e48b",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "194cc16ae30c4fe8a441d886c6affeef",
+   "text_preview": "Pro-communist social media users have spent much of the past week attacking Cuban-American pop star Camila Cabello after",
+   "train_fragment_ids": [
+    "fcb2ea9f65154d97925de70d4bd82c5b"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "es",
+   "machine_model": "",
+   "normalized_sha256": "20a82f875ad0546bf5648c2b4cecde634700a6d1e137c2d8748bf30d3831d2c3",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "1bb0021484c64799bbd9fdac77e4cd50",
+   "text_preview": "SUSCR\u00cdBETESeccionesAl MinutoInternacionalPol\u00edticaOpini\u00f3nSociedadDeportesEconom\u00edaCiudadesPopCulturaSucesosParticipaci\u00f3nSu",
+   "train_fragment_ids": [
+    "123a9bf0afe148feb697a900ba663661"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "71d0522a93e319072f3f5d041914d6bf913f9c6b74a803242b0331c099349532",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "1bb910b2213a4fdda636665b5528830c",
+   "text_preview": "Breitbart News Editor-in-Chief Alex Marlow speaks with members of the Trump administration at the White House following ",
+   "train_fragment_ids": [
+    "ae3b9020789942bdb702694c4975450a"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "dc026c438dd54e778c525be041bd0761b4ea395a48cac1ee5e857dacb5c77bed",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "20d84c6992024949882bf8f903e1433a",
+   "text_preview": "Further {\"customDimensions\": {\"2\":\"Abby Zimet\",\"8\":2675285735,\"4\":\"\",\"3\":\"further\",\"5\":\"02/23/2026\"}, \"post\": {\"id\": 267",
+   "train_fragment_ids": [
+    "f88e85eb05a54ecc9a5d70218af392e1"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "anthropic_claude-opus-4-6",
+   "normalized_sha256": "77997c33d10f5265c4325389eb78f4af0ebbe688c46db19b86ab797cdaa27426",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "22b9aa43d6194e90b65299583f626962",
+   "text_preview": "Global temperatures in 2024 were the highest ever recorded, surpassing the previous record set in 2023 by a significant ",
+   "train_fragment_ids": [
+    "646d207664044e56a3dab87737bbf7c3"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "fr",
+   "machine_model": "",
+   "normalized_sha256": "f326e046fe03f7b2779265c567775da8289b7db607a0961a23e125f4b480a037",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "293ae297afdf4e059b138ea757bf56e8",
+   "text_preview": "Les personnes affect\u00e9es par les intemp\u00e9ries ont d\u00e9sormais 30 jours pour d\u00e9clarer leur sinistre aupr\u00e8s de leurs assureurs",
+   "train_fragment_ids": [
+    "0975f550b6b84eddac23ce9037a2753d",
+    "f7922756a21148218bb15d63bf147421"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "fd00bb923ef4cb65cda3f35f8ce3d0ef2dc8a77174da31eb94576370014686e6",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "2b9626dcc6fc4d9b92356f171cde90b0",
+   "text_preview": "USA diskutiert Verbot von TikTok",
+   "train_fragment_ids": [
+    "63007c4782e64de1b4f98fd3aa2172d1"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "84acdd4853e734993d8c05b1171a59ba8f3784087b449f37ddcbfcbcd8ecc579",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "2f8b01d02e314518955c4dc1dceefb0f",
+   "text_preview": "Menu Commentary Commentators 2024 Election Congress White House Supreme Court Constitution Military and National Securit",
+   "train_fragment_ids": [
+    "f0bd6223c2d6403f818c54c9ab86473d"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "e3375f1047d937df72eab40bee067304a6d03b1c166bf0735be880442d2d60df",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "3269ad950da24192b8054a3b10aef538",
+   "text_preview": "Mike Adams also serves as the lab science director of an internationally accredited (ISO 17025) analytical laboratory kn",
+   "train_fragment_ids": [
+    "2e8c14463f584962ae2bf80c23e90385",
+    "69ba5e93c5d9438898efc167ac96be50"
+   ]
+  },
+  {
+   "format": "tweet",
+   "language": "es",
+   "machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "normalized_sha256": "ea79f1b74493d2a56c6154d78968c021f6e7195cc0a2f6af795598d4285251b6",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "32f789066b7c4c929baba4929cd93660",
+   "text_preview": "\"Donald Trump visita a Joe Biden en vacaciones en Haw\u00e1i. #TrumpBiden #Hawaii\"",
+   "train_fragment_ids": [
+    "dff7621d15f1402387ca898e6070572f"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "640dc5d09e9e8edd6798a5ee3f45d1f037cca027a74ed19f8ef0f4b6cbdd42c2",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "371dde1d4d604fe889ded94d9009e418",
+   "text_preview": "As The Gateway Pundit&#8217;s Jordan Conradson reported, President Trump delivered a historic address marking his second",
+   "train_fragment_ids": [
+    "9b1eda38e80947ce82ba1c00df085ae6"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.909091 >= 0.90",
+   "similarity": 0.9090909090909091,
+   "test_fragment_id": "390d1cc34c214993a8e8bafa853deb08",
+   "test_machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "train_fragment_id": "67f859c4ef9549a685ab9ada037cae84",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "efdc1aa47e08508e7ef2d0c0de134591f35b51bf8c6553add1ac03cbc72e0388",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "39c71f2dc7de48129a1b47d787210f9f",
+   "text_preview": "EU zwingt Apple zur Zulassung alternativer App Stores",
+   "train_fragment_ids": [
+    "61597e6ae7a4407d96e04e4da2492d3f",
+    "afda1c70a7b34e03b07bc07985a35813"
+   ]
+  },
+  {
+   "format": "tweet",
+   "language": "en",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.944954 >= 0.90",
+   "similarity": 0.944954128440367,
+   "test_fragment_id": "3b835455919a45589335d8eb052fc113",
+   "test_machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "train_fragment_id": "b8f693068c6e494a8d992b6b825772f1",
+   "train_machine_model": "mistralai_mistral-7b-instruct-v0.2"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "77caf65348b8de3e4e8f2de7dc8fc3fe57b2c4601fe01ca0bc3db03ceb27ab77",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "3cdfcd822b93449795051b28140dcd81",
+   "text_preview": "{\"customDimensions\": {\"7\":\"Nicole Charky-Chami\",\"13\":2675333036,\"9\":\"markwayne mullin, affordable care act, surgeon gene",
+   "train_fragment_ids": [
+    "d74c1af8b23c4b89a00198b06062e4c0",
+    "e7a2cd957a1a4d91a67826d01ec5cb46"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "e1aeebf075d6dce8bac27aa939a3e010bad68daacd578aa185475b83337fb299",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "3dad005a12e24aa7b4fa286bd0b25a15",
+   "text_preview": "Alemania legaliza el uso de cannabis",
+   "train_fragment_ids": [
+    "53cd33f4d35741e78b8d3b7e98a40865"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "8bb12a729d672395c952558548f9e8688b3bbe25296fd9411453dec451781a8e",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "3e9b4c2d8f284887b4c1e8083a74d828",
+   "text_preview": "\u201cTrump&#39;s misguided tariff tantrum has caused an affordability crisis for American consumers and farmers\u201d {\"customDim",
+   "train_fragment_ids": [
+    "b7ba22a6f6294223ad443901f59277de"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "314ec16bcbf07a504195c94741739f531b6aee1f752c7a21d8d7e63e54026faa",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "43cde4fa969641ae9fc7908348679604",
+   "text_preview": "{\"customDimensions\": {\"2\":\"Newswire Editor\",\"8\":2675289524,\"3\":\"newswire\",\"5\":\"02/20/2026\"}, \"post\": {\"id\": 2675289524, ",
+   "train_fragment_ids": [
+    "9165ed708a1b408ebbe6db990e379981"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.907563 >= 0.90",
+   "similarity": 0.907563025210084,
+   "test_fragment_id": "4d6cf882387e41bf816964b2b198557b",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "5aa187dec4954a148585af80cc47e3e6",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "72696571988dcc8acfac31bd2d84f021e807728c4d50fb7c420f666f38d7fd34",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "53b9d5a5b1594659935077708127ae79",
+   "text_preview": "34||h1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on(\"fetch-start\",function(t,e){this.",
+   "train_fragment_ids": [
+    "1b054bd83bc644bc8bafedf743fd7034",
+    "1c8c337686ab4c8a8b14e18c6cf39661",
+    "44b4c62d548b41a2886fd3d11e52639a",
+    "ae0ff34702cc4237a752fd783e5a47a2"
+   ]
+  },
+  {
+   "format": "tweet",
+   "language": "de",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.909091 >= 0.90",
+   "similarity": 0.9090909090909091,
+   "test_fragment_id": "53ecc5c130654642832011f31f8dbf2d",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "31d29f2ef5be4f60baa60c9fcc5024f5",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "tweet",
+   "language": "de",
+   "machine_model": "meta_llama-2-13b-chat",
+   "normalized_sha256": "6a9be4f67beff38598e82ab06c882346b3f2e9bb2c0eed05fcc7e3e2469f8f16",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "56361d9578ef4b59bcfb3278312f973c",
+   "text_preview": "\"Bayerns Premier unterschreibt Unabh\u00e4ngigkeitserkl\u00e4rung! \ud83c\udde7\ud83c\uddf7\ud83d\udc4f\"",
+   "train_fragment_ids": [
+    "17a0e046da61419db4861ca07d7678b3",
+    "25fc54806d0a440ca85ae3bb7e037f46",
+    "6ea7e8c8024245b096faf7de160c740b",
+    "bc59873512404e64a55ecc4330985287"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "517197eea1e1b3292dce576a033033c000708ce7477dad2eb2d3882508ac9923",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "5974ab9cb2a9424e87783e439be10a58",
+   "text_preview": "{\"customDimensions\": {\"7\":\"Michelangelo Signorile\",\"13\":2675333080,\"9\":\"trump administration, state of the union, state ",
+   "train_fragment_ids": [
+    "3dff8748609d4aafb5538155f5360a56",
+    "e992b04bc6084876bdacdddb2d713ed0"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "1e865fc4f99c7aa6f915b8f982ce859720ae69f5529d324ed8aef3fc1db33996",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "5ca9769055f441f882b295cf6689ccf2",
+   "text_preview": "New York City Mayor Zohran Mamdani (D) and Rep. Alexandria Ocasio-Cortez (D-N.Y.) released a Spanish-language video Tues",
+   "train_fragment_ids": [
+    "f4e7e1de4082498b84c7bf89282eea7d"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "de",
+   "machine_model": "",
+   "normalized_sha256": "8d06261f08db4f5870609839f4479dd558ceae18f3e5c2d9a426ef948eefd4c9",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "64acb9a239174511baa85c269bca55cd",
+   "text_preview": "Das Mindestalter f\u00fcr Alkoholkonsum in Disney World kann auf 18 Jahre herabgesetzt werden Der National Minimum Drinking A",
+   "train_fragment_ids": [
+    "f1772918ebcd4d31a559b3c9967f75cc"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "640dc5d09e9e8edd6798a5ee3f45d1f037cca027a74ed19f8ef0f4b6cbdd42c2",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "6788173c842d453abcfc506278e8fae6",
+   "text_preview": "As The Gateway Pundit&#8217;s Jordan Conradson reported, President Trump delivered a historic address marking his second",
+   "train_fragment_ids": [
+    "9b1eda38e80947ce82ba1c00df085ae6"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "machine_model": "meta_llama-2-13b-chat",
+   "normalized_sha256": "f8b812f5ad8997d8eb45cac055d3ab520cb5476ba1333cf043685c9d25f2a178",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "6937abfef6f74bc8924ece2dedd262c3",
+   "text_preview": "Les robots peuvent se marier en Californie",
+   "train_fragment_ids": [
+    "255caf3a1d3846aaabc7ff88bd49f2ae"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "machine_model": "openai_gpt-4o_2024-08-06",
+   "normalized_sha256": "300dbe993f401a90953725a50cb497eb8d000aa8304a5d00ebcefa85ebddcce6",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "698a2ffb090f4288992a531edffc746a",
+   "text_preview": "La Californie autorise les robots \u00e0 se marier : une premi\u00e8re mondiale!",
+   "train_fragment_ids": [
+    "d6d850b603b44ef9ae2e67214d6f3c86"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.916129 >= 0.90",
+   "similarity": 0.9161290322580645,
+   "test_fragment_id": "73e499a475054ae596bca429ba3e902b",
+   "test_machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "train_fragment_id": "b53964ee888b488b8ab83786326a31bf",
+   "train_machine_model": "mistralai_mistral-7b-instruct-v0.2"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "origin": "Human",
+   "reason": "near training-text match at SequenceMatcher ratio 0.969254 >= 0.90",
+   "similarity": 0.9692541856925418,
+   "test_fragment_id": "7997ef6a3d984837a1dd1a8ed21b7061",
+   "test_machine_model": "",
+   "train_fragment_id": "7a8198f5dff346208db0c6ad009d93bd",
+   "train_machine_model": ""
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "dfdafc127bb95f3ae423eb0506129819d8ce2e3775dd7773cf36e20f2ff59346",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "7aa2f7f7cd0642369c3ef64262c7db3a",
+   "text_preview": "Yesterday. I wrote about the Democrat pro-crime invention of releasing monsters sentenced to over a century in prison by",
+   "train_fragment_ids": [
+    "e68678ff820041a0ad383b03823ede8a"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "en",
+   "machine_model": "meta_llama-2-13b-chat",
+   "normalized_sha256": "3df6e85b5311f3f0fea5db045133f2b24e85454b9d40aab9496e944eb72a4dd6",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "7ecbed8fd89e440c889924d1a9373259",
+   "text_preview": "CALIFORNIA ALLOWS ROBOTS TO MARRY",
+   "train_fragment_ids": [
+    "31f29fd0316d4d6e9518ca052691c19f"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "d3dbec74943fc06967c003c751dad3fca36a24909b81a5b2f62c6d460033f522",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "7ee86eeeb35e4f5eb7436e1149798d57",
+   "text_preview": "Editor&#8217;s note: In Part 2 of Father Enoch\u2019s 5-part essay, he continues his analysis of Pope Leo XIV\u2019s homily at a J",
+   "train_fragment_ids": [
+    "b88ed531728c4803af975ef7a125b62c"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "902eee7da4bc1c1a36e6b869f6f9535fd28e07a434ebb95f8e95181bd0c4db23",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "897e9051e5a140778a2c1e656ddc6355",
+   "text_preview": "The Department of Justice filed a lawsuit against the sanctuary state of New Jersey after its governor banned Immigratio",
+   "train_fragment_ids": [
+    "ddd707ec44114c5e901d9cc7cae58fc5"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "b42ea0243b63d1a8ae17f4ffa0d190e187d17685351d672f989539182c2c36a2",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "8999ce3629334a12b4423e3e39bcb261",
+   "text_preview": "Their honored guest was Kilmar Abrego Garcia, an illegal alien, wife-beater, MS-13 member, and accused human trafficker.",
+   "train_fragment_ids": [
+    "2886d6dee0da45a98daa23430db72fb1"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "cfaef5b56f27a1ad1669c6a6e938c290cdd9633e4d1eb34971cbd278b15ee5b1",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "906b01e81c8049b793a0da817054ca92",
+   "text_preview": "The Democrat party&#8217;s apparently unanimous refusal to stand up for Americans over illegal migrants was &#8220;one o",
+   "train_fragment_ids": [
+    "203206c14b324b8782b80f57fe415aa8",
+    "7edc6d13733b40228bcec68da014511b"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "dd2e688d81461b454cf5c55d1ef813eae82306babec54332f6cb53f39494bcc5",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "91b9da7d25c045acb957a40b00b7b113",
+   "text_preview": "Donald Trump rend visite \u00e0 Joe Biden en vacances \u00e0 Hawaii",
+   "train_fragment_ids": [
+    "6aaca59d4c6243bbb110a903f18d239d"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "372cd72f284ee81979af09f30afdbdf33241141888ca353775d35f82cfa456e0",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "928a8c4fda3f452589b02202bd1f1293",
+   "text_preview": "Order Jamie Glazov&#8217;s new book, &#8216;United in Hate: The Left&#8217;s Romance with Tyranny, Terror, and Hamas&#82",
+   "train_fragment_ids": [
+    "2b90c37e5d074c2389f77c0e2e346d16",
+    "be90376b7e97430594caeb60a2ef6d12"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "1b6c6d1ca78430e2f7681bf05ae5d6a1eca614a7f735d25e30ff038c08079451",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "9871c7c30cd949759af8b0fc6c5a5ec2",
+   "text_preview": "Rep. Randy Forbes Member of Congress (R-VA) February 25, 2026 11:55 AM ET February 25, 2026 11:55 AM ET Rep. Randy Forbe",
+   "train_fragment_ids": [
+    "988874cdd2f248b293cabe7297fe7465",
+    "9b6aaf23fb604b74a72fc8d8bfcf69ff"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "es",
+   "machine_model": "",
+   "normalized_sha256": "6e42420399af95e58a03f5c746000472d1fe1c99862f08bf7022aa74a4d7f770",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a02fda5de85b42f688bee778da7169c2",
+   "text_preview": "BBC News, MundoIr al contenidoSeccionesNoticiasAm\u00e9rica LatinaInternacionalEE.UU.Econom\u00edaCienciaSaludCulturaTecnolog\u00edaHay",
+   "train_fragment_ids": [
+    "b04d6670ea0842508691bcdfcd040458",
+    "fbecc3c9e2cc44b7b843e87bf408d7ad"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "machine_model": "openai_gpt-4o_2024-08-06",
+   "normalized_sha256": "608af1e906736ca91fe1601d8eddec6d45d4000eaa8f2450d998cd01615e0631",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a0b21eea8421448184015c0b2b65896f",
+   "text_preview": "La UE obliga a Apple a permitir tiendas de aplicaciones alternativas",
+   "train_fragment_ids": [
+    "49ba6f3a083040fdbf6dc23dbafb3d19",
+    "8260c5fd79fb4a9ea2f5de1e42ad9e45",
+    "a228e1653eb7417b97b3b7c7bc9e90c2",
+    "c2056b5101fa419ca9cde9cc96f00304",
+    "ceafd601728a48ed805145b940931393",
+    "d1ac35693e8f4f3fa2e5aa815c773db9"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "216ee3a76307b0706458bd60225d193bba8fd4692bcb362a79ad8dfc96ab1a18",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a2dfcbd398024fdaa7e5f991426f2fd4",
+   "text_preview": "A child-like man is not a man whose development has been arrested; on the contrary, he is a man who has given himself a ",
+   "train_fragment_ids": [
+    "01a9286666b24c80aa093c72631e4fc2",
+    "0bd729d05d954dc08528ff761a6817f9",
+    "3adc9d9ce0ff4fa5ad30b871d9b224ed",
+    "48364ef4f59a4572a5625491f5eb5483",
+    "4e8779456c964efeb52d081ad2b5c5dd",
+    "4f1619ff3d9d44238a715eab7fc2107b",
+    "783e68c7f35746a9a6e471775f3448ba",
+    "9ba76b19db93443786f9f8325bfa9100",
+    "9ee5c19c1bf94d988cc8c37766423b3c",
+    "aee4af70ff524c2cbadcdfea3904554f",
+    "cdb77c4a67bb4ddea452941f9b526f73",
+    "e1408569b4874d60bf50b2b81640d89b",
+    "edf224e64a6c45cf926091ae28a27dec",
+    "f08628abee304c90b918389b0b87b586",
+    "f2b7a4b852bc47a298697dbb7bee9098"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "4db9260ef31255049fb9a929aeeb638ec022fef5617994886b72fdc007739e88",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a37939ef470f4ef79e76ffaeeb91375e",
+   "text_preview": "Open main menu ArchivesAuthorsBlogBooks ResourcesLew Rockwell BooksRon Paul BooksMurray N. Rothbard Library ResourcesMis",
+   "train_fragment_ids": [
+    "36e41f6d24094a248478d9d1e7a2d4c8",
+    "b46a20cbd5c944b5ae1fd4bab15cb5d5"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "d443a91f78f19c1d76de45102dcbc9b66ac1e9a27c43fe058cf1b5c8a0e7f110",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a3e8a14252e141adb40328e4d9f87137",
+   "text_preview": "Report details harrowing 18-month occupation of North Darfur capital, showing destruction aimed at ethnic communities Pr",
+   "train_fragment_ids": [
+    "1c17a2bd2ab542ccad978aea40e3a77e"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "7b9b71c7e43db9622aaa522184e32f2b16901eceec50a35b91bc953ec2122cff",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a6510ecd541f449f8cf7227c4dc7eaab",
+   "text_preview": "34||h1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on(\"fetch-start\",function(t,e){this.",
+   "train_fragment_ids": [
+    "0880225c6b9f4770a78226b42f78fb76",
+    "3932aa799790413a922a52b04e4f97c4",
+    "3ff46b0d5fba442aa6ca0afaee1dd37c",
+    "fa115dd771814a8886ca4d1e2757a539"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "normalized_sha256": "8d5b78539935c5859c68ab951871da6277130ccb24ef3c9d2495ee280b2055c0",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a89d554bb6664acd894ef647632ce2d5",
+   "text_preview": "\"Donald Trump besucht Joe Biden auf Urlaub in Hawaii\" (\"Donald Trump visits Joe Biden on vacation in Hawaii\")",
+   "train_fragment_ids": [
+    "d5c272fe48d149a4b65de4f05218a2df"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "6eb0999d7068f7883765e69109398cc560ed557b733303fe68c79caeddfbe30f",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a8ee08891b07408c93bed26cef362d8a",
+   "text_preview": "Menu Commentary Commentators 2024 Election Congress White House Supreme Court Constitution Military and National Securit",
+   "train_fragment_ids": [
+    "ca5b224064d8413ea7ea955cf28c5acf"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.955882 >= 0.90",
+   "similarity": 0.9558823529411765,
+   "test_fragment_id": "a9193c2fb1be4f559de1c81dfa9d0d4a",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "35ea972c688345f6b6862f9eb4ba8a0f",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "ead61a28d182cbadc9085b6988ad97fbd7b4f0da21e14bee057e30e18b7f7934",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "a9a15b29e9004e4c8c676f164d83dc14",
+   "text_preview": "Open main menu ArchivesAuthorsBlogBooks ResourcesLew Rockwell BooksRon Paul BooksMurray N. Rothbard Library ResourcesMis",
+   "train_fragment_ids": [
+    "cbe7e2a86fca46cca8e6301558589b5e",
+    "ef14aa23390447f1a91bb19637b500f6"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "517cc7312fa8a120687b484fd94782b003c045b2b71cf95c3e4f027af2947df0",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "b41ea7cc28e84847a0887d7842e005ec",
+   "text_preview": "Donald Trump besucht Joe Biden im Urlaub auf Hawaii",
+   "train_fragment_ids": [
+    "67f859c4ef9549a685ab9ada037cae84",
+    "7a5eade8c21b4067bc486a2e48235267"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "normalized_sha256": "fb83b77c173c916a3ddfce8e38401a79e700503b7d9cdf77b25bf92b0367ee22",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "bc44c8ee3c3946d8af2a7e20d9e8f959",
+   "text_preview": "\"Californie autorise les robots \u00e0 se marier\"",
+   "train_fragment_ids": [
+    "518077645ea54bf693f281acc4f6e891"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "18a8012ee4d00ead23fdcddaeee2a0035650e5e158ba497d9854a00a912b89cb",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "bc5167e159bd4e75b6d29bce0a169356",
+   "text_preview": "Special Series Far-Flung Postcards Greetings from Jordan's Wadi Rum desert, where patches of green emerge after winter r",
+   "train_fragment_ids": [
+    "0dcb212ac2d048b982b46526a44a84b3"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "de",
+   "machine_model": "",
+   "normalized_sha256": "54f4b0734f75c592e2f196697b9224b0781de1ba6deaded428dee00495df2327",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "bd1f525c63434d41b680a29a37281310",
+   "text_preview": "Pfeil nach linksPfeil nach rechtsMerklisteAufklappenKommentareAbspielenPauseAbspielenWiederholen Men\u00fc suchen Suche Nicht",
+   "train_fragment_ids": [
+    "0927ae404e444296a00816fe642f0069",
+    "30419643868847869ca7ad5ee3129d8b",
+    "3933844d437f4265b43ae2cc72915beb",
+    "4d4f15e6f9c248deb1182283698923e0",
+    "685b9aa9e03542c5b745e99477cdd2a8",
+    "7cf1dd07fe3a430cb6d7103c03a7184d"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "a55725f75e28d96c9a985d6849339532f38f8fca9edb641d8db0421f1ca4edda",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "c2c8c3b991764157a74cec87803f438a",
+   "text_preview": "\"California permite que los robots se casen\"",
+   "train_fragment_ids": [
+    "1e9f6bf48a31459aabe733bdf27b7dee",
+    "28294a4cd4524ce593368b2b99405e7d",
+    "2de1fc439dc94bccb9d727b82cbb7de3",
+    "aae14cf15ff642079f7af970077722fe"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "ac5934fa3df06d1c6a88cb62fa6e3bc397424690acc9bd5596dc75f671fd1d4a",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "c4f628dc0d5d47cb90de202f40ccf941",
+   "text_preview": "We have been following the fallout from the US DOJ release of the \u2018Epstein Files\u2019, which has led to the arrest of the br",
+   "train_fragment_ids": [
+    "8ae7bb70bba94563b41ce5e9f2899fda",
+    "9b56461dbe2e420a910eec2c096a6f91"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "5b65fc785e7746bcad3b71df90ca47c6c50635804d07f2a1d69abf2246aafa31",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "c9918af785fa486cae2ecf24eec172c8",
+   "text_preview": "Colombia continues to navigate the fragile aftermath of more than five decades of armed conflict. Although the 2016 peac",
+   "train_fragment_ids": [
+    "bc53a95226674f7c8053bbaceffca1d4"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "en",
+   "machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "normalized_sha256": "f9769550fe38386b83b46d84ebdd76bf5c0caf625b3322bd306fa45bcc3b570a",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "cb7fcf8772ee46159510fa6cf2f65bd0",
+   "text_preview": "\"Bavarian Premier Signs Declaration of Independence\"",
+   "train_fragment_ids": [
+    "718621c573ac4763b3d50ac911113a58"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "5394d1db71dae7803734b0c3b224d7c4829dc46e98e57e401133735d351868fd",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "ce2155eb9744488db6f6598b4e394f64",
+   "text_preview": "Ireland Owens Reporter February 25, 2026 12:04 PM ET February 25, 2026 12:04 PM ET Ireland Owens Reporter Font Size: con",
+   "train_fragment_ids": [
+    "2c4d9d07823f4f3aa1769d5d6f14a3f3"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.950000 >= 0.90",
+   "similarity": 0.95,
+   "test_fragment_id": "ce712dae24f94fa1b6b91f2f9d0b1067",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "772e9f99bde64a87a77e522ce2e637c4",
+   "train_machine_model": "openai_gpt-35-turbo"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "d2340ecd95e46e74b15e103380e7090f02a37b55435c1fc71c7c2ff8c3489f0e",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "d167168a69ce4571b3deb646fff31045",
+   "text_preview": "When the Democrats, especially the foreign Muslim contingent like Rep. Ilhan Omar and Rep. Rashida Tlaib, weren&#8217;t ",
+   "train_fragment_ids": [
+    "0871cb18f1ba4b62a05c4e5c5f18030c",
+    "8c97c347fc0b4f808ef224c3b618cc00"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "c6c019ff8ebc3ab42b9a459f6ffe4a9d63818a60f5ae97a782c4ba98d82d061c",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "d7663603d69540ce8b750bbfce250b6d",
+   "text_preview": "Horrific New Data Reveals Thousands Of Children Mutilated Under Biden Regimeby Tyler DurdenAuthored...Authored by Steve ",
+   "train_fragment_ids": [
+    "f504f725939d4c7390941fa7bb9865bf"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "de",
+   "machine_model": "",
+   "normalized_sha256": "1b66e7c284e3c79a64c008e8a8e9ee3fa4a585618ac79927c79e14567fd06b57",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "d8ac3ed86782479aa7353a2082ac66ca",
+   "text_preview": "');-webkit-background-position:right 16px top 16px;background-position:right 16px top 16px;background-repeat:no-repeat;m",
+   "train_fragment_ids": [
+    "06e25bba04d54b66b64a5c618ec8b0e6",
+    "0ed1c202b90e447fad9783d6a149d755",
+    "55956332b56d465bbc4aeaa80c2ce874",
+    "796e1611a76b40ef966814375084a986",
+    "84094673050c4565b29a6f3538dba48f",
+    "88f03ba5656744dc8feb3b4fa045b636",
+    "d6f2f04abb244b82b049af9533d0395c"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.970149 >= 0.90",
+   "similarity": 0.9701492537313433,
+   "test_fragment_id": "dce4d97198d24b2598ad1cc61424883d",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "35ea972c688345f6b6862f9eb4ba8a0f",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "98659f932c9d391fc2096afbf052aa365404df97dd8e4f65790c6aa163b260ad",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "deca37be8f774532a57c0a1233fb4fbf",
+   "text_preview": "A shopping cart with groceries at a Target store in New York City on April 10, 2025. President Trump has several ways to",
+   "train_fragment_ids": [
+    "afce00750f9d4e5d9d83509c2ff280f4"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "d3dbec74943fc06967c003c751dad3fca36a24909b81a5b2f62c6d460033f522",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "def6341bbe2c478cb0bda00c0572fcaf",
+   "text_preview": "Editor&#8217;s note: In Part 2 of Father Enoch\u2019s 5-part essay, he continues his analysis of Pope Leo XIV\u2019s homily at a J",
+   "train_fragment_ids": [
+    "b88ed531728c4803af975ef7a125b62c"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "machine_model": "openai_gpt-35-turbo",
+   "normalized_sha256": "e3f2013553a5115ef566fe6503c2890033a8c52eef27c8b6ab140a8ae70ce4dd",
+   "origin": "Machine",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "e45b60b6e1cf4b7bb1f84943364e2163",
+   "text_preview": "La Californie autorise les robots \u00e0 se marier",
+   "train_fragment_ids": [
+    "2bda4fb2d3a14282824cb6bb92c473e9",
+    "abaf67548553467782f04505b4874231"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "532ba89b7c0e5de454509f5fe2f5e94c0087fd08395a91a0517d7aa7ffb6545e",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "e6e5c5a301214ae1b904f9d317073cbc",
+   "text_preview": "Harold Hutchison Media Reporter February 25, 2026 11:52 AM ET February 25, 2026 11:52 AM ET Harold Hutchison Media Repor",
+   "train_fragment_ids": [
+    "f6e8d598aa784d6dbce62e94c311d3ab"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "71d0522a93e319072f3f5d041914d6bf913f9c6b74a803242b0331c099349532",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "ea980e7eb1e44c73ba6226e85aeda9ad",
+   "text_preview": "Breitbart News Editor-in-Chief Alex Marlow speaks with members of the Trump administration at the White House following ",
+   "train_fragment_ids": [
+    "ae3b9020789942bdb702694c4975450a"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "de",
+   "machine_model": "",
+   "normalized_sha256": "1b66e7c284e3c79a64c008e8a8e9ee3fa4a585618ac79927c79e14567fd06b57",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "ec4323b41de948248c2658f4b50fe68f",
+   "text_preview": "');-webkit-background-position:right 16px top 16px;background-position:right 16px top 16px;background-repeat:no-repeat;m",
+   "train_fragment_ids": [
+    "06e25bba04d54b66b64a5c618ec8b0e6",
+    "0ed1c202b90e447fad9783d6a149d755",
+    "55956332b56d465bbc4aeaa80c2ce874",
+    "796e1611a76b40ef966814375084a986",
+    "84094673050c4565b29a6f3538dba48f",
+    "88f03ba5656744dc8feb3b4fa045b636",
+    "d6f2f04abb244b82b049af9533d0395c"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "9bc877aa6bb74699d0794ae739ac00bb31e1c05e863d30408023ad7fbff34c82",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "ecce66a716d14310888752017c499d6c",
+   "text_preview": "Nicole Silverio Media Reporter February 25, 2026 12:08 PM ET February 25, 2026 12:08 PM ET Nicole Silverio Media Reporte",
+   "train_fragment_ids": [
+    "8ae605e1df3d49ab9fb9aa8b9c8e4b2e"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "82f37fc54379d687980eb78982f1079147857391576640203336f677d688e5d7",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "f2118591bc7047249f6a38407b44c05a",
+   "text_preview": "Democratic Senate Minority Leader Chuck Schumer (D-NY) on Wednesday gave his own rebuttal to President Trump&#8217;s Sta",
+   "train_fragment_ids": [
+    "b14a3894ff294818b4e7df1dc701b8f9"
+   ]
+  },
+  {
+   "format": "unknown",
+   "language": "fr",
+   "machine_model": "",
+   "normalized_sha256": "e7220fa7da7e56e9c86b5e6dc740f35f8b6f903b79767c3c1dd18527c3f367c5",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "f773404d97c344b69fd37440bbd52c95",
+   "text_preview": "Des vid\u00e9os diffus\u00e9es sur les r\u00e9seaux sociaux montrent des rassemblements dans plusieurs universit\u00e9s iraniennes depuis sa",
+   "train_fragment_ids": [
+    "bfb7d7d15fda401db082fd3382b410dc"
+   ]
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "origin": "Machine",
+   "reason": "near training-text match at SequenceMatcher ratio 0.925620 >= 0.90",
+   "similarity": 0.9256198347107438,
+   "test_fragment_id": "f856dbb3daa8491fb33a4ada190266a4",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "8e30e61b9266420094a40a9bb51e66c0",
+   "train_machine_model": "openai_gpt-35-turbo"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "machine_model": "",
+   "normalized_sha256": "c5dd7dc1349e641d641ea0d4b1705114df77486aa8538f381cdcd4ea7fa5ba3e",
+   "origin": "Human",
+   "reason": "exact normalized training-text match",
+   "test_fragment_id": "ffa994b5264d4d719d1391f944aa206c",
+   "text_preview": "Historically, the 50 percent approval mark has acted as a break-even point. Presidents below 50 percent have seen their ",
+   "train_fragment_ids": [
+    "9ff53792f5fd49abb22f1fb166b352fe"
+   ]
+  }
+ ],
+ "near_match_candidates_at_or_above_0_85": [
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "similarity": 0.9026548672566371,
+   "test_fragment_id": "0a41b8bf49b84b93af44231a287d2972",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "15d0a34adc854c52bf105cfcdff4d865",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "similarity": 0.9696969696969697,
+   "test_fragment_id": "13ce5bd912f24a6baad7c45c44ced0c5",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "c82aec454bde43a69e3d5f38372f3a4a",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "headline",
+   "language": "en",
+   "origin": "Machine",
+   "similarity": 0.9365079365079365,
+   "test_fragment_id": "16db11401ac844f2b8c27a852fbf6714",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "199d2874d48c447ab75763f2853f59c8",
+   "train_machine_model": "mistralai_mistral-7b-instruct-v0.2"
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "origin": "Machine",
+   "similarity": 0.9090909090909091,
+   "test_fragment_id": "390d1cc34c214993a8e8bafa853deb08",
+   "test_machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "train_fragment_id": "67f859c4ef9549a685ab9ada037cae84",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "tweet",
+   "language": "en",
+   "origin": "Machine",
+   "similarity": 0.944954128440367,
+   "test_fragment_id": "3b835455919a45589335d8eb052fc113",
+   "test_machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "train_fragment_id": "b8f693068c6e494a8d992b6b825772f1",
+   "train_machine_model": "mistralai_mistral-7b-instruct-v0.2"
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "origin": "Machine",
+   "similarity": 0.907563025210084,
+   "test_fragment_id": "4d6cf882387e41bf816964b2b198557b",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "5aa187dec4954a148585af80cc47e3e6",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "tweet",
+   "language": "de",
+   "origin": "Machine",
+   "similarity": 0.9090909090909091,
+   "test_fragment_id": "53ecc5c130654642832011f31f8dbf2d",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "31d29f2ef5be4f60baa60c9fcc5024f5",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "origin": "Machine",
+   "similarity": 0.9161290322580645,
+   "test_fragment_id": "73e499a475054ae596bca429ba3e902b",
+   "test_machine_model": "mistralai_mistral-7b-instruct-v0.2",
+   "train_fragment_id": "b53964ee888b488b8ab83786326a31bf",
+   "train_machine_model": "mistralai_mistral-7b-instruct-v0.2"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "origin": "Human",
+   "similarity": 0.9692541856925418,
+   "test_fragment_id": "7997ef6a3d984837a1dd1a8ed21b7061",
+   "test_machine_model": "",
+   "train_fragment_id": "7a8198f5dff346208db0c6ad009d93bd",
+   "train_machine_model": ""
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "origin": "Machine",
+   "similarity": 0.890625,
+   "test_fragment_id": "8211261d1cad4eef85d3778d97c1d7b5",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "cd83f30b91f241d5ab9306bf1a1a8a62",
+   "train_machine_model": "openai_gpt-35-turbo"
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "origin": "Machine",
+   "similarity": 0.881578947368421,
+   "test_fragment_id": "a8a29ff7a04548c3b0a18678c2cb1f37",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "a9e9730369b747c9bdb61b1e7d44e2e1",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "similarity": 0.9558823529411765,
+   "test_fragment_id": "a9193c2fb1be4f559de1c81dfa9d0d4a",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "35ea972c688345f6b6862f9eb4ba8a0f",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "similarity": 0.8767123287671232,
+   "test_fragment_id": "a99c2a40bc4b4f129a08f7d682a5352a",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "2c7937f821de4a0b8ac7357d15232e42",
+   "train_machine_model": "openai_gpt-4o_2024-08-06"
+  },
+  {
+   "format": "headline",
+   "language": "de",
+   "origin": "Machine",
+   "similarity": 0.95,
+   "test_fragment_id": "ce712dae24f94fa1b6b91f2f9d0b1067",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "772e9f99bde64a87a77e522ce2e637c4",
+   "train_machine_model": "openai_gpt-35-turbo"
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "similarity": 0.855072463768116,
+   "test_fragment_id": "d5ab4aa92bcb40cca68f77912b9be2fd",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "b8420a5021ea47079dd00984c51e53d7",
+   "train_machine_model": "openai_gpt-35-turbo"
+  },
+  {
+   "format": "headline",
+   "language": "es",
+   "origin": "Machine",
+   "similarity": 0.9701492537313433,
+   "test_fragment_id": "dce4d97198d24b2598ad1cc61424883d",
+   "test_machine_model": "meta_llama-2-13b-chat",
+   "train_fragment_id": "35ea972c688345f6b6862f9eb4ba8a0f",
+   "train_machine_model": "meta_llama-2-13b-chat"
+  },
+  {
+   "format": "headline",
+   "language": "en",
+   "origin": "Machine",
+   "similarity": 0.8609271523178808,
+   "test_fragment_id": "e4f7c4fded78441d8bd3fb4dc14ac552",
+   "test_machine_model": "openai_gpt-35-turbo",
+   "train_fragment_id": "d205806e99d84c11a841bf5569abad55",
+   "train_machine_model": "openai_gpt-35-turbo"
+  },
+  {
+   "format": "unknown",
+   "language": "en",
+   "origin": "Human",
+   "similarity": 0.8875715453802125,
+   "test_fragment_id": "ef8cfea872764bd78822cd0f79e2eb50",
+   "test_machine_model": "",
+   "train_fragment_id": "864d93d77b894eb7a63a705a283bf3d1",
+   "train_machine_model": ""
+  },
+  {
+   "format": "headline",
+   "language": "fr",
+   "origin": "Machine",
+   "similarity": 0.9256198347107438,
+   "test_fragment_id": "f856dbb3daa8491fb33a4ada190266a4",
+   "test_machine_model": "openai_gpt-4o_2024-08-06",
+   "train_fragment_id": "8e30e61b9266420094a40a9bb51e66c0",
+   "train_machine_model": "openai_gpt-35-turbo"
+  }
+ ],
+ "ood_overlap_audit": {
+  "m4": {
+   "exact_raw_prefix_matches_to_training": 0,
+   "fragment_id_matches_to_training": 0,
+   "identical_evaluation_rows_across_models": true,
+   "matches": [],
+   "normalized_prefix_matches_to_training": 0,
+   "rows": 500,
+   "scope": "Artifacts retain only the first 200 raw characters of OOD text. Any exact full-text match of at least 200 characters would necessarily match the raw prefix test; the normalized-prefix test additionally applies the in-domain normalization. Near-duplicate OOD overlap cannot be ruled out from truncated previews."
+  },
+  "mage": {
+   "exact_raw_prefix_matches_to_training": 0,
+   "fragment_id_matches_to_training": 0,
+   "identical_evaluation_rows_across_models": true,
+   "matches": [],
+   "normalized_prefix_matches_to_training": 0,
+   "rows": 500,
+   "scope": "Artifacts retain only the first 200 raw characters of OOD text. Any exact full-text match of at least 200 characters would necessarily match the raw prefix test; the normalized-prefix test additionally applies the in-domain normalization. Near-duplicate OOD overlap cannot be ruled out from truncated previews."
+  },
+  "raid": {
+   "exact_raw_prefix_matches_to_training": 0,
+   "fragment_id_matches_to_training": 0,
+   "identical_evaluation_rows_across_models": true,
+   "matches": [],
+   "normalized_prefix_matches_to_training": 0,
+   "rows": 500,
+   "scope": "Artifacts retain only the first 200 raw characters of OOD text. Any exact full-text match of at least 200 characters would necessarily match the raw prefix test; the normalized-prefix test additionally applies the in-domain normalization. Near-duplicate OOD overlap cannot be ruled out from truncated previews."
+  }
+ },
+ "procedure": {
+  "cleaned_label_counts": {
+   "Human": 41,
+   "Machine": 367
+  },
+  "cleaned_test_rows": 408,
+  "exact_rows_dropped": 71,
+  "exact_rule": "Drop a test row if its complete normalized text equals the complete normalized text of any training row.",
+  "near_rows_dropped": 13,
+  "near_rule": "After excluding exact matches, index normalized training text by five-word shingles sampled every three words; rank candidates by shared sampled shingles; score the top ten with difflib.SequenceMatcher(autojunk=False); drop when the best ratio is at least 0.90.",
+  "normalization": "Python re.sub(r'\\W+', ' ', text.casefold()).strip(), with Unicode-aware word characters",
+  "original_test_rows": 492,
+  "primary_near_threshold": 0.9,
+  "sensitivity_thresholds": [
+   0.85,
+   0.9,
+   0.95
+  ]
+ },
+ "provenance": {
+  "dataset_version": "classifier-artifacts / archived 2026-08-11",
+  "input_files": [
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/bert-base-uncased.json",
+    "sha256": "fb82f645a237520eec8965ad71be83c7fc7737522784a2a72c389255a295c8d3",
+    "size_bytes": 1495
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/bert-base-uncased__seed123.json",
+    "sha256": "f0e317e3fd5120a503485a1f2700f291e760301159ebb2b2c685e2f05ff62ba6",
+    "size_bytes": 1751
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/bert-base-uncased__seed2024.json",
+    "sha256": "13a21ec59d5352fa002d42050e505a2980f225ff7a541af59e1f81199864e219",
+    "size_bytes": 1751
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/bigbird-roberta-base.json",
+    "sha256": "a7d607eae84b851c3d4c55192a3e119956c162c91bd3f5710e5c6418ed2c95e7",
+    "size_bytes": 1554
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/bigbird-roberta-base__seed123.json",
+    "sha256": "4188c54bc54ead5f053f40fe588567eba03ec6603f14bc76a8810271526bd445",
+    "size_bytes": 1774
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/bigbird-roberta-base__seed2024.json",
+    "sha256": "04acef53af031a43488f6541dcb3ca9459565e1bfd7d1b7634c746935468f8e3",
+    "size_bytes": 1768
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/longformer-base-4096.json",
+    "sha256": "6d44afccf3b076745e3feeceedaae5f94cffa81966c66c0c5f5d9230a49cb2ad",
+    "size_bytes": 1564
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/longformer-base-4096__seed123.json",
+    "sha256": "390dbc5c958f5095f9ce3aa5a709636b12d7ab4112b9c8364a53a9368fd3ada3",
+    "size_bytes": 1777
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/metrics/longformer-base-4096__seed2024.json",
+    "sha256": "28cf5c51da422b9cf39bd8966b33797d0e81be2717b753a2e0531dca6d9fd3d4",
+    "size_bytes": 1783
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_m4__bert-base__seed42.json",
+    "sha256": "5ed86474996cc6145183e7e79be486da75be31c99fb9d96621f6d368b8f5ffca",
+    "size_bytes": 268863
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_m4__bigbird__seed42.json",
+    "sha256": "3bf51996cf78eb4826789c6eabebce511f1f4bcbde2b6019eaba9c4e3f58b09c",
+    "size_bytes": 268645
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_m4__longformer__seed42.json",
+    "sha256": "7a05d2cc807cb548282558a47dc13252876b61ad59355eff16bf0e61ccc6c000",
+    "size_bytes": 268644
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_mage__bert-base__seed42.json",
+    "sha256": "60877e15f257990030f0e1f61020140567ce91106bef268bdac0cdfbf596993a",
+    "size_bytes": 235367
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_mage__bigbird__seed42.json",
+    "sha256": "29475a41f07ef1a5153ffc6b4f7dae40e04ccf06a7c4fd54099f7116120fc587",
+    "size_bytes": 235139
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_mage__longformer__seed42.json",
+    "sha256": "15da6713b4f94098eb65766448abd1c90616857a6ba14cbdeef5acc9366a8d3d",
+    "size_bytes": 235075
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_raid__bert-base__seed42.json",
+    "sha256": "06de8c8d7569b8710fe5a4399048b2959c57ce63f4c94f4e5569bbaa8882aeb1",
+    "size_bytes": 329236
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_raid__bigbird__seed42.json",
+    "sha256": "6a58079ceb6bddaf5ede761d865b37abeb961c8dc999be2be0df2ab46fb6637a",
+    "size_bytes": 328829
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_raid__longformer__seed42.json",
+    "sha256": "7ed88eb5642f1812066a0fd89e4ec9e2d9e5d414da50adcc38a62f8909e0e07b",
+    "size_bytes": 328876
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_roguegpt__bert-base__seed42.json",
+    "sha256": "3f9af01b42910fe0543122f0695fef93845ad7de8909a227b7545f55845c40f1",
+    "size_bytes": 191800
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_roguegpt__bigbird__seed42.json",
+    "sha256": "5211dd363d9cc83754211e72bba88c1a117051db48bd70d5934d40ee99b2b34c",
+    "size_bytes": 191487
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/results/roguegpt_to_roguegpt__longformer__seed42.json",
+    "sha256": "7406cd30b792d8a7cb0b3e567fd6497f9af2b6c2a804c60344021a79a8af376f",
+    "size_bytes": 191486
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/splits/summary.json",
+    "sha256": "2a17bc267fd8929b3f02f344331bc233b52a071a4bfcc4d3f43ab386b6d084b7",
+    "size_bytes": 1303
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/splits/test.csv",
+    "sha256": "a0b421aa41ca241ae04be1db90cfbc013871860972ff4aafb95a0308c4c1fbad",
+    "size_bytes": 405837
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/splits/train.csv",
+    "sha256": "688b6aa22471165264114e2acdcd73cd87fd3684fe66c6a9a9dc060dc4a4ce84",
+    "size_bytes": 1899546
+   },
+   {
+    "path": "/Volumes/MacDev/dissertation-work/data/classifier-artifacts/splits/validation.csv",
+    "sha256": "7b207ba26181d3735e2beabeef213acc8ce9a25c69cd8803b578bd3b8857e693",
+    "size_bytes": 404564
+   }
+  ]
+ },
+ "seed42_complete_evaluation": {
+  "bert-base": {
+   "before_prediction_artifact": {
+    "accuracy": 0.9898373983739838,
+    "confusion_matrix": {
+     "fn": 1,
+     "fp": 4,
+     "labels": [
+      "Human",
+      "Machine"
+     ],
+     "rows_true_columns_predicted": [
+      [
+       92,
+       4
+      ],
+      [
+       1,
+       395
+      ]
+     ],
+     "tn": 92,
+     "tp": 395
+    },
+    "f1_human": 0.9735449735449735,
+    "f1_machine": 0.9937106918238994,
+    "f1_macro": 0.9836278326844364,
+    "f1_weighted": 0.9897759175255724,
+    "label_counts": {
+     "human": 96,
+     "machine": 396
+    },
+    "n": 492,
+    "precision_human": 0.989247311827957,
+    "precision_machine": 0.9899749373433584,
+    "precision_macro": 0.9896111245856577,
+    "recall_human": 0.9583333333333334,
+    "recall_machine": 0.9974747474747475,
+    "recall_macro": 0.9779040404040404
+   },
+   "bootstrap_cleaned": {
+    "method": "nonparametric row bootstrap with replacement; percentile interval",
+    "metrics": {
+     "accuracy": {
+      "bootstrap_mean": 0.9877164215686275,
+      "bootstrap_sample_sd": 0.0054114242303835184,
+      "ci95_hi": 0.9975490196078431,
+      "ci95_lo": 0.9754901960784313,
+      "point": 0.9877450980392157
+     },
+     "f1_human": {
+      "bootstrap_mean": 0.9359810067884408,
+      "bootstrap_sample_sd": 0.028745263026478122,
+      "ci95_hi": 0.9866666666666666,
+      "ci95_lo": 0.8727272727272728,
+      "point": 0.9367088607594938
+     },
+     "f1_machine": {
+      "bootstrap_mean": 0.9931883660906311,
+      "bootstrap_sample_sd": 0.003019574313365088,
+      "ci95_hi": 0.9986432397001338,
+      "ci95_lo": 0.9865229110512129,
+      "point": 0.9932157394843961
+     },
+     "f1_macro": {
+      "bootstrap_mean": 0.964584686439536,
+      "bootstrap_sample_sd": 0.01576732354635546,
+      "ci95_hi": 0.9926585695006747,
+      "ci95_lo": 0.9301788311799435,
+      "point": 0.964962300121945
+     },
+     "f1_weighted": {
+      "bootstrap_mean": 0.9874693762621157,
+      "bootstrap_sample_sd": 0.005604368204114667,
+      "ci95_hi": 0.9975347624595416,
+      "ci95_lo": 0.9749114439516917,
+      "point": 0.9875373521615506
+     },
+     "precision_human": {
+      "bootstrap_mean": 0.9734308300766741,
+      "bootstrap_sample_sd": 0.026292144962513718,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9117647058823529,
+      "point": 0.9736842105263158
+     },
+     "precision_machine": {
+      "bootstrap_mean": 0.9891873673364542,
+      "bootstrap_sample_sd": 0.00531563415009966,
+      "ci95_hi": 0.9973474801061007,
+      "ci95_lo": 0.9781405793846845,
+      "point": 0.9891891891891892
+     },
+     "precision_macro": {
+      "bootstrap_mean": 0.9813090987065641,
+      "bootstrap_sample_sd": 0.013437976151954512,
+      "ci95_hi": 0.9986413043478262,
+      "ci95_lo": 0.9500248597654258,
+      "point": 0.9814366998577525
+     },
+     "recall_human": {
+      "bootstrap_mean": 0.9026994364137173,
+      "bootstrap_sample_sd": 0.046270650765033394,
+      "ci95_hi": 0.9777898550724635,
+      "ci95_lo": 0.8043478260869565,
+      "point": 0.9024390243902439
+     },
+     "recall_machine": {
+      "bootstrap_mean": 0.9972398229599365,
+      "bootstrap_sample_sd": 0.002711779096826532,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9916434540389972,
+      "point": 0.997275204359673
+     },
+     "recall_macro": {
+      "bootstrap_mean": 0.949969629686827,
+      "bootstrap_sample_sd": 0.02318942061872651,
+      "ci95_hi": 0.9881944444444444,
+      "ci95_lo": 0.9000877298370451,
+      "point": 0.9498571143749585
+     }
+    },
+    "resamples": 10000,
+    "seed": 42
+   },
+   "cleaned": {
+    "accuracy": 0.9877450980392157,
+    "confusion_matrix": {
+     "fn": 1,
+     "fp": 4,
+     "labels": [
+      "Human",
+      "Machine"
+     ],
+     "rows_true_columns_predicted": [
+      [
+       37,
+       4
+      ],
+      [
+       1,
+       366
+      ]
+     ],
+     "tn": 37,
+     "tp": 366
+    },
+    "f1_human": 0.9367088607594938,
+    "f1_machine": 0.9932157394843961,
+    "f1_macro": 0.964962300121945,
+    "f1_weighted": 0.9875373521615506,
+    "label_counts": {
+     "human": 41,
+     "machine": 367
+    },
+    "n": 408,
+    "precision_human": 0.9736842105263158,
+    "precision_machine": 0.9891891891891892,
+    "precision_macro": 0.9814366998577525,
+    "recall_human": 0.9024390243902439,
+    "recall_machine": 0.997275204359673,
+    "recall_macro": 0.9498571143749585
+   },
+   "removed_rows_correct": 84,
+   "removed_rows_total": 84
+  },
+  "bigbird": {
+   "before_prediction_artifact": {
+    "accuracy": 0.9898373983739838,
+    "confusion_matrix": {
+     "fn": 1,
+     "fp": 4,
+     "labels": [
+      "Human",
+      "Machine"
+     ],
+     "rows_true_columns_predicted": [
+      [
+       92,
+       4
+      ],
+      [
+       1,
+       395
+      ]
+     ],
+     "tn": 92,
+     "tp": 395
+    },
+    "f1_human": 0.9735449735449735,
+    "f1_machine": 0.9937106918238994,
+    "f1_macro": 0.9836278326844364,
+    "f1_weighted": 0.9897759175255724,
+    "label_counts": {
+     "human": 96,
+     "machine": 396
+    },
+    "n": 492,
+    "precision_human": 0.989247311827957,
+    "precision_machine": 0.9899749373433584,
+    "precision_macro": 0.9896111245856577,
+    "recall_human": 0.9583333333333334,
+    "recall_machine": 0.9974747474747475,
+    "recall_macro": 0.9779040404040404
+   },
+   "bootstrap_cleaned": {
+    "method": "nonparametric row bootstrap with replacement; percentile interval",
+    "metrics": {
+     "accuracy": {
+      "bootstrap_mean": 0.9877036764705882,
+      "bootstrap_sample_sd": 0.005417000954708965,
+      "ci95_hi": 0.9975490196078431,
+      "ci95_lo": 0.9754901960784313,
+      "point": 0.9877450980392157
+     },
+     "f1_human": {
+      "bootstrap_mean": 0.935934711370027,
+      "bootstrap_sample_sd": 0.028684693290480203,
+      "ci95_hi": 0.9859154929577464,
+      "ci95_lo": 0.8732394366197184,
+      "point": 0.9367088607594938
+     },
+     "f1_machine": {
+      "bootstrap_mean": 0.9931812494136333,
+      "bootstrap_sample_sd": 0.003023100622384456,
+      "ci95_hi": 0.9986431478968791,
+      "ci95_lo": 0.9864489439731353,
+      "point": 0.9932157394843961
+     },
+     "f1_macro": {
+      "bootstrap_mean": 0.9645579803918302,
+      "bootstrap_sample_sd": 0.015740229618427706,
+      "ci95_hi": 0.9922866055392758,
+      "ci95_lo": 0.9305794498534834,
+      "point": 0.964962300121945
+     },
+     "f1_weighted": {
+      "bootstrap_mean": 0.9874557837845505,
+      "bootstrap_sample_sd": 0.005614020819516903,
+      "ci95_hi": 0.9975343335714852,
+      "ci95_lo": 0.974812834224599,
+      "point": 0.9875373521615506
+     },
+     "precision_human": {
+      "bootstrap_mean": 0.9734376826571068,
+      "bootstrap_sample_sd": 0.026269596362652838,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9117647058823529,
+      "point": 0.9736842105263158
+     },
+     "precision_machine": {
+      "bootstrap_mean": 0.9891734407769026,
+      "bootstrap_sample_sd": 0.005336990634454011,
+      "ci95_hi": 0.9973474801061007,
+      "ci95_lo": 0.9780204643841007,
+      "point": 0.9891891891891892
+     },
+     "precision_macro": {
+      "bootstrap_mean": 0.9813055617170048,
+      "bootstrap_sample_sd": 0.013414983722001223,
+      "ci95_hi": 0.9986376021798364,
+      "ci95_lo": 0.9504404442742245,
+      "point": 0.9814366998577525
+     },
+     "recall_human": {
+      "bootstrap_mean": 0.9026181502833264,
+      "bootstrap_sample_sd": 0.04629701995228979,
+      "ci95_hi": 0.9782608695652174,
+      "ci95_lo": 0.8,
+      "point": 0.9024390243902439
+     },
+     "recall_machine": {
+      "bootstrap_mean": 0.9972398229599365,
+      "bootstrap_sample_sd": 0.002711779096826532,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9916434540389972,
+      "point": 0.997275204359673
+     },
+     "recall_macro": {
+      "bootstrap_mean": 0.9499289866216315,
+      "bootstrap_sample_sd": 0.023193352969228354,
+      "ci95_hi": 0.9879766605764131,
+      "ci95_lo": 0.9,
+      "point": 0.9498571143749585
+     }
+    },
+    "resamples": 10000,
+    "seed": 42
+   },
+   "cleaned": {
+    "accuracy": 0.9877450980392157,
+    "confusion_matrix": {
+     "fn": 1,
+     "fp": 4,
+     "labels": [
+      "Human",
+      "Machine"
+     ],
+     "rows_true_columns_predicted": [
+      [
+       37,
+       4
+      ],
+      [
+       1,
+       366
+      ]
+     ],
+     "tn": 37,
+     "tp": 366
+    },
+    "f1_human": 0.9367088607594938,
+    "f1_machine": 0.9932157394843961,
+    "f1_macro": 0.964962300121945,
+    "f1_weighted": 0.9875373521615506,
+    "label_counts": {
+     "human": 41,
+     "machine": 367
+    },
+    "n": 408,
+    "precision_human": 0.9736842105263158,
+    "precision_machine": 0.9891891891891892,
+    "precision_macro": 0.9814366998577525,
+    "recall_human": 0.9024390243902439,
+    "recall_machine": 0.997275204359673,
+    "recall_macro": 0.9498571143749585
+   },
+   "removed_rows_correct": 84,
+   "removed_rows_total": 84
+  },
+  "longformer": {
+   "before_prediction_artifact": {
+    "accuracy": 0.9959349593495935,
+    "confusion_matrix": {
+     "fn": 1,
+     "fp": 1,
+     "labels": [
+      "Human",
+      "Machine"
+     ],
+     "rows_true_columns_predicted": [
+      [
+       95,
+       1
+      ],
+      [
+       1,
+       395
+      ]
+     ],
+     "tn": 95,
+     "tp": 395
+    },
+    "f1_human": 0.9895833333333334,
+    "f1_machine": 0.9974747474747475,
+    "f1_macro": 0.9935290404040404,
+    "f1_weighted": 0.9959349593495935,
+    "label_counts": {
+     "human": 96,
+     "machine": 396
+    },
+    "n": 492,
+    "precision_human": 0.9895833333333334,
+    "precision_machine": 0.9974747474747475,
+    "precision_macro": 0.9935290404040404,
+    "recall_human": 0.9895833333333334,
+    "recall_machine": 0.9974747474747475,
+    "recall_macro": 0.9935290404040404
+   },
+   "bootstrap_cleaned": {
+    "method": "nonparametric row bootstrap with replacement; percentile interval",
+    "metrics": {
+     "accuracy": {
+      "bootstrap_mean": 0.9950404411764706,
+      "bootstrap_sample_sd": 0.0035097429933646897,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9877450980392157,
+      "point": 0.9950980392156863
+     },
+     "f1_human": {
+      "bootstrap_mean": 0.9750887639503188,
+      "bootstrap_sample_sd": 0.01793706212323102,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9333333333333333,
+      "point": 0.975609756097561
+     },
+     "f1_machine": {
+      "bootstrap_mean": 0.9972385392228993,
+      "bootstrap_sample_sd": 0.0019587848196251784,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9930843706777317,
+      "point": 0.997275204359673
+     },
+     "f1_macro": {
+      "bootstrap_mean": 0.9861636515866091,
+      "bootstrap_sample_sd": 0.009911469475603181,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9632928475033737,
+      "point": 0.9864424802286169
+     },
+     "f1_weighted": {
+      "bootstrap_mean": 0.9950400410983558,
+      "bootstrap_sample_sd": 0.0035116514827834384,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9876558940365082,
+      "point": 0.9950980392156863
+     },
+     "precision_human": {
+      "bootstrap_mean": 0.9753658935986692,
+      "bootstrap_sample_sd": 0.024352593624579887,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9166666666666666,
+      "point": 0.975609756097561
+     },
+     "precision_machine": {
+      "bootstrap_mean": 0.9972446338084912,
+      "bootstrap_sample_sd": 0.0027657247181461972,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9916201117318436,
+      "point": 0.997275204359673
+     },
+     "precision_macro": {
+      "bootstrap_mean": 0.9863052637035802,
+      "bootstrap_sample_sd": 0.012279974993816169,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9570633181393174,
+      "point": 0.9864424802286169
+     },
+     "recall_human": {
+      "bootstrap_mean": 0.9754079749290377,
+      "bootstrap_sample_sd": 0.024698755018663456,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9166666666666666,
+      "point": 0.975609756097561
+     },
+     "recall_machine": {
+      "bootstrap_mean": 0.9972398229599365,
+      "bootstrap_sample_sd": 0.002711779096826532,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.9916434540389972,
+      "point": 0.997275204359673
+     },
+     "recall_macro": {
+      "bootstrap_mean": 0.9863238989444871,
+      "bootstrap_sample_sd": 0.012447667710592468,
+      "ci95_hi": 1.0,
+      "ci95_lo": 0.956989247311828,
+      "point": 0.9864424802286169
+     }
+    },
+    "resamples": 10000,
+    "seed": 42
+   },
+   "cleaned": {
+    "accuracy": 0.9950980392156863,
+    "confusion_matrix": {
+     "fn": 1,
+     "fp": 1,
+     "labels": [
+      "Human",
+      "Machine"
+     ],
+     "rows_true_columns_predicted": [
+      [
+       40,
+       1
+      ],
+      [
+       1,
+       366
+      ]
+     ],
+     "tn": 40,
+     "tp": 366
+    },
+    "f1_human": 0.975609756097561,
+    "f1_machine": 0.997275204359673,
+    "f1_macro": 0.9864424802286169,
+    "f1_weighted": 0.9950980392156863,
+    "label_counts": {
+     "human": 41,
+     "machine": 367
+    },
+    "n": 408,
+    "precision_human": 0.975609756097561,
+    "precision_machine": 0.997275204359673,
+    "precision_macro": 0.9864424802286169,
+    "recall_human": 0.975609756097561,
+    "recall_machine": 0.997275204359673,
+    "recall_macro": 0.9864424802286169
+   },
+   "removed_rows_correct": 84,
+   "removed_rows_total": 84
+  }
+ },
+ "sensitivity": {
+  "0.85": {
+   "exact_removed": 71,
+   "near_removed": 19,
+   "remaining": 402,
+   "seed42_metrics": {
+    "bert-base": {
+     "accuracy": 0.9875621890547264,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        36,
+        4
+       ],
+       [
+        1,
+        361
+       ]
+      ],
+      "tn": 36,
+      "tp": 361
+     },
+     "f1_human": 0.935064935064935,
+     "f1_machine": 0.9931224209078404,
+     "f1_macro": 0.9640936779863878,
+     "f1_weighted": 0.9873455566448648,
+     "label_counts": {
+      "human": 40,
+      "machine": 362
+     },
+     "n": 402,
+     "precision_human": 0.972972972972973,
+     "precision_machine": 0.989041095890411,
+     "precision_macro": 0.981007034431692,
+     "recall_human": 0.9,
+     "recall_machine": 0.9972375690607734,
+     "recall_macro": 0.9486187845303867
+    },
+    "bigbird": {
+     "accuracy": 0.9875621890547264,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        36,
+        4
+       ],
+       [
+        1,
+        361
+       ]
+      ],
+      "tn": 36,
+      "tp": 361
+     },
+     "f1_human": 0.935064935064935,
+     "f1_machine": 0.9931224209078404,
+     "f1_macro": 0.9640936779863878,
+     "f1_weighted": 0.9873455566448648,
+     "label_counts": {
+      "human": 40,
+      "machine": 362
+     },
+     "n": 402,
+     "precision_human": 0.972972972972973,
+     "precision_machine": 0.989041095890411,
+     "precision_macro": 0.981007034431692,
+     "recall_human": 0.9,
+     "recall_machine": 0.9972375690607734,
+     "recall_macro": 0.9486187845303867
+    },
+    "longformer": {
+     "accuracy": 0.9950248756218906,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 1,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        39,
+        1
+       ],
+       [
+        1,
+        361
+       ]
+      ],
+      "tn": 39,
+      "tp": 361
+     },
+     "f1_human": 0.975,
+     "f1_machine": 0.9972375690607734,
+     "f1_macro": 0.9861187845303867,
+     "f1_weighted": 0.9950248756218906,
+     "label_counts": {
+      "human": 40,
+      "machine": 362
+     },
+     "n": 402,
+     "precision_human": 0.975,
+     "precision_machine": 0.9972375690607734,
+     "precision_macro": 0.9861187845303867,
+     "recall_human": 0.975,
+     "recall_machine": 0.9972375690607734,
+     "recall_macro": 0.9861187845303867
+    }
+   },
+   "total_removed": 90
+  },
+  "0.90": {
+   "exact_removed": 71,
+   "near_removed": 13,
+   "remaining": 408,
+   "seed42_metrics": {
+    "bert-base": {
+     "accuracy": 0.9877450980392157,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        37,
+        4
+       ],
+       [
+        1,
+        366
+       ]
+      ],
+      "tn": 37,
+      "tp": 366
+     },
+     "f1_human": 0.9367088607594938,
+     "f1_machine": 0.9932157394843961,
+     "f1_macro": 0.964962300121945,
+     "f1_weighted": 0.9875373521615506,
+     "label_counts": {
+      "human": 41,
+      "machine": 367
+     },
+     "n": 408,
+     "precision_human": 0.9736842105263158,
+     "precision_machine": 0.9891891891891892,
+     "precision_macro": 0.9814366998577525,
+     "recall_human": 0.9024390243902439,
+     "recall_machine": 0.997275204359673,
+     "recall_macro": 0.9498571143749585
+    },
+    "bigbird": {
+     "accuracy": 0.9877450980392157,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        37,
+        4
+       ],
+       [
+        1,
+        366
+       ]
+      ],
+      "tn": 37,
+      "tp": 366
+     },
+     "f1_human": 0.9367088607594938,
+     "f1_machine": 0.9932157394843961,
+     "f1_macro": 0.964962300121945,
+     "f1_weighted": 0.9875373521615506,
+     "label_counts": {
+      "human": 41,
+      "machine": 367
+     },
+     "n": 408,
+     "precision_human": 0.9736842105263158,
+     "precision_machine": 0.9891891891891892,
+     "precision_macro": 0.9814366998577525,
+     "recall_human": 0.9024390243902439,
+     "recall_machine": 0.997275204359673,
+     "recall_macro": 0.9498571143749585
+    },
+    "longformer": {
+     "accuracy": 0.9950980392156863,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 1,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        40,
+        1
+       ],
+       [
+        1,
+        366
+       ]
+      ],
+      "tn": 40,
+      "tp": 366
+     },
+     "f1_human": 0.975609756097561,
+     "f1_machine": 0.997275204359673,
+     "f1_macro": 0.9864424802286169,
+     "f1_weighted": 0.9950980392156863,
+     "label_counts": {
+      "human": 41,
+      "machine": 367
+     },
+     "n": 408,
+     "precision_human": 0.975609756097561,
+     "precision_machine": 0.997275204359673,
+     "precision_macro": 0.9864424802286169,
+     "recall_human": 0.975609756097561,
+     "recall_machine": 0.997275204359673,
+     "recall_macro": 0.9864424802286169
+    }
+   },
+   "total_removed": 84
+  },
+  "0.95": {
+   "exact_removed": 71,
+   "near_removed": 5,
+   "remaining": 416,
+   "seed42_metrics": {
+    "bert-base": {
+     "accuracy": 0.9879807692307693,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        37,
+        4
+       ],
+       [
+        1,
+        374
+       ]
+      ],
+      "tn": 37,
+      "tp": 374
+     },
+     "f1_human": 0.9367088607594938,
+     "f1_machine": 0.9933598937583001,
+     "f1_macro": 0.965034377258897,
+     "f1_weighted": 0.9877764986790909,
+     "label_counts": {
+      "human": 41,
+      "machine": 375
+     },
+     "n": 416,
+     "precision_human": 0.9736842105263158,
+     "precision_machine": 0.9894179894179894,
+     "precision_macro": 0.9815510999721526,
+     "recall_human": 0.9024390243902439,
+     "recall_machine": 0.9973333333333333,
+     "recall_macro": 0.9498861788617886
+    },
+    "bigbird": {
+     "accuracy": 0.9879807692307693,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 4,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        37,
+        4
+       ],
+       [
+        1,
+        374
+       ]
+      ],
+      "tn": 37,
+      "tp": 374
+     },
+     "f1_human": 0.9367088607594938,
+     "f1_machine": 0.9933598937583001,
+     "f1_macro": 0.965034377258897,
+     "f1_weighted": 0.9877764986790909,
+     "label_counts": {
+      "human": 41,
+      "machine": 375
+     },
+     "n": 416,
+     "precision_human": 0.9736842105263158,
+     "precision_machine": 0.9894179894179894,
+     "precision_macro": 0.9815510999721526,
+     "recall_human": 0.9024390243902439,
+     "recall_machine": 0.9973333333333333,
+     "recall_macro": 0.9498861788617886
+    },
+    "longformer": {
+     "accuracy": 0.9951923076923077,
+     "confusion_matrix": {
+      "fn": 1,
+      "fp": 1,
+      "labels": [
+       "Human",
+       "Machine"
+      ],
+      "rows_true_columns_predicted": [
+       [
+        40,
+        1
+       ],
+       [
+        1,
+        374
+       ]
+      ],
+      "tn": 40,
+      "tp": 374
+     },
+     "f1_human": 0.975609756097561,
+     "f1_machine": 0.9973333333333333,
+     "f1_macro": 0.9864715447154471,
+     "f1_weighted": 0.9951923076923077,
+     "label_counts": {
+      "human": 41,
+      "machine": 375
+     },
+     "n": 416,
+     "precision_human": 0.975609756097561,
+     "precision_machine": 0.9973333333333333,
+     "precision_macro": 0.9864715447154471,
+     "recall_human": 0.975609756097561,
+     "recall_machine": 0.9973333333333333,
+     "recall_macro": 0.9864715447154471
+    }
+   },
+   "total_removed": 76
+  }
+ }
+}

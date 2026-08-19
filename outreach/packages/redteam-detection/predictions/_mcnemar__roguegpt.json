@@ -1,0 +1,45 @@
+{
+ "alpha": 0.05,
+ "correction": "bonferroni",
+ "eval_corpus": "roguegpt",
+ "n_comparisons": 3,
+ "n_test": 492,
+ "pairs": [
+  {
+   "acc_a": 0.9898373983739838,
+   "acc_b": 0.9898373983739838,
+   "b_a_wrong_b_right": 1,
+   "c_a_right_b_wrong": 1,
+   "chi2": 0.5,
+   "model_a": "bert-base",
+   "model_b": "bigbird",
+   "p_bonferroni": 1.0,
+   "p_value": 0.47950012218695337,
+   "significant_005_bonferroni": false
+  },
+  {
+   "acc_a": 0.9898373983739838,
+   "acc_b": 0.9959349593495935,
+   "b_a_wrong_b_right": 3,
+   "c_a_right_b_wrong": 0,
+   "chi2": 1.3333333333333333,
+   "model_a": "bert-base",
+   "model_b": "longformer",
+   "p_bonferroni": 0.7446392369697709,
+   "p_value": 0.24821307898992362,
+   "significant_005_bonferroni": false
+  },
+  {
+   "acc_a": 0.9898373983739838,
+   "acc_b": 0.9959349593495935,
+   "b_a_wrong_b_right": 4,
+   "c_a_right_b_wrong": 1,
+   "chi2": 0.8,
+   "model_a": "bigbird",
+   "model_b": "longformer",
+   "p_bonferroni": 1.0,
+   "p_value": 0.37109336952269756,
+   "significant_005_bonferroni": false
+  }
+ ]
+}

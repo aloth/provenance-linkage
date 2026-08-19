@@ -1,0 +1,49 @@
+{
+ "config": {
+  "batch_size": 1,
+  "epochs": 3,
+  "experiment_name": "bigbird-roberta-base",
+  "fp16": false,
+  "gradient_accumulation_steps": 8,
+  "gradient_checkpointing": true,
+  "learning_rate": 2e-05,
+  "max_length": 512,
+  "model_name": "google/bigbird-roberta-base",
+  "output_subdir": "bigbird-roberta-base",
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+ },
+ "config_path": "/content/aidisinfo/code/configs/bigbird-base.json",
+ "device": "cuda:0",
+ "output_dir": "/content/aidisinfo/code/artifacts/models/bigbird-roberta-base",
+ "run_name": "bigbird-roberta-base-1776861863",
+ "runtime_seconds": 747.707424515,
+ "seconds_per_epoch": 249.23580817166666,
+ "seed": 42,
+ "test_metrics": {
+  "epoch": 3.0,
+  "eval_accuracy": 0.9898373983739838,
+  "eval_f1_machine": 0.9937106918238994,
+  "eval_f1_macro": 0.9836278326844364,
+  "eval_f1_weighted": 0.9897759175255724,
+  "eval_loss": 0.05769455432891846,
+  "eval_precision_machine": 0.9899749373433584,
+  "eval_precision_macro": 0.9896111245856577,
+  "eval_recall_machine": 0.9974747474747475,
+  "eval_recall_macro": 0.9779040404040404,
+  "eval_runtime": 10.2977,
+  "eval_samples_per_second": 47.778,
+  "eval_steps_per_second": 47.778
+ },
+ "test_samples": 492,
+ "train_metrics": {
+  "epoch": 3.0,
+  "total_flos": 638885083831704.0,
+  "train_loss": 1.232480115478947,
+  "train_runtime": 747.4779,
+  "train_samples_per_second": 9.203,
+  "train_steps_per_second": 1.152
+ },
+ "train_samples": 2293,
+ "validation_samples": 492
+}

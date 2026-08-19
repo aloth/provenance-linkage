@@ -1,0 +1,49 @@
+{
+ "config": {
+  "batch_size": 2,
+  "epochs": 3,
+  "experiment_name": "longformer-base-4096-seed123",
+  "fp16": false,
+  "gradient_accumulation_steps": 4,
+  "gradient_checkpointing": true,
+  "learning_rate": 2e-05,
+  "max_length": 512,
+  "model_name": "allenai/longformer-base-4096",
+  "output_subdir": "longformer-base-4096__seed123",
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+ },
+ "config_path": "/Volumes/Data/.CloudStorage/Data/OneDrive-Perso\u0308nlich/Research/Collaborations/ai-disinfo-text-classifier/code/configs/longformer-base__seed123.json",
+ "device": "mps",
+ "output_dir": "/Volumes/Data/.CloudStorage/Data/OneDrive-Perso\u0308nlich/Research/Collaborations/ai-disinfo-text-classifier/code/artifacts/models/longformer-base-4096__seed123",
+ "run_name": "longformer-base-4096-seed123-1777560232",
+ "runtime_seconds": 5914.550440208055,
+ "seconds_per_epoch": 1971.516813402685,
+ "seed": 123,
+ "test_metrics": {
+  "epoch": 3.0,
+  "eval_accuracy": 0.9939024390243902,
+  "eval_f1_machine": 0.9962168978562421,
+  "eval_f1_macro": 0.9902550457867598,
+  "eval_f1_weighted": 0.9938903214388831,
+  "eval_loss": 0.03893545642495155,
+  "eval_precision_machine": 0.9949622166246851,
+  "eval_precision_macro": 0.9922179504176056,
+  "eval_recall_machine": 0.9974747474747475,
+  "eval_recall_macro": 0.9883207070707071,
+  "eval_runtime": 100.5808,
+  "eval_samples_per_second": 4.892,
+  "eval_steps_per_second": 2.446
+ },
+ "test_samples": 492,
+ "train_metrics": {
+  "epoch": 3.0,
+  "total_flos": 1203045536259480.0,
+  "train_loss": 0.549386475131383,
+  "train_runtime": 5914.4033,
+  "train_samples_per_second": 1.163,
+  "train_steps_per_second": 0.146
+ },
+ "train_samples": 2293,
+ "validation_samples": 492
+}

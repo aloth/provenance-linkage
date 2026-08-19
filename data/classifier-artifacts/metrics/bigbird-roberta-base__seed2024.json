@@ -1,0 +1,49 @@
+{
+ "config": {
+  "batch_size": 1,
+  "epochs": 3,
+  "experiment_name": "bigbird-roberta-base-seed2024",
+  "fp16": false,
+  "gradient_accumulation_steps": 8,
+  "gradient_checkpointing": true,
+  "learning_rate": 2e-05,
+  "max_length": 512,
+  "model_name": "google/bigbird-roberta-base",
+  "output_subdir": "bigbird-roberta-base__seed2024",
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+ },
+ "config_path": "/Volumes/Data/.CloudStorage/Data/OneDrive-Perso\u0308nlich/Research/Collaborations/ai-disinfo-text-classifier/code/configs/bigbird-base__seed2024.json",
+ "device": "cpu",
+ "output_dir": "/Volumes/Data/.CloudStorage/Data/OneDrive-Perso\u0308nlich/Research/Collaborations/ai-disinfo-text-classifier/code/artifacts/models/bigbird-roberta-base__seed2024",
+ "run_name": "bigbird-roberta-base-seed2024-1777641848",
+ "runtime_seconds": 2035.8380142501555,
+ "seconds_per_epoch": 678.6126714167185,
+ "seed": 2024,
+ "test_metrics": {
+  "epoch": 3.0,
+  "eval_accuracy": 0.9878048780487805,
+  "eval_f1_machine": 0.992462311557789,
+  "eval_f1_macro": 0.9802737089703839,
+  "eval_f1_weighted": 0.9877057837188016,
+  "eval_loss": 0.07662972062826157,
+  "eval_precision_machine": 0.9875,
+  "eval_precision_macro": 0.9883152173913043,
+  "eval_recall_machine": 0.9974747474747475,
+  "eval_recall_macro": 0.9726957070707071,
+  "eval_runtime": 25.7912,
+  "eval_samples_per_second": 19.076,
+  "eval_steps_per_second": 19.076
+ },
+ "test_samples": 492,
+ "train_metrics": {
+  "epoch": 3.0,
+  "total_flos": 638885083831704.0,
+  "train_loss": 1.5274072384133743,
+  "train_runtime": 2035.7078,
+  "train_samples_per_second": 3.379,
+  "train_steps_per_second": 0.423
+ },
+ "train_samples": 2293,
+ "validation_samples": 492
+}

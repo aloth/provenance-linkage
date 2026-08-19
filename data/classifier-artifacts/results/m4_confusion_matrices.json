@@ -1,0 +1,50 @@
+{
+ "bert-base": {
+  "fn": 235,
+  "fp": 13,
+  "human_precision": 0.0784313725490196,
+  "human_recall": 0.6060606060606061,
+  "label_distribution": {
+   "Human": 33,
+   "Machine": 467
+  },
+  "machine_precision": 0.9469387755102041,
+  "machine_recall": 0.49678800856531047,
+  "n": 500,
+  "source_file": "roguegpt_to_m4__bert-base__seed42.json",
+  "tn": 20,
+  "tp": 232
+ },
+ "bigbird": {
+  "fn": 164,
+  "fp": 15,
+  "human_precision": 0.0989010989010989,
+  "human_recall": 0.5454545454545454,
+  "label_distribution": {
+   "Human": 33,
+   "Machine": 467
+  },
+  "machine_precision": 0.9528301886792453,
+  "machine_recall": 0.6488222698072805,
+  "n": 500,
+  "source_file": "roguegpt_to_m4__bigbird__seed42.json",
+  "tn": 18,
+  "tp": 303
+ },
+ "longformer": {
+  "fn": 294,
+  "fp": 8,
+  "human_precision": 0.07836990595611286,
+  "human_recall": 0.7575757575757576,
+  "label_distribution": {
+   "Human": 33,
+   "Machine": 467
+  },
+  "machine_precision": 0.9558011049723757,
+  "machine_recall": 0.37044967880085655,
+  "n": 500,
+  "source_file": "roguegpt_to_m4__longformer__seed42.json",
+  "tn": 25,
+  "tp": 173
+ }
+}

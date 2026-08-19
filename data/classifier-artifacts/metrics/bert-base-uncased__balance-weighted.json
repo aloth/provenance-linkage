@@ -1,0 +1,62 @@
+{
+ "balance": "weighted",
+ "class_weights": [
+  2.5591518878936768,
+  0.6214092373847961
+ ],
+ "config": {
+  "batch_size": 8,
+  "epochs": 3,
+  "experiment_name": "bert-base-uncased",
+  "fp16": false,
+  "gradient_accumulation_steps": 1,
+  "gradient_checkpointing": false,
+  "learning_rate": 2e-05,
+  "max_length": 256,
+  "model_name": "bert-base-uncased",
+  "output_subdir": "bert-base-uncased",
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+ },
+ "config_path": "/Volumes/MacDev/ai-disinfo-work/configs/bert-base.json",
+ "device": "mps",
+ "output_dir": "/Volumes/MacDev/ai-disinfo-work/artifacts/models/bert-base-uncased__balance-weighted",
+ "run_name": "bert-base-uncased-balance-weighted-1779186424",
+ "runtime_seconds": 702.3916255410295,
+ "seconds_per_epoch": 234.13054184700982,
+ "seed": 42,
+ "test_metrics": {
+  "epoch": 3.0,
+  "eval_accuracy": 0.9898373983739838,
+  "eval_f1_machine": 0.9937106918238994,
+  "eval_f1_macro": 0.9836278326844364,
+  "eval_f1_weighted": 0.9897759175255724,
+  "eval_loss": 0.043257683515548706,
+  "eval_precision_machine": 0.9899749373433584,
+  "eval_precision_macro": 0.9896111245856577,
+  "eval_recall_machine": 0.9974747474747475,
+  "eval_recall_macro": 0.9779040404040404,
+  "eval_runtime": 7.8695,
+  "eval_samples_per_second": 62.52,
+  "eval_steps_per_second": 7.879
+ },
+ "test_samples": 492,
+ "train_label_counts_after": {
+  "0": 448,
+  "1": 1845
+ },
+ "train_label_counts_before": {
+  "0": 448,
+  "1": 1845
+ },
+ "train_metrics": {
+  "epoch": 3.0,
+  "total_flos": 885551131803300.0,
+  "train_loss": 0.15030809577602328,
+  "train_runtime": 702.307,
+  "train_samples_per_second": 9.795,
+  "train_steps_per_second": 1.226
+ },
+ "train_samples": 2293,
+ "validation_samples": 492
+}

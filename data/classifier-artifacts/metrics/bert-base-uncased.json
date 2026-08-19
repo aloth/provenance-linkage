@@ -1,0 +1,49 @@
+{
+ "config": {
+  "batch_size": 8,
+  "epochs": 3,
+  "experiment_name": "bert-base-uncased",
+  "fp16": false,
+  "gradient_accumulation_steps": 1,
+  "gradient_checkpointing": false,
+  "learning_rate": 2e-05,
+  "max_length": 256,
+  "model_name": "bert-base-uncased",
+  "output_subdir": "bert-base-uncased",
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+ },
+ "config_path": "/content/aidisinfo/code/configs/bert-base.json",
+ "device": "cuda:0",
+ "output_dir": "/content/aidisinfo/code/artifacts/models/bert-base-uncased",
+ "run_name": "bert-base-uncased-1776861512",
+ "runtime_seconds": 320.92074292999996,
+ "seconds_per_epoch": 106.97358097666665,
+ "seed": 42,
+ "test_metrics": {
+  "epoch": 3.0,
+  "eval_accuracy": 0.991869918699187,
+  "eval_f1_machine": 0.9949748743718593,
+  "eval_f1_macro": 0.9868491393135892,
+  "eval_f1_weighted": 0.9918038558125343,
+  "eval_loss": 0.037113673985004425,
+  "eval_precision_machine": 0.99,
+  "eval_precision_macro": 0.995,
+  "eval_recall_machine": 1.0,
+  "eval_recall_macro": 0.9791666666666667,
+  "eval_runtime": 5.2114,
+  "eval_samples_per_second": 94.409,
+  "eval_steps_per_second": 11.897
+ },
+ "test_samples": 492,
+ "train_metrics": {
+  "epoch": 3.0,
+  "total_flos": 885551131803300.0,
+  "train_loss": 0.09801463974439933,
+  "train_runtime": 320.6114,
+  "train_samples_per_second": 21.456,
+  "train_steps_per_second": 2.685
+ },
+ "train_samples": 2293,
+ "validation_samples": 492
+}

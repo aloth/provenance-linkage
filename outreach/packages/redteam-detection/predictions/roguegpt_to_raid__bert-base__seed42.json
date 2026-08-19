@@ -1,0 +1,8031 @@
+{
+ "batch_size": 16,
+ "checkpoint": "artifacts/models/bert-base-uncased",
+ "device": "mps",
+ "eval_corpus": "raid",
+ "eval_notes": "RAID split=extra, raw=2039100, sampled=500",
+ "eval_size": 500,
+ "generated_at": "2026-04-30T14:00:50.772567+00:00",
+ "label_distribution": {
+  "Human": 40,
+  "Machine": 460
+ },
+ "max_length": 256,
+ "metrics": {
+  "accuracy": 0.336,
+  "f1_machine": 0.4503311258278146,
+  "f1_macro": 0.3059736437219881,
+  "f1_weighted": 0.4272339286908824,
+  "precision_machine": 0.9444444444444444,
+  "precision_macro": 0.5171660424469413,
+  "recall_machine": 0.2956521739130435,
+  "recall_macro": 0.5478260869565218
+ },
+ "model_tag": "bert-base",
+ "predictions": [
+  {
+   "label": 1,
+   "logits": [
+    2.624695062637329,
+    -3.1103153228759766
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "b4dd8d5c-b74a-4241-88d1-941cdb241a88",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9244384765625,
+    -3.7556090354919434
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "adede326-1873-4452-a079-70ebd1a09580",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6410160064697266,
+    -3.081932544708252
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "c22e58ff-27b1-497c-b968-f493832b6daa",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.01125431060791,
+    -3.8877036571502686
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "5c1a31d3-72b7-499b-91d1-8a9bd87adac6",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0259432792663574,
+    -3.8982017040252686
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "b4df24b8-d1b5-4997-9fff-ee5359da86c0",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9250588417053223,
+    -3.7263262271881104
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "5d567ecd-5973-4d50-90e1-f297f73b3f5a",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.6434308290481567,
+    -0.7251955270767212
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "4efe477d-efd7-498e-892f-2f781f6b540b",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8050942420959473,
+    -3.4960575103759766
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "0bac5c60-29bf-4ead-8b50-2d33a06b5e3e",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.6727650165557861,
+    2.041422128677368
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "36710050-787c-48a7-b1d4-148276149c4f",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.2754710912704468,
+    1.449242353439331
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "cafe3848-9c5d-407d-8e2a-b3c2005a480d",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.90885066986084,
+    -3.701545238494873
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "caa6304d-c8f0-4e1f-a7bb-757732580f95",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.005815029144287,
+    -3.9046480655670166
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "7ec8457d-0e30-4372-8725-4317db52bb2c",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.828449249267578,
+    -3.491520404815674
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "fc346d1f-614a-4ee6-a3b8-4e263cfb76b4",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9898080825805664,
+    -3.8444669246673584
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "38d0da4b-6188-46f0-9c63-715e996f9ed8",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.777261257171631,
+    -3.5963125228881836
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "fe131e39-c342-477c-a031-a58e1c6ad2f7",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.020171880722046,
+    -3.9181089401245117
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "dab0f679-f844-4124-805a-d30cd5d975ed",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.038161277770996,
+    -3.9115498065948486
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "79dc8408-3bd2-4bc7-bb2b-8a31127c1bba",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.744643449783325,
+    -3.4158883094787598
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d50d271a-df78-44c5-bccd-f4116214a334",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8190188407897949,
+    -0.5853140354156494
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "1a035c52-e66d-4df3-aaeb-48c158ed9d87",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.866229772567749,
+    -0.8835336565971375
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "669b3659-bfc6-4783-b00e-38a79251a0cb",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5858728885650635,
+    -3.1841845512390137
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "8c02b951-4109-4964-867e-5a1f7f2f7873",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3425981998443604,
+    2.890653610229492
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "120cd49d-2e15-41a9-9ad8-8606e009683d",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0239930152893066,
+    -3.908107280731201
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "8293e486-49d1-4a69-98b9-2929ce8a074a",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.157423734664917,
+    3.8377630710601807
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "b760e083-5c5f-4ad2-a982-4e86554d6770",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7539496421813965,
+    3.3460819721221924
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "9e8660e5-b3cf-4c25-b759-6b7fd8209f00",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.427802085876465,
+    -3.082930088043213
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "f340dfee-5dde-4a64-b41e-0b2dfbdfb95e",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.023418426513672,
+    -3.85554575920105
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "894a7244-be85-48dc-898f-c4808827a70a",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.3787038326263428,
+    -0.2487262487411499
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "93887d54-e86c-4cd6-8be0-7fcb62556529",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.2821952700614929,
+    0.6002670526504517
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "8070850d-6e09-4c70-9149-e3d78cd60f1d",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0535807609558105,
+    -3.866447925567627
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "9ce218a3-f36e-4d57-af79-ec573c5026c0",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.461716651916504,
+    4.094882488250732
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "c10fce9b-22a3-4f0c-9334-50774cd3b377",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.1207833290100098,
+    3.7071194648742676
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "18d947e2-675f-4278-adb5-63ac6a89919a",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.909134864807129,
+    -3.7448275089263916
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "42666b94-c079-4560-bf01-64ab7aa423be",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3999249935150146,
+    4.007568359375
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "75b61ac4-55c1-46ef-aa6f-b2d81e1669d9",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.639674663543701,
+    3.254805088043213
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "741e8f32-ae86-440a-8839-5c23a5edeb04",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.969275712966919,
+    -3.824517250061035
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "9ac78d3a-7f10-4dac-b975-0003dc67ce1b",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.476639747619629,
+    -1.7246495485305786
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "30b2c961-86dd-43db-b04c-a1d191a0ced4",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.041356086730957,
+    -3.910980701446533
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b4c9c1b1-ff9b-465b-9e7c-d7c0a8275654",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9442033767700195,
+    -3.7976255416870117
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d75d221c-7103-4668-abee-2e4df8d6e60f",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8984189629554749,
+    0.9347579479217529
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "33e583f3-a02e-4c5a-8081-e6b1714929d3",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9425199031829834,
+    -3.716946601867676
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "edd70e05-2cee-4d49-b6c7-e897745042d4",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.489103317260742,
+    3.9760937690734863
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "773ba7a2-b9e6-4048-a764-ae8884da6d57",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9316935539245605,
+    -3.6920933723449707
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b1340f47-6a34-4ede-9db3-63688ef51ac1",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.6019549369812012,
+    1.7806425094604492
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "d349e618-dd19-45ac-afdd-48b59bf0ef89",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5601091384887695,
+    4.248328685760498
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "aec3a832-1593-4e3a-903a-2670a570f108",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.999086380004883,
+    -3.853130578994751
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "ac6fd43f-0a3c-4427-90aa-e54e350c941f",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.009442090988159,
+    -3.795341968536377
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "cf8a737f-f89a-4b8a-9484-d03be61ace1a",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5631051063537598,
+    -3.116745948791504
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "b9b15173-8217-4522-959d-1925808b4385",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.983365058898926,
+    -3.8877217769622803
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "ce2eddce-bba3-43ea-a2b1-7a22b0955a2e",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.870756149291992,
+    -3.6569483280181885
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "faeb2d4f-e7d4-4c57-a615-21698619daf4",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.252122402191162,
+    -3.050027847290039
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "d4fb51f3-6ceb-4d7e-938d-c1060b3f7b0d",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.5225586891174316,
+    2.806886672973633
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "eb3cbc5f-f01e-4444-bc2c-e7ae831ae152",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9928741455078125,
+    -3.8324196338653564
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "4b5a90c8-2b05-4f24-9128-ad59b04247ae",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.928053617477417,
+    3.6426515579223633
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "d5388af3-6fa4-4025-ae1e-7a058b7eb698",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9491586685180664,
+    -3.778496742248535
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "6e4f33ef-c36e-4336-8dad-1f77ce030177",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4502182006835938,
+    4.0146965980529785
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "034ceaab-af3a-4a8e-9d37-1a8de6961006",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.2123211920261383,
+    -0.0542893223464489
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "a3a4d9f1-33bd-4fcf-819b-6d74d43559b6",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0475196838378906,
+    -3.954448699951172
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "d5f29d62-d0b9-4db7-a4e4-3e7c6435b823",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.4669067859649658,
+    -1.9935500621795654
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "1e85f5ac-2a46-4aff-ae70-dc5b6846c0b1",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0396840572357178,
+    3.604940891265869
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "f8783936-4f1e-407e-a837-8d3d9d9923a5",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.051398277282715,
+    -3.946746349334717
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d39fc982-9657-4a72-b528-e426c9a1d887",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.922163724899292,
+    2.6619937419891357
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "1a651820-7aef-4d11-8c25-d495f107dac9",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4296505451202393,
+    -3.0192413330078125
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "40744139-e9ff-4974-a524-e68fbd9397c5",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7310173511505127,
+    -3.347569465637207
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "0fd498f4-5fe2-48a2-81c1-d3c2856a0556",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.9480853080749512,
+    1.205612301826477
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "895b1758-003e-4d70-a61f-bdd88ec785e8",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2179598808288574,
+    3.8218657970428467
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "8b43db77-14ac-42ff-abf5-15a26198c186",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4250524044036865,
+    4.1406636238098145
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "17f8cc38-82d3-4337-a1dc-6ef20dc59e7c",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.040806531906128,
+    -3.931656837463379
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "885a05dc-d272-41cc-a53e-84953a1b01b9",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.6832931041717529,
+    -0.9045323133468628
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "db97848b-dba5-4174-965c-504d2d85230c",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.589428186416626,
+    -3.2411489486694336
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "11c27a89-41a9-4d5a-bf77-22d6dcc66f16",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6880104541778564,
+    -3.323246717453003
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "d3980133-8c86-4da2-a42b-7e2a64fc7766",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.9295473694801331,
+    -1.1061235666275024
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "ebf1a271-c167-4478-8ae5-e8a2bbf43d6b",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9433112144470215,
+    -3.6920013427734375
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "c0bc98e8-9ab8-44a0-bfd9-f8953991c841",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.0209851264953613,
+    1.4381860494613647
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "425b20d2-74ac-40a4-b015-8ec40a67c6b8",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0375847816467285,
+    -2.5364232063293457
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "6d5b816e-2036-4901-b456-c65eb928f5ff",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8928494453430176,
+    -1.0806007385253906
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b711305d-dbac-451c-b084-ec22a4ee1d3b",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.7226362228393555,
+    -2.1513285636901855
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "a8b7df8d-37e1-4c84-8467-3991500fa94a",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.158176898956299,
+    -2.8930864334106445
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "36e78cac-fc93-4469-9b07-97a20d7289f7",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0129709243774414,
+    -3.896475315093994
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "c8b259ba-86f3-438a-93bf-20594960d836",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.808652400970459,
+    -3.538809061050415
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "e5ec04d7-b8fb-43d6-b0cb-43b8006ebb6e",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.2669637203216553,
+    -2.820932388305664
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "098838c9-665c-440c-9923-e449df7830e4",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8828234672546387,
+    -3.6946470737457275
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "e8a29fc3-6519-41c7-bc64-c7d2d576311e",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.3216683566570282,
+    -0.10820487886667252
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b8d27660-6d90-4a9e-84b8-bd47d3c9b0c8",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.245290517807007,
+    -2.698124647140503
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b6afa533-8daa-4b3a-9b86-2956ac80e332",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.860325813293457,
+    1.9961901903152466
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "f61f0295-07b3-4654-a2fc-2077e5302ba3",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.54941725730896,
+    -3.0187864303588867
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "cbf2affd-9ec9-438f-a4b2-6e6ec45e1c69",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3518524169921875,
+    3.830359935760498
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "956b75f2-c21b-4a1a-bde6-6702400eda10",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.631957769393921,
+    -3.306061029434204
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "65a870fc-f7e9-49d2-88e3-ab0e9dfefd13",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.836810827255249,
+    -3.6660704612731934
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "a7cfc284-1694-4948-b693-cbf3b5e9261b",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.944761276245117,
+    -3.6853291988372803
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "2004c49a-0c60-4746-be98-a12369a1e23d",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7030696868896484,
+    -3.377915382385254
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "005d7b05-8a4f-4256-8436-ac156f7506e7",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.625748634338379,
+    3.175328493118286
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "72d8a915-f4f2-4aab-b260-cfc854dfcd38",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7619102001190186,
+    3.3782403469085693
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "ade71622-12e4-4b66-8d56-3cc9431004c9",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7020339965820312,
+    -3.4989466667175293
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "ebb13d1e-eef2-4f7a-b94a-812dd2f3077c",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.029021978378296,
+    -3.8894176483154297
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "53a05760-3662-4e6b-b026-3ef1486c9323",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.858135223388672,
+    -3.7076010704040527
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "c209505a-f0fb-432d-b4f0-b3682162bd73",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.9366097450256348,
+    -3.7704570293426514
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "473899a8-ba63-4af7-b8a5-b2e822fe7f6a",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0514750480651855,
+    -3.93257212638855
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "b2215eba-e268-4919-97da-b062f6986c3e",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.026132106781006,
+    -3.9323601722717285
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "5b7d5743-9822-4d00-9f7b-080f5ed36454",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0700249671936035,
+    -3.8888397216796875
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "afc51c55-d39d-4500-aef5-4febb960d17b",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.61147403717041,
+    -3.2110562324523926
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "6341d9d2-5ac4-481c-8362-e97bc17ea6ad",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0435914993286133,
+    -3.928321599960327
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "c50f4dca-ee3b-4c17-af50-abe45436a67c",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7490859031677246,
+    -3.364171266555786
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "15d36c52-c41e-4ad1-bad6-c4646d28602c",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9933972358703613,
+    -3.8409342765808105
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "67070129-a368-47d6-984a-91e43e08143e",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8931074142456055,
+    -3.680842876434326
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "b34522af-fb5a-4211-a38e-97a8ad5bd373",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.343364715576172,
+    2.9751815795898438
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "7aab2824-b939-496f-99eb-799bfcc5f12d",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9897799491882324,
+    -3.8694686889648438
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "3d21f723-c756-472d-ab87-006d776527e5",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.042579174041748,
+    -3.8529303073883057
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "dd00686e-7f5d-4d29-9df1-e940003e0a38",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.9742372035980225,
+    -2.4890198707580566
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "d3f43005-4b47-41ee-9df9-f49d222f01af",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0221376419067383,
+    3.572251558303833
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "4f79d776-1637-4733-8ab5-4618058002c5",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9878649711608887,
+    -3.846801519393921
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "b292c74a-599e-4818-bf2a-73b3c7fb7f8f",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4626612663269043,
+    -3.019258499145508
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "400e0e3d-72b8-4d8b-a7b3-42f9598b3af0",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.00290584564209,
+    -3.8310623168945312
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "3877ac07-cffb-477a-94dd-3789770198d0",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.887958526611328,
+    -3.678405284881592
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "012b52d3-66ff-48ad-83ce-1d5c1e1347b4",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9992523193359375,
+    -3.8682377338409424
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "5dd52cbd-fd2e-4fbe-aeaa-a0315d45ce19",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9731521606445312,
+    -3.8217124938964844
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "1981e50e-0853-4617-8ae1-53293d208e68",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8356504440307617,
+    -3.4943926334381104
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "6b8c4c0b-f170-4ebf-8e03-9071a509b82d",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7793519496917725,
+    -3.496680736541748
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "63dd8f83-c387-4fe9-a1ee-a5ece650ae05",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.238825559616089,
+    2.407264232635498
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "562e47e4-7f4a-41c9-a772-989ab379e8cc",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0242578983306885,
+    -3.897228240966797
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "685e1628-e1e2-4659-ba3f-45c33215f689",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1871209144592285,
+    -1.4982035160064697
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "aecd41f4-4723-4e6b-bbfe-0a0a3fd45907",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.044344902038574,
+    -3.955486297607422
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "9375738b-66fd-4d7f-922c-782bd7328d1b",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.5078887939453125,
+    2.8977925777435303
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "f4c42015-28db-4228-b796-ae913e00cd3e",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.842155933380127,
+    3.4077651500701904
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "4c3beee5-f049-4448-97d4-cf511bf85ed5",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9741969108581543,
+    -3.845944404602051
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "d5b18fb8-02e6-4ef2-9059-40c91ab46331",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0034871101379395,
+    -3.8706588745117188
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "14b271ed-caf6-4916-a5f0-cd6c80c0c159",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9531900882720947,
+    3.6062774658203125
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "67e9681a-691d-447c-9f5d-a6129652729d",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8613898754119873,
+    -3.518427848815918
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "de8e7715-d6b7-4a82-9370-1477090ac20f",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2683086395263672,
+    -1.8459950685501099
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "753ed675-2f36-449f-9423-2527e8e19c1f",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0094003677368164,
+    -3.904784917831421
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "1e5a4ef5-261f-4489-a554-b0a3189a63c6",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.871224880218506,
+    -3.630232572555542
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "f3856635-21c9-4e89-b02b-6f88949a2e72",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8105988502502441,
+    -0.9266424179077148
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "49c800d0-033e-47a9-98dc-12316d777313",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7412500381469727,
+    -3.340038299560547
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "2d0ddeae-23e7-4c8b-9f1b-439b882f4258",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3657851219177246,
+    2.9292845726013184
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "e8a70d6a-d664-49cd-8ef5-80b933d54913",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.017566680908203,
+    -3.893404006958008
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "70541eac-d8b1-4aae-8a87-736465f13a2c",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9619266986846924,
+    -3.8031811714172363
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "5ac5669f-0ef8-44e4-8e08-488ace1aedd0",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.32037538290023804,
+    0.8482083082199097
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "f7f31c33-c603-4f31-8bdd-0a9fc4081484",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.912863254547119,
+    -3.7320618629455566
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "2f9fe20b-3f33-4d26-952a-72c1903f0264",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.594510316848755,
+    -3.3907697200775146
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "220eaf64-c437-4d84-9ee3-8c14a77d8189",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9986579418182373,
+    -3.8766045570373535
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "3d78b29b-d9a8-4962-ae9e-06866ffea453",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5362884998321533,
+    -2.1853601932525635
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "0448eb05-03f9-4fb7-9924-0cfe359efcd5",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2174968719482422,
+    -1.568352222442627
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "6e770ef7-b547-4a33-8bf4-c099b3060682",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5569911003112793,
+    4.13584566116333
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "523a6c2c-bc9a-4567-b189-44f1b328c236",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.1380629539489746,
+    -2.5419116020202637
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "9e41771c-7407-4997-b80c-468166bb7f9b",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.880774974822998,
+    3.3165266513824463
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "bc5e5d58-4d6b-4cdf-ae94-a25b05c01180",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2694172859191895,
+    3.88592529296875
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "bfa5c003-0783-4fdd-9cb8-2a4aff2c0893",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.13287760317325592,
+    -0.18892443180084229
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "b5df6642-c820-4edf-95e1-e9fa2472d314",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3110908269882202,
+    -1.6970150470733643
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "51f09f37-68db-4afd-8615-594534479ca4",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0528173446655273,
+    -3.8526740074157715
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "43ba8951-55d3-4882-a1d7-0149cd456ff9",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4101622104644775,
+    3.9547553062438965
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "2e2ee5d8-95e0-47e3-a0f6-93309b58bb0e",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9185638427734375,
+    -3.6737210750579834
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "85f90e4e-2e28-4f28-937f-a4074454731c",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    0.7498193979263306,
+    -0.644968569278717
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "8486e1e9-c7cc-4107-ac31-cfd84ca7fc23",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.000174045562744,
+    -3.873401165008545
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "4bcacffa-a251-4cfb-aa2f-d064f9690d68",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0157856941223145,
+    -3.8245456218719482
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "39bccdf4-e161-41aa-a46f-a21e26a3dc72",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.13553209602832794,
+    0.3537271022796631
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "fb757f34-1ee9-460b-93e2-de1b83e59ca5",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6742382049560547,
+    -2.2400717735290527
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "ec4e554c-2d18-405b-9960-931f9261336c",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.596832752227783,
+    -3.237042188644409
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "9ed01a53-f421-47f3-a3f8-8c638f59a714",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.478030204772949,
+    4.1304240226745605
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "a9d49173-cfec-4d81-b05e-7aaddc140f14",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9070820808410645,
+    -3.776475429534912
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d2ea459e-27de-43be-9eb3-47ebed53f3a5",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5698513984680176,
+    4.1490607261657715
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "67433509-508a-432e-8b27-1ce723436710",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9400758743286133,
+    3.4263226985931396
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "0cc7ab4d-6974-40b0-a00c-020fefc0796d",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.869837999343872,
+    3.434969425201416
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "96379d74-6ce7-4110-9243-c453ff266f72",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.511505126953125,
+    2.864837646484375
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "1a97a253-f49d-45e3-ba54-845157579975",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.015097141265869,
+    -3.896122694015503
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "e8bf88d4-a776-4e54-b448-4e459c774fff",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.7146157026290894,
+    -0.5841844081878662
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "80a4107d-6eb4-4e84-9765-bd9f9fa1b1fc",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.597200870513916,
+    -3.2272350788116455
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "f734906c-7e78-4da1-b4f2-c11160c7cc94",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.936727523803711,
+    -3.6579978466033936
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "041ef1db-a0b5-4af9-ac34-bc924a02dad2",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.860258102416992,
+    3.499917507171631
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "9520e70e-5065-4b88-94cb-43cf0c96aba3",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.158740997314453,
+    -2.6597094535827637
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "58bcb732-74cb-4d65-88c6-2e3ae1f532a8",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9449944496154785,
+    -3.783482551574707
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "2887d084-6089-496a-9f53-91aba3de98dd",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.989011764526367,
+    -3.8280062675476074
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "1670b144-8516-4b94-8250-f9f27454d06d",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.620833396911621,
+    -2.023186683654785
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "ad780cd4-11d7-421e-84be-2f1e1c0ab209",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0046000480651855,
+    -3.8231287002563477
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "5e6a7b9d-8d56-486c-9689-1e03d49e5470",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.0627206563949585,
+    -0.1201004758477211
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "96e44840-f4b2-4218-aa8a-4ea381141b67",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7806291580200195,
+    -3.502504825592041
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "1260241c-eb80-49f0-b2bc-e6d64cba4c0b",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9871082305908203,
+    -3.8721415996551514
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "1f9e8471-c0c2-4348-b3a5-66121673bae8",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.936406135559082,
+    -3.7596583366394043
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "395a35a7-be3c-4fa6-bb18-458c3a3b2ebd",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7732484340667725,
+    -3.533785820007324
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "4bbb5a7f-1e57-4116-8eeb-526689e3c39c",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0074024200439453,
+    -3.898916244506836
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "431d1da1-e379-4c60-9c01-2ff8682f8d08",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5575048923492432,
+    1.747044324874878
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b8449656-54eb-4383-9eed-c32406b8620e",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.93739652633667,
+    -3.7174787521362305
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "53204ad1-8a15-472c-8057-9ecc31281ee9",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0192277431488037,
+    -3.9180281162261963
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "e645c5f7-f07e-40dc-8e7b-45a1478b1294",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.931145668029785,
+    -3.6908609867095947
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "fe033cfc-a761-4c85-a96a-22febaf1dbef",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9388427734375,
+    -3.8107495307922363
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "8947deac-75ff-4733-8700-f7e3fa560112",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.896695375442505,
+    -3.737987756729126
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "70888f4f-f0f0-44c2-85ac-2966c4d07fb3",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.5669768452644348,
+    -0.6478108763694763
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "7b2ca4c1-c63e-49bb-9602-e35ad2dbbaa8",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9440321922302246,
+    -3.725778341293335
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "6f4264f7-3809-46d7-8f02-57a30f342627",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.65413761138916,
+    -3.338913917541504
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "30635210-04bb-40d2-9650-19116b48bb05",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.685868978500366,
+    -3.533569812774658
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "0822999b-4ada-4dcf-b756-9008c9e27419",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.4045673608779907,
+    -0.32393741607666016
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "c283a0de-edfe-4e88-ae2e-59f2be427aca",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.071472406387329,
+    -3.915816307067871
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "7c865912-d328-4745-9129-a6c4ecef9df7",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.994248867034912,
+    -3.8829681873321533
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "f4241029-47cf-4b66-b5b9-adc9d00f56df",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.715111255645752,
+    -3.4435555934906006
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "998d6c85-0945-4274-b474-0cd615bba6ed",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2191400527954102,
+    -0.7964859008789062
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "ba2c07b0-c312-4fcf-afb0-b750932839ad",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.6378532648086548,
+    1.4493827819824219
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "13378288-03f3-4e57-9d79-0617bdbff795",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.26254940032959,
+    3.8922996520996094
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "ecd1fe16-2778-41ab-a494-e6923816f15c",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.031137228012085,
+    -3.902233362197876
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "9706fa77-717b-4044-b066-55bfdf5f43cc",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9510486125946045,
+    -3.705970287322998
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "47e8d8e7-aa60-46b4-9004-3c9bfdeb0ea8",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.6005377769470215,
+    1.8298763036727905
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "995eec46-7b08-4d3e-ab44-821eede1af3e",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7265493869781494,
+    -2.271209239959717
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "5d2028eb-c98b-4490-bf8b-5e19486a2c3d",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0337157249450684,
+    -3.9299840927124023
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "53a5a869-40ed-41f2-99da-59f7166eed2e",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9597666263580322,
+    -3.6941022872924805
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "e51574ff-6fb6-4ad1-a773-ed26bdf0bac6",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0580668449401855,
+    -2.676398754119873
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "e355c49b-3ceb-4263-ad3e-70565c75a84b",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.942195177078247,
+    -2.5201330184936523
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "374c8bc1-bb75-42d5-89ca-a5ea70fa1d7d",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.928677558898926,
+    -3.764402389526367
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "0c410364-01a2-4c04-80ee-fd8094f5b294",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3078155517578125,
+    -2.937087059020996
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "8e1a228a-ce79-467a-adc3-cc8eba9ec7c8",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.973707437515259,
+    -3.836130380630493
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "cfde6aaf-653f-4dd0-939f-e5bf71df0e72",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.653089761734009,
+    -3.337419271469116
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "da67b1ac-b392-416d-bde1-0a1d356665bc",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1818528175354004,
+    2.5305840969085693
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "6d3481dd-b0b4-4e2d-999a-546f1e2df7c9",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.81658935546875,
+    3.500354766845703
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "65fc7034-974a-49a6-92f2-8d6eb9923d18",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.973574638366699,
+    -3.8535289764404297
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "c1aa6d8c-1e5f-4c8a-a45f-3cda1e28c332",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8673863410949707,
+    -3.6028599739074707
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "f7a6ae26-c70f-48a6-a55d-8311ffcada74",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.936215877532959,
+    -3.6704678535461426
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "30baf44c-73f8-4b2b-a8af-9d8452a8ee2b",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.029102325439453,
+    -3.897826671600342
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "5232b68d-026d-4db8-a1ac-a9d660e0a07e",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2748961448669434,
+    3.9434902667999268
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "92c6388e-b7ae-4fdb-8e02-b814c21a0926",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8855419158935547,
+    -3.571148633956909
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "0406cc71-00a3-4914-a8e6-de17daee20e6",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.4220881462097168,
+    -1.7283397912979126
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "14b9217c-932d-4a58-bce6-8a219d8fc7a2",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3425307273864746,
+    -3.016796588897705
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "9217e4c9-563a-41ef-b424-ca75a5f6a69f",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.4675568342208862,
+    -1.643425464630127
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "686c8db3-0c3e-4919-92a8-02b79368ceca",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7888846397399902,
+    -3.434040069580078
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "cf4e42e5-9336-4af1-93db-31f4b54e6e67",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.401613473892212,
+    -3.0482993125915527
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "2774c2e0-5ca9-49b0-adcf-ebb0c86b425e",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0988192558288574,
+    -3.974578857421875
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "5ab32348-8a9d-465a-b523-3d7f9f75fb2f",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5448050498962402,
+    -3.1442956924438477
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "8ebbb897-ad1e-4130-a3a5-dbbbb368fbbe",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5525565147399902,
+    4.087253093719482
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "faaf093a-7f1f-4626-8526-046dc416cac4",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3425307273864746,
+    -3.016796588897705
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "23583d3b-e911-4023-ab34-5f3c4e4563e4",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.0816052109003067,
+    0.16724793612957
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "2790ec1a-6034-461d-879a-69a0ba242c8c",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.641718864440918,
+    4.204870700836182
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "d13cecb7-eec5-479d-a621-96d52c63d499",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.447551727294922,
+    -3.048670768737793
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "dc18a12e-e80c-4d8e-959a-c1f1197a4c23",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.864016056060791,
+    -3.575068950653076
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b8b7d1b0-f11a-4d1b-ab54-ceae7fbba6c2",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5171515941619873,
+    4.155896186828613
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "7f75a090-dfec-43fc-859f-a8c74270c3c4",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1842007637023926,
+    2.5857157707214355
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "9764cd99-e98a-4b15-aa38-5dbf5f890cf9",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9631760120391846,
+    -3.7296335697174072
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "160adde8-3c87-4eab-97ad-7e48de3090d4",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.035825252532959,
+    -2.6157050132751465
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "e6933b54-acb8-4a61-94dc-c25fc49090d6",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.399991989135742,
+    3.8835859298706055
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "00b49658-295c-46eb-9f55-a3d485adf5e1",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.2508950233459473,
+    -2.626868724822998
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "b8cfd3c4-0aef-4981-ab6c-2e4e5634f159",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4210965633392334,
+    4.091239929199219
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "4c680fed-35b8-448b-bd48-7e0fb960e227",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.61831533908844,
+    -1.902525544166565
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "96d825da-d704-47ba-b7fa-ae724aae78e3",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9786834716796875,
+    -3.8344783782958984
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "01da300b-534a-4003-a1f3-7ad5180e100b",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9650018215179443,
+    -3.767141103744507
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "a3562925-8939-4cc8-a0c5-a697e21efbc5",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0238165855407715,
+    -3.850571632385254
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "bfe53e86-b4b3-4804-94d5-b5a3c9615f1b",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.825644016265869,
+    -3.655364751815796
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "65dce758-6dc0-4a99-a73b-a672c210d147",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8309590816497803,
+    -3.608450412750244
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "9dfe3419-0274-4126-a727-d34fae151059",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.458429753780365,
+    0.3352680802345276
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "17d35f4f-aa84-4784-8b53-99fd6e20e932",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5483436584472656,
+    -3.310723304748535
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "031f64af-4562-4b01-80ed-6ad881f39f7d",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.6614991426467896,
+    1.9870598316192627
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "3b5dac73-2902-4fba-b326-75d18221224c",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9763917922973633,
+    -3.8466286659240723
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "fdd1b68d-81cb-4b6a-b883-77d489e0a681",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2496498823165894,
+    -1.117231845855713
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "a4394761-d732-40c5-87bf-6af844cdbde9",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.979949951171875,
+    -3.7430830001831055
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "0e1f8540-9831-4a2f-827d-c2f20b49d6c5",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.9759583473205566,
+    -3.834761381149292
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "306e780f-1a91-42b1-9dd0-1cbec1aa53aa",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.981384754180908,
+    -3.825066328048706
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "677cff53-3c7b-4a12-8c43-22947d9cfdf8",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9043121337890625,
+    -3.6988160610198975
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "c013bf4b-d5ee-42a9-838b-1c1e318a686e",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3954341411590576,
+    3.9872756004333496
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "ffc70832-09b4-439d-9b20-aa7c04ea1ac7",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.423362970352173,
+    4.119751453399658
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "19883578-b23a-4de7-966e-d9c0992501e1",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0122294425964355,
+    -3.874624490737915
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "defe880b-e67f-45de-81a4-ea04ff700052",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0312747955322266,
+    3.649461507797241
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "bfe2ec7d-5bb1-47d4-9ab2-eb405494eb73",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1663131713867188,
+    2.4343936443328857
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "160888b0-ea0f-4f1d-8496-ed3b81e5cbbe",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3212356567382812,
+    3.939889430999756
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "19104fd3-6db7-49cd-a318-69f959112130",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.248788595199585,
+    -2.8160057067871094
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "226cfd76-7185-4da9-939b-32637d0588aa",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.933103561401367,
+    -3.8044958114624023
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "258158dd-9a66-4c65-ac71-ea14c191f894",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9194071292877197,
+    -3.760956048965454
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "ee05abfe-b8a8-460a-b35c-3cc8733466d1",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4808201789855957,
+    -3.1132378578186035
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "e3253b77-88c0-4844-bb33-9a6dc4866d6e",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.9647389054298401,
+    -1.0730128288269043
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "43bb9139-1f1e-4cc6-99a5-c3eddf1cf82b",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.2689647674560547,
+    2.6874871253967285
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "a9953e07-82dc-4cde-acdd-b314fc7eae4c",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.942721366882324,
+    -3.8146533966064453
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "640941c2-bf5f-4ab5-b83b-931617ca4bc3",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3626139163970947,
+    -2.791480541229248
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "e5f99a1f-ee96-4fd3-b94d-6eb798dfaf84",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.9852328300476074,
+    -2.3178277015686035
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "a08ee5e9-9692-49aa-bf5b-b0aa1c27a87e",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9250593185424805,
+    -3.6946842670440674
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "a7de04de-6589-47f3-b075-5e58026428c5",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.31691113114356995,
+    -0.294479638338089
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b5c1f367-d492-43e2-8f77-b19458367f68",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9469597339630127,
+    -3.791426181793213
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "ea124de6-f82f-4fb9-a821-23d12edab575",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6452531814575195,
+    3.2366371154785156
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "703157aa-85c3-499e-ad57-24a7dd70f88f",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.3676280379295349,
+    -0.17023321986198425
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "1db9ec2a-07a8-4006-9c52-bea16891e7e4",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3067054748535156,
+    3.9112038612365723
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "8e21324a-eac3-40dc-a4cf-a93a61658e81",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9495248794555664,
+    3.6279876232147217
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "2c365b48-81c3-469e-9852-3102292b0f2b",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7784156799316406,
+    3.4379992485046387
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "b38e7833-ec8b-452b-9404-d53f0f6501ef",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.7879719734191895,
+    1.7721526622772217
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "34a4ef91-1cb2-4fd5-9a20-b97ac2b8754c",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.9555397033691406,
+    -3.696321487426758
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "bb0babff-581c-43c2-a722-f0bd3557acd5",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.182517647743225,
+    -1.6799054145812988
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "527fae98-9afe-416e-bdbc-25a07c9d2e11",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.3762518167495728,
+    1.761384129524231
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "228fe19b-647e-4e60-9bf8-d2d42a008ae7",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.5229942202568054,
+    -0.657221257686615
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "1c81a1c3-2054-4d15-b626-22c129718407",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.024974822998047,
+    -3.901097297668457
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "66ba9508-6edb-4d30-ac08-f0b88e8dda70",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.111231803894043,
+    -3.9828500747680664
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "462f0c52-6606-4832-930c-ed8b4c5f70e7",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.918583393096924,
+    -3.6558663845062256
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "45b80754-68bd-4def-a54a-eee9bb569f79",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7582383155822754,
+    -3.422499895095825
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "612513b5-f84f-4b31-9169-840fd5f40429",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9587316513061523,
+    -3.8131866455078125
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "964aeab3-9118-4b5c-af34-0b17199cc695",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8548707962036133,
+    -3.575361490249634
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "d9032cb3-1058-4156-b292-2326b00bc64e",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.555832624435425,
+    2.8050122261047363
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "393bfbc3-be6f-4da4-9635-ef9196836242",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.979240655899048,
+    -3.747709274291992
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "946dd3c8-f783-4b7a-94dd-dada809a0ecc",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0262041091918945,
+    -3.905900716781616
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "4c0686c3-bd8d-453c-a569-f10355192c33",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8650906085968018,
+    -3.6794321537017822
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "435dbe34-d674-458d-af6f-96677900908e",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8131279945373535,
+    -3.535327434539795
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "13a07f6e-9c25-4c67-a18a-b13cd78220d3",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.665919542312622,
+    -3.338827133178711
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "3fe870ac-1bfd-40c5-aa89-db53929f1dd1",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0335536003112793,
+    -3.881058931350708
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "af4fb016-69e0-48ee-bbce-b82904dc5897",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9713187217712402,
+    -3.843174457550049
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "9dac2c31-c22b-4656-839a-bddea8ee2885",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.857149124145508,
+    -3.629061460494995
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "86807421-73dd-4969-8269-7f521bb3f049",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8325448036193848,
+    -3.5257396697998047
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "06b10b12-28a2-4b0c-8822-9565d1276997",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.962662696838379,
+    -3.69051456451416
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "80d7888b-e560-4a68-b46e-865d1ee6f687",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2786731719970703,
+    3.8410747051239014
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "62be8bc5-fd6c-4644-8046-1da4b417d8ac",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.4958367347717285,
+    2.7889914512634277
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "ae2fb43a-e52d-40dc-b441-516725843534",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.003384828567505,
+    -3.827975034713745
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "294c6a84-39eb-4e7b-b738-b3a982b70f2a",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5214812755584717,
+    1.7900633811950684
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "97e660bc-08bb-4c2d-8d2d-6ccd374a4b43",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1988320350646973,
+    3.8421759605407715
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "2750e0ef-1a68-4818-9f68-b260a6f47a1e",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.345615863800049,
+    3.9083476066589355
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "7055a1e2-d1a8-4092-9612-08a48de6cb35",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5117411613464355,
+    -3.206704616546631
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "88ff880c-c341-4ead-99db-b842a01e1549",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3453097343444824,
+    -1.6961919069290161
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "f589c1cc-208a-45f8-87db-82a24d12a909",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.28402042388916,
+    3.865236759185791
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "35d87fd1-5464-476f-95fc-ef46a4307094",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.0606396198272705,
+    -1.258418321609497
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "184eba7c-e138-40b6-ab94-7df38199080a",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.961665391921997,
+    -3.785372018814087
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "2f41e4fd-2aa5-4fda-bd80-6d0192d54dd8",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4959075450897217,
+    -3.147731304168701
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "bb3c78d9-9ed9-4eda-a8e9-8207e62fcf16",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.9629156589508057,
+    2.2068872451782227
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "c6a545cc-13b6-4c49-9324-a29f4aab108e",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.318864583969116,
+    3.9412333965301514
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "3068d4cc-8605-4f72-9ef6-d02748718338",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.142977476119995,
+    3.8723337650299072
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "d3c6694b-8b4c-4559-93e0-17887e5d822b",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.935171604156494,
+    -3.7524707317352295
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "75a5c52f-7e2a-4cf8-b83d-d4914fa3642a",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.963718891143799,
+    -3.7302520275115967
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "ad6c2c96-cfb6-478d-8431-d849460f402b",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3886637687683105,
+    2.9349019527435303
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "bd3b77e8-015a-4a94-8959-1eb917dba84c",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.127920150756836,
+    2.466782331466675
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "95d72ee8-25d4-4e3b-9e02-57317e8ac251",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.524657964706421,
+    3.124695301055908
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "4e33698f-9ac8-4911-95ab-e7308af26b38",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3216919898986816,
+    2.953606605529785
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "a804008d-1c49-4d64-9d86-afa3e14fe51b",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1758646965026855,
+    3.803893566131592
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "37ac3000-513d-4036-92df-551e3677624e",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.7862931489944458,
+    1.0828030109405518
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "1b1b258c-fb7c-4e55-9ad6-b8c2ac4ab8f8",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.011120319366455,
+    -3.9088523387908936
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "c4bb3d18-2b71-4303-bfc6-630264f9cbe2",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.029503107070923,
+    -3.8017468452453613
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "185551fc-1a2b-470d-bd2f-49125f0385c3",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0110385417938232,
+    -3.7962968349456787
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "d91b52c0-69c2-4491-b9df-94ef3fddba34",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.039012908935547,
+    -3.9296255111694336
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d35a1af9-ea08-4f58-a21f-fd6bdd6b799d",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0070550441741943,
+    -3.8937807083129883
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "5ef5b636-b8e0-44df-accc-28a87969520b",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.967822790145874,
+    -2.541262626647949
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "32c45b2e-3bda-42ea-8790-d89e8202443b",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5879504680633545,
+    4.179742336273193
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "94dc4564-6051-412f-b85e-482d917e5c0c",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.516844630241394,
+    -0.35142049193382263
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "045cd695-0438-4f50-84db-9252df0c11a5",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2528724670410156,
+    3.911386489868164
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "a7444b78-7cbe-4c8c-9d36-f5078a5a8686",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.743581771850586,
+    -2.0630035400390625
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "925d55aa-4991-40d9-ae74-437038329630",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.354869842529297,
+    2.656935691833496
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b691fffa-8ba4-4732-af4a-5bbfcd3f443f",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.814169406890869,
+    -3.636127233505249
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "f7133ee7-3b59-4664-8562-59b32bd2dd46",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7872447967529297,
+    3.438262462615967
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "2fd26f60-d7a4-4557-a6de-891097d8da4d",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7245988845825195,
+    -3.351463794708252
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "4d927368-0881-4b51-9ae1-6c051dbb2841",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6473207473754883,
+    -3.258151054382324
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "675c81b6-52d5-41cc-944d-0d14330d8e34",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1816492080688477,
+    2.541830062866211
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "a55ff84e-35f2-4e30-b885-443bc5bdb36f",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.8096814155578613,
+    -3.5468437671661377
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "d12cae87-cda0-46c1-86a8-67399c6b7b34",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0851876735687256,
+    -2.8580193519592285
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "4c424908-e36f-4333-a6fc-898514fec42c",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0274605751037598,
+    3.6325299739837646
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "cf112248-f0c8-4cd2-9cee-bb6cdcc8a60a",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.06384892016649246,
+    0.011242330074310303
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "72d0f00f-0c69-440c-961f-d2cd6273139a",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9728446006774902,
+    -3.697913885116577
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "604b3edb-9126-48c2-81e9-2fad4b38a34d",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0650382041931152,
+    -2.430039405822754
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "9540b616-7643-4f4c-bd36-d31361ad7068",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.1178715229034424,
+    -2.7203893661499023
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "bdfb32f6-a633-491c-898b-e56573c2e8f9",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.890087366104126,
+    -1.0336804389953613
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "200a2668-8fa7-438d-a839-e41056cbd643",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.927150011062622,
+    2.296612501144409
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "4350099b-930d-4320-9095-0ecadf66981c",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9569013118743896,
+    -3.8234047889709473
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "ca487679-d2f5-4b2e-865b-10b34b14b12e",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8073887825012207,
+    -3.610140085220337
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "2cf1fbba-88ac-41b4-aed3-2142c9e3c179",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.804835796356201,
+    -3.5342466831207275
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "e052ab80-ac64-4ec0-a4f2-e5fa153fe32e",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.670372486114502,
+    -3.350050926208496
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "a5dbd625-2fc2-42f3-ab62-3f9c0b9dd79c",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9864511489868164,
+    -3.8154892921447754
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "c0558f75-3ec1-47a8-b701-adc173004697",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6243491172790527,
+    -3.2674245834350586
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "233babab-e7f7-4236-85b1-13efe9c452a7",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4949331283569336,
+    4.146631717681885
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "88825a6a-a9f7-430f-8798-c9b04beb2ee8",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9075775146484375,
+    -3.725785255432129
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "db312248-0b37-4a34-90de-c4340bc9269b",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.513770580291748,
+    -3.1196813583374023
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "0c637210-fdeb-46e4-93b3-a6480509c5a0",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1821532249450684,
+    3.811239719390869
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "48394a89-148e-4e54-b392-b5e02ed4d75d",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.9406252503395081,
+    -0.9784582853317261
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "b5da4ad5-cc3d-4e94-ab46-9b55cc89fd37",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6558456420898438,
+    -3.283569097518921
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "b30b437e-67e0-4602-b380-3a298444565a",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.577786445617676,
+    -3.2451114654541016
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "7b66da50-39f3-4118-86b7-8f9f6ef70376",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3805038928985596,
+    3.874581813812256
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "510e223f-c0fc-49ec-b650-e6c96d2f42e7",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0559895038604736,
+    -2.514197587966919
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "61f76c6f-2895-40d6-8c37-85ef86813e8b",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8752100467681885,
+    -3.6515955924987793
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "ed649574-6e5a-40cc-979c-75797e5e98e4",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0052623748779297,
+    -3.867950916290283
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "c6aacf3f-7a1f-40cc-bd38-9d88282e5cc5",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.841465711593628,
+    1.8708913326263428
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "4edcebc1-2dc7-454d-b612-cdce7e7e8b67",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.3940710425376892,
+    -0.3462820053100586
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "812af8a7-0b18-42cf-a0ae-ae27ea64e9f4",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.320833206176758,
+    3.914168357849121
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "9fdccb6d-7562-44e2-849a-ee83e96f79d9",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.6333149671554565,
+    -0.49955230951309204
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "3ec5b89e-2ea8-4190-b603-fcd0367768cb",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2233123779296875,
+    3.811800003051758
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "be48158b-c725-4777-80ce-fdba87e841e7",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0592145919799805,
+    -3.8616769313812256
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "3949c06f-f4ba-4e60-a732-e70b2a093382",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3088769912719727,
+    3.996004343032837
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "d4f6a43d-491a-4b9e-b673-ff5f82f95ad7",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5155553817749023,
+    -3.2233457565307617
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "25cf0cc9-5038-4a6e-9795-203e1d86ae62",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.4223601818084717,
+    2.7288410663604736
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "6a39ca52-4f62-4b8c-af56-2f3db1e877a1",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0830349922180176,
+    -3.9099507331848145
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "1d283322-f4da-4d83-8c8c-feaba14ccbbb",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.4929568767547607,
+    1.6300044059753418
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "96e1b9dc-5bd2-4bd2-8d0a-c3d71473bfce",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.7147291302680969,
+    0.9832745790481567
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "e83e8721-578e-4eed-83dc-b0a55a3b807d",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9154012203216553,
+    -3.7549214363098145
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "10bc0d3b-a22a-4e2e-bb1c-a2152890bb91",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.971982479095459,
+    -3.843528985977173
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d27b06fe-8e04-4687-963d-3b408fd3a895",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9775195121765137,
+    -3.8263494968414307
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "c79d3dc1-08cb-48ac-af4f-cf75914a3aa8",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9378108978271484,
+    3.1892590522766113
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "6671348e-5c93-4fb0-aa0d-7f9952b29e72",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0806453227996826,
+    -3.884413957595825
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "25567381-46a1-4b84-a5db-fd2d2078cd51",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0453591346740723,
+    -3.9309184551239014
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "50380aae-a99b-420f-af9a-df5d013ad98f",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.010952949523926,
+    -3.8601644039154053
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "b249e976-0302-499f-b0a6-66e01308997e",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8357951641082764,
+    -3.568068742752075
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "de1be7e5-a340-42b4-b4bc-6d39a0f6469d",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8235933780670166,
+    3.1899683475494385
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "058d6af0-c1eb-4f36-9fee-2be229124fee",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.709995985031128,
+    -3.4277427196502686
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "8b5dddd0-9d1d-4614-b1ba-9d421f3b7e53",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.061610221862793,
+    -3.956892967224121
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "f6ad54ea-b26b-4775-8694-5edb30b9b73a",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8926687240600586,
+    3.5260298252105713
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "8f8f3514-6a59-46ba-a4c6-2f796804831f",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9459168910980225,
+    -3.8198187351226807
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "1a47b933-09f0-4484-a859-77a920acd7be",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8609604835510254,
+    -3.642167806625366
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "18e509ad-28d7-4c73-bdaf-f89a722b9a09",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.058760643005371,
+    3.6498477458953857
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "33fda97b-c7fa-4c0f-a894-8aa37d38f574",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9829249382019043,
+    -3.8621859550476074
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "1e988da5-c563-4820-a054-f0bd5368e7a0",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.140829563140869,
+    3.4800684452056885
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "9972b1c6-791d-44b8-98ee-bd6f101c776e",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.557361125946045,
+    -3.1750330924987793
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "4d2671fc-e8e3-4559-bfb9-2ced4a0e2d7d",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5178945064544678,
+    -3.1788392066955566
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "1cd0edb8-974d-4b17-835f-552345b34c06",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.945812225341797,
+    -3.7866435050964355
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "0b167916-6639-444f-badc-042ef6adaaef",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.33877381682395935,
+    -0.7930125594139099
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "7f24d7ae-81aa-41b8-baf3-aa4a435b6939",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9961252212524414,
+    -3.821143388748169
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "87dbcc34-4c6b-4a37-b225-c2479dac4280",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    0.6844466924667358,
+    -0.36974459886550903
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "5406426f-c2ce-49c1-aa3f-e8bc42aa49b5",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3474907875061035,
+    3.9317102432250977
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "e27c0700-b54e-4bd1-8c4d-8e8cc6a16bd4",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.6485490798950195,
+    -3.333604097366333
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "c6d2e5cf-760d-4d2f-ab0d-fe6ac1e7dc50",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9550013542175293,
+    -3.7816731929779053
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "b7ad7319-beae-476d-b262-42df9e6c4299",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1708171367645264,
+    2.4175615310668945
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "820c407c-d097-471a-842f-69794685d881",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0225014686584473,
+    -3.83516263961792
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "0c2bf705-b4a0-40ae-ac55-559129289ccc",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.938394546508789,
+    -3.771791458129883
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "51bc1885-aca6-4081-ae9e-b7b94744b7fa",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6897025108337402,
+    -3.4002561569213867
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "a33a1249-3435-474e-b483-0ff62a589800",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.939754009246826,
+    -3.6291069984436035
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "4f413e67-ccf1-4fab-81b7-d89a2960af0a",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.98978328704834,
+    -3.836716890335083
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "fe7e7372-cb3a-43a5-b54f-90b0170f8e3c",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.698216438293457,
+    -3.357440233230591
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "d3303e2b-d918-4f31-b310-695fc007f472",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0270936489105225,
+    -3.836091995239258
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "c82f3a50-6e4d-48b4-b1d4-185d2298e47f",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2744767665863037,
+    3.855748414993286
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "e627bc4f-ce81-4708-9821-6a62284368d5",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.7646646499633789,
+    -0.6923820972442627
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "31f64d71-738a-4ad5-889b-97dbed0c8128",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9728312492370605,
+    3.606689453125
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "2de29aba-9844-4009-9697-8938340018ff",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0378124713897705,
+    -3.875133752822876
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "283f4e7a-edbc-48f8-84c5-a498eb140d21",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.87153959274292,
+    3.2945804595947266
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "021d2fcb-40de-4d42-8b0c-07c05ad1baa9",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8946595191955566,
+    -3.7618114948272705
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "98f9d2dd-09d3-4119-804a-6231c898d85f",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1726388931274414,
+    -1.5100208520889282
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "33b28eb9-d2ff-4427-be4a-85c93426012e",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.720655918121338,
+    3.1438159942626953
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "e5c26524-5550-4162-80ca-0317b85121e0",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.051077365875244,
+    -3.9657821655273438
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "5bdd168a-8f16-4ef7-8c3d-a350e9c46bc0",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.0347888469696045,
+    1.1115574836730957
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "8608055b-4ae0-49c1-b50b-d30a31599f7b",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.899714469909668,
+    3.3874635696411133
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "19cb3372-e2e9-479f-8d96-9f7152af11a0",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8777613639831543,
+    -3.699324607849121
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "2e5d498c-f08a-4494-b764-0409d74b32fa",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0296592712402344,
+    -3.9249765872955322
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "940f82f9-e08f-48c1-9018-a5f0628a0787",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3218555450439453,
+    -2.6974310874938965
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "93d4dca6-36a7-44a1-8f2f-55bb4ff05e7a",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.077115058898926,
+    3.685901403427124
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "09d9af8b-e560-4b66-a953-fd3ccc0951ce",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.299309730529785,
+    -2.87762451171875
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "fc78776b-b992-45d3-a494-e5856ff44179",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0555579662323,
+    -3.919658660888672
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "fda213a8-ade2-4611-b1ef-5afdb1041f45",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6347776651382446,
+    -2.151510000228882
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "6ebd9bc6-bc4e-49c8-990c-b1710e72b6c6",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.665037214756012,
+    -0.6841068863868713
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "a444092f-5752-4676-9d8b-9c9c2996bd78",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7376651763916016,
+    3.37351655960083
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "3a18b6ea-a974-44d3-8a0e-c897d26a1abb",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.913586139678955,
+    -3.7242274284362793
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "06b4cec1-075b-41f2-a8d3-0a821d6eff57",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.970949649810791,
+    -3.8213422298431396
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "e619c658-b0fc-4db7-bd1f-c05b6895ceba",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.909423828125,
+    -3.6378774642944336
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "04ea4e6b-1b97-4085-a0fa-c6b1182ad9a5",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0796914100646973,
+    3.7914323806762695
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "2f8ca45a-f5e5-401c-8b0b-719493c4d97e",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0425615310668945,
+    -3.934471368789673
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "c5334af8-76f9-4575-8588-c721a0b648dd",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.063450336456299,
+    -3.9210031032562256
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "dbce16d7-30f2-41ed-a178-3f7087bc69ec",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7568118572235107,
+    -3.492232322692871
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "afa77d64-54c9-4aea-93ea-87e0f72ba261",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9855904579162598,
+    -3.83394193649292
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "00b914d4-f1c1-4137-81c1-6a0d1d13d270",
+    "model": "gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.431046485900879,
+    -2.9993538856506348
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "code",
+    "id": "64b5ac64-d7cd-4a03-85b3-aa3de5c3fd18",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.9054754972457886,
+    1.1069002151489258
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "8613e7ee-e268-4b86-ab12-31ead9d8a79b",
+    "model": "gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0204837322235107,
+    -3.916057586669922
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "f892af2e-04e2-4ae5-b07b-80f61ba10998",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5946617126464844,
+    4.1255669593811035
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "783c99bd-331a-491c-a92b-1596bd4da643",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9909281730651855,
+    -3.862006187438965
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "79b259b2-7cc4-4627-b7e2-07b0d2780d40",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0317325592041016,
+    -3.854423999786377
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "d953b75a-92ff-4469-b06c-a55a74879ac6",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.970853328704834,
+    -3.7587857246398926
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "f6734e53-d511-4750-8676-9c85463ff4ca",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.012369394302368,
+    -3.9092793464660645
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "8139bbac-b45d-4a86-858f-30f6c06009e9",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6270999908447266,
+    -3.2789182662963867
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "4f718915-9186-4322-b704-508bbda1bc9a",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0127835273742676,
+    -3.8880653381347656
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "200ee597-9648-4170-8549-ecbbcedf7e22",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0575342178344727,
+    -3.9276556968688965
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "2e78b344-0f48-4797-9858-ff677906d8af",
+    "model": "mistral-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.9377567768096924,
+    -2.3544347286224365
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "72d75e40-0798-4140-9294-42d42b2888cb",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.531811237335205,
+    3.253554582595825
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "776dfe56-5f1b-41b9-bb48-2f5f317ad813",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.130244255065918,
+    -2.7273519039154053
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "d2a9b62c-2345-4154-a10b-cad4081783ab",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.6218204498291016,
+    4.115884780883789
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "17e19304-9edb-4228-b59f-8e1584346a07",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.065741777420044,
+    -3.953383445739746
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "ad9fda3d-28d7-49ec-ad0e-e075181fc663",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.024506092071533,
+    -3.9078500270843506
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "8372b792-2afc-4bb3-8c14-023f96884812",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.1899372637271881,
+    0.4381919205188751
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "718b2851-6822-4d64-b022-7db7f2061fde",
+    "model": "mistral"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.535860300064087,
+    -3.133452892303467
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "37ac4530-27cf-45ed-a142-30cc43e4f66f",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9883975982666016,
+    -3.8515570163726807
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "4ad78c77-31f2-4ad5-9d86-0842e9ecbeb9",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.501230478286743,
+    -3.1280007362365723
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "5bd7ddae-5a80-4de5-aaff-ff7123720bf4",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.6979434490203857,
+    1.998356819152832
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "672a65c6-a805-4d8a-b20f-6f6615c907d2",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.4772338271141052,
+    0.7323755621910095
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "ff7f3d94-e1b3-4529-a622-11b6c44127a1",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.887166976928711,
+    -3.5364770889282227
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "4e3d7ddb-f0ec-440d-b93b-11928e88e81b",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.10136342048645,
+    -2.669663906097412
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "7fbda53d-09b8-487a-a617-5dc8ef2ff229",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.014941453933716,
+    -3.809206247329712
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "f4cd2620-d8c8-4028-8753-2aadc82e04d0",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3445138931274414,
+    4.070221424102783
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "7b9ac9cf-951d-4048-8117-9dfeae4699c1",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.021892786026001,
+    -1.2708725929260254
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "004fec0d-9754-45ae-8b22-26e3801e05fb",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.884718656539917,
+    -3.7203760147094727
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "d11f72ed-0355-49c6-b22d-037b0d181738",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6848948001861572,
+    -3.35897159576416
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "18f8ad93-7f42-45e4-aa14-489c2fd49c0b",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0215251445770264,
+    -3.8821229934692383
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "518c0eb3-b446-4a09-bab0-db8d05d21382",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.6613194346427917,
+    0.7256675958633423
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "961bd6e7-3fe3-4f7c-8e7d-2b482d7cb602",
+    "model": "human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.064772844314575,
+    -3.930138349533081
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "201af4cb-df7e-4e5d-bbae-93c2eb9deb97",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4243226051330566,
+    -2.9994864463806152
+   ],
+   "meta": {
+    "attack": "alternative_spelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "a4a7df32-0786-4492-8ca7-6b6db8faf262",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.490891933441162,
+    4.060173511505127
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "23419faf-4ccc-43e9-90d1-a6f389f7629d",
+    "model": "mpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1728062629699707,
+    3.7742300033569336
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "86cee86f-02bd-4724-9f11-a3c378adb4f1",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4584407806396484,
+    4.0312275886535645
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "eb78133b-2a72-447a-a618-6571ab194550",
+    "model": "llama-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7346174716949463,
+    3.2789416313171387
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "e915df76-9077-462c-81ca-d40f9688da55",
+    "model": "mpt-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1273877620697021,
+    -1.5696758031845093
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "71c0999b-1a8b-42ee-8558-40535ac477dc",
+    "model": "gpt3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4157519340515137,
+    4.0398969650268555
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "7d4e9cfa-7acc-43a8-bbce-0ec74894272f",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.050985336303711,
+    2.3977417945861816
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "d7423dec-b3ff-4c7c-b3e8-2e60b35b984d",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0518603324890137,
+    -3.9471096992492676
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "german",
+    "id": "bd16c2a9-b26e-48ed-a682-97f2c00a5d1b",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4969635009765625,
+    4.12280797958374
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "e73e29d7-6a7c-4b02-bd30-4d4feedd2cb9",
+    "model": "chatgpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3094173669815063,
+    -1.7899266481399536
+   ],
+   "meta": {
+    "attack": "number",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "2d459e71-31d4-460e-90f9-c524380433fc",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2360596656799316,
+    3.85319185256958
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "32c25de4-5fa4-45dc-b207-2c67ec6d02c6",
+    "model": "gpt3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0148661136627197,
+    -3.936558723449707
+   ],
+   "meta": {
+    "attack": "homoglyph",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "6691bc4a-991d-41b5-b302-de0c8a337cc8",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8793811798095703,
+    -3.617617130279541
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "2d846688-dba0-4bb2-9ecd-aaa121d730bd",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.828091621398926,
+    3.6086935997009277
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "fd2951dd-bf41-4a84-8b8b-d9aecf870561",
+    "model": "cohere"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5732083320617676,
+    -3.3086416721343994
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "03b1b063-f839-47dc-a503-aea2d88222c6",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.916727066040039,
+    -3.7113795280456543
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "63e13f82-9bf8-4e2e-9b50-7b8c35c482e4",
+    "model": "mpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.786747455596924,
+    -3.6083483695983887
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "czech",
+    "id": "888474c8-63fb-4294-9cf2-fe9865ce65c0",
+    "model": "mistral"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9511115550994873,
+    -3.6956052780151367
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "16bc05f0-b4ed-4cc4-bb6c-5d8dddcd8e37",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5810468196868896,
+    -3.279090642929077
+   ],
+   "meta": {
+    "attack": "synonym",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "dc221441-3534-400e-9adf-b5046457202e",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.050649642944336,
+    -3.898763418197632
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "",
+    "domain": "czech",
+    "id": "225c6614-c700-4ac7-9797-9094dbd47c41",
+    "model": "human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9281792640686035,
+    -3.605644702911377
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "99818f51-d843-4f9b-b27e-5c36d8badeb0",
+    "model": "cohere-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0222880840301514,
+    3.6431796550750732
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "5c17710b-5dea-4beb-91a4-858195fbd763",
+    "model": "mistral-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0175113677978516,
+    -3.8004202842712402
+   ],
+   "meta": {
+    "attack": "none",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "code",
+    "id": "724b6d31-dc2f-4e59-955b-325ec8d84705",
+    "model": "cohere"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.2308831214904785,
+    -2.760697603225708
+   ],
+   "meta": {
+    "attack": "whitespace",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "56c0bda2-90dd-4c4f-8aa9-d3290bb3209e",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7771918773651123,
+    -1.955718994140625
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "91b6deee-8cae-4ffc-89d7-d822e24f3f2f",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.781222105026245,
+    -3.4119160175323486
+   ],
+   "meta": {
+    "attack": "zero_width_space",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "f29a0878-d43c-41fb-9054-536526f956f3",
+    "model": "gpt2"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.844613552093506,
+    -3.5582354068756104
+   ],
+   "meta": {
+    "attack": "upper_lower",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "code",
+    "id": "108f5266-e048-45ab-a0b3-e06d4afdb007",
+    "model": "chatgpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.1956243515014648,
+    1.5889863967895508
+   ],
+   "meta": {
+    "attack": "insert_paragraphs",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "3a3b784b-a750-4930-b43f-cf86db30cccb",
+    "model": "gpt2"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.150231122970581,
+    -2.72352933883667
+   ],
+   "meta": {
+    "attack": "paraphrase",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "czech",
+    "id": "c80ffd7f-baf7-4a69-96b3-eaedb72f0a02",
+    "model": "llama-chat"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7372841835021973,
+    3.343371868133545
+   ],
+   "meta": {
+    "attack": "perplexity_misspelling",
+    "corpus": "raid",
+    "decoding": "sampling",
+    "domain": "german",
+    "id": "07e2c526-918d-4a08-8d4a-d0d32fec7559",
+    "model": "cohere-chat"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.796142101287842,
+    -3.4822845458984375
+   ],
+   "meta": {
+    "attack": "article_deletion",
+    "corpus": "raid",
+    "decoding": "greedy",
+    "domain": "german",
+    "id": "e67251f7-b009-496f-8c56-a89d845379d5",
+    "model": "mpt-chat"
+   },
+   "pred": 0
+  }
+ ],
+ "runtime_s": 12.218076944351196,
+ "schema": "aidisinfo.cross_corpus.v1",
+ "seed": 42,
+ "train_corpus": "roguegpt"
+}

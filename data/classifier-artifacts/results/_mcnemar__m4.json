@@ -1,0 +1,45 @@
+{
+ "alpha": 0.05,
+ "correction": "bonferroni",
+ "eval_corpus": "m4",
+ "n_comparisons": 3,
+ "n_test": 500,
+ "pairs": [
+  {
+   "acc_a": 0.504,
+   "acc_b": 0.642,
+   "b_a_wrong_b_right": 93,
+   "c_a_right_b_wrong": 24,
+   "chi2": 39.52136752136752,
+   "model_a": "bert-base",
+   "model_b": "bigbird",
+   "p_bonferroni": 9.734683059647864e-10,
+   "p_value": 3.2448943532159547e-10,
+   "significant_005_bonferroni": true
+  },
+  {
+   "acc_a": 0.504,
+   "acc_b": 0.396,
+   "b_a_wrong_b_right": 32,
+   "c_a_right_b_wrong": 86,
+   "chi2": 23.805084745762713,
+   "model_a": "bert-base",
+   "model_b": "longformer",
+   "p_bonferroni": 3.19801457615565e-06,
+   "p_value": 1.06600485871855e-06,
+   "significant_005_bonferroni": true
+  },
+  {
+   "acc_a": 0.642,
+   "acc_b": 0.396,
+   "b_a_wrong_b_right": 11,
+   "c_a_right_b_wrong": 134,
+   "chi2": 102.64827586206897,
+   "model_a": "bigbird",
+   "model_b": "longformer",
+   "p_bonferroni": 0.0,
+   "p_value": 0.0,
+   "significant_005_bonferroni": true
+  }
+ ]
+}

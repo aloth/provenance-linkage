@@ -1,0 +1,49 @@
+{
+ "config": {
+  "batch_size": 8,
+  "epochs": 3,
+  "experiment_name": "bert-base-uncased-seed123",
+  "fp16": false,
+  "gradient_accumulation_steps": 1,
+  "gradient_checkpointing": false,
+  "learning_rate": 2e-05,
+  "max_length": 256,
+  "model_name": "bert-base-uncased",
+  "output_subdir": "bert-base-uncased__seed123",
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+ },
+ "config_path": "/Volumes/Data/.CloudStorage/Data/OneDrive-Perso\u0308nlich/Research/Collaborations/ai-disinfo-text-classifier/code/configs/bert-base__seed123.json",
+ "device": "mps",
+ "output_dir": "/Volumes/Data/.CloudStorage/Data/OneDrive-Perso\u0308nlich/Research/Collaborations/ai-disinfo-text-classifier/code/artifacts/models/bert-base-uncased__seed123",
+ "run_name": "bert-base-uncased-seed123-1777558829",
+ "runtime_seconds": 628.3590527907945,
+ "seconds_per_epoch": 209.45301759693152,
+ "seed": 123,
+ "test_metrics": {
+  "epoch": 3.0,
+  "eval_accuracy": 0.9939024390243902,
+  "eval_f1_machine": 0.9962168978562421,
+  "eval_f1_macro": 0.9902550457867598,
+  "eval_f1_weighted": 0.9938903214388831,
+  "eval_loss": 0.040675628930330276,
+  "eval_precision_machine": 0.9949622166246851,
+  "eval_precision_macro": 0.9922179504176056,
+  "eval_recall_machine": 0.9974747474747475,
+  "eval_recall_macro": 0.9883207070707071,
+  "eval_runtime": 10.3696,
+  "eval_samples_per_second": 47.446,
+  "eval_steps_per_second": 5.979
+ },
+ "test_samples": 492,
+ "train_metrics": {
+  "epoch": 3.0,
+  "total_flos": 892583699757600.0,
+  "train_loss": 0.1318635675854955,
+  "train_runtime": 628.0664,
+  "train_samples_per_second": 10.953,
+  "train_steps_per_second": 1.371
+ },
+ "train_samples": 2293,
+ "validation_samples": 492
+}

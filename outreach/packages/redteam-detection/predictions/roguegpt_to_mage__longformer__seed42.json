@@ -1,0 +1,6536 @@
+{
+ "batch_size": 1,
+ "checkpoint": "artifacts/models/longformer-base-4096",
+ "device": "cpu",
+ "eval_corpus": "mage",
+ "eval_notes": "MAGE config=test_ood_set_gpt, split=test, raw=60743, sampled=500",
+ "eval_size": 500,
+ "generated_at": "2026-04-30T10:33:46.126876+00:00",
+ "label_distribution": {
+  "Human": 111,
+  "Machine": 389
+ },
+ "label_key_corrected": true,
+ "label_key_note": "MAGE encodes 0=machine, 1=human; the project convention is 0=human, 1=machine. The stored key was corrected on 2026-08-18T06:11:54.421799+00:00 (triage finding T1). Model outputs (pred, logits) are unchanged; all derived metrics were recomputed.",
+ "max_length": 4096,
+ "metrics": {
+  "accuracy": 0.426,
+  "f1_human": 0.3550561797752809,
+  "f1_machine": 0.4828828828828829,
+  "f1_macro": 0.4189695313290819,
+  "f1_weighted": 0.45450535479299525,
+  "precision_human": 0.23652694610778444,
+  "precision_machine": 0.8072289156626506,
+  "precision_macro": 0.5218779308852175,
+  "recall_human": 0.7117117117117117,
+  "recall_machine": 0.3444730077120823,
+  "recall_macro": 0.5280923597118969
+ },
+ "model_tag": "longformer",
+ "predictions": [
+  {
+   "label": 1,
+   "logits": [
+    -0.2713828384876251,
+    -0.20778223872184753
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0627200603485107,
+    -3.2659597396850586
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.041141986846924,
+    -4.5358567237854
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.856139183044434,
+    -5.141861438751221
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.469881057739258,
+    -4.875483989715576
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.3277781009674072,
+    0.9016505479812622
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.15641450881958,
+    -4.560917854309082
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.314063310623169,
+    3.1584014892578125
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.635772228240967,
+    -4.886974334716797
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.7695937156677246,
+    3.687971591949463
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_gpt_neox"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.886104106903076,
+    4.715358257293701
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.984065532684326,
+    4.974991798400879
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_flan_t5_large"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3901488780975342,
+    -1.6569793224334717
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.4976892471313477,
+    -3.926985740661621
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.582411766052246,
+    -2.0699753761291504
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.3718936443328857,
+    0.8788368105888367
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.41281449794769287,
+    0.06484436988830566
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.159659385681152,
+    3.8559436798095703
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.965585231781006,
+    2.805016040802002
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8852084875106812,
+    0.7103968858718872
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_65B"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.556206703186035,
+    -4.739733695983887
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.737393379211426,
+    -5.027675628662109
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.170085906982422,
+    -2.6731650829315186
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_flan_t5_small"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.904535293579102,
+    -5.075743675231934
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.031627655029297,
+    3.9244093894958496
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_2.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.791182518005371,
+    -5.072353363037109
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.658530235290527,
+    -4.934441566467285
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.9669172763824463,
+    -4.394134521484375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.8105268478393555,
+    2.513079881668091
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.687433958053589,
+    -4.222357749938965
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.174676418304443,
+    -4.367062091827393
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.467826843261719,
+    -4.818526744842529
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.119465351104736,
+    5.029517650604248
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_flan_t5_large"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.832210540771484,
+    -5.04160213470459
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.1817851066589355,
+    -2.636320114135742
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.268861770629883,
+    4.176246166229248
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.4117937088012695,
+    -4.641955375671387
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.352229118347168,
+    -4.657832622528076
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.38706636428833,
+    4.389848709106445
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "imdb_gpt4_para"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.6543478965759277,
+    -3.743619680404663
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.681739807128906,
+    -4.837803840637207
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.431896209716797,
+    -4.721428871154785
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_t0_11b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.118466854095459,
+    -4.590023994445801
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.7667136192321777,
+    3.633615255355835
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.693695545196533,
+    -2.867699384689331
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.538861274719238,
+    -4.872428894042969
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.333054542541504,
+    4.294351577758789
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.140244722366333,
+    0.8618537187576294
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_specified_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.668817520141602,
+    -4.930750846862793
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0607385635375977,
+    -3.5089638233184814
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.800158500671387,
+    4.694974422454834
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.5472631454467773,
+    -2.825392484664917
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.84395432472229,
+    3.7391791343688965
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.690542459487915,
+    -4.03515625
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.881722927093506,
+    -5.048252582550049
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.362593650817871,
+    -4.700666427612305
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.097297668457031,
+    -4.347982883453369
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.857330799102783,
+    -4.272760391235352
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1760832071304321,
+    -1.3890998363494873
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.4980732202529907,
+    1.0985411405563354
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.6620965003967285,
+    -4.209654808044434
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.4296183586120605,
+    -3.8088889122009277
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.215243339538574,
+    4.144299507141113
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_gpt_neox"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7712996006011963,
+    -3.277686595916748
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_topical_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.6933159828186035,
+    -4.837123870849609
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5836243629455566,
+    2.943535089492798
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_350m"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1970417499542236,
+    3.045858860015869
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.787841796875,
+    4.820219993591309
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -5.045651912689209,
+    4.895271301269531
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.672597885131836,
+    -4.841994762420654
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.749462127685547,
+    -4.993779182434082
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.922013759613037,
+    -2.367802143096924
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.37020981311798096,
+    -0.6722543239593506
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.470860004425049,
+    1.8722333908081055
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_13b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.622471809387207,
+    4.554330825805664
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_13B"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.9881596565246582,
+    -2.582828998565674
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.7545084953308105,
+    -4.848825454711914
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.075482368469238,
+    5.054290771484375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_125m"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.9164795875549316,
+    -4.161347389221191
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.653388261795044,
+    -2.9240376949310303
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_topical_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8325794339179993,
+    0.5205022096633911
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.910066604614258,
+    4.7702555656433105
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.154145240783691,
+    -4.502962589263916
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.1677260398864746,
+    -2.444404125213623
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.864511489868164,
+    -5.082894325256348
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.27426522970199585,
+    -0.6646443605422974
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.272001028060913,
+    -2.8089776039123535
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.772116661071777,
+    -4.981357574462891
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6279523372650146,
+    -2.8487954139709473
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_gpt4_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.621553421020508,
+    -4.919754505157471
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9807448387145996,
+    -3.6157891750335693
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.089235305786133,
+    3.8293986320495605
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.237775802612305,
+    3.9195361137390137
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.554220199584961,
+    -4.870527267456055
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.7428246736526489,
+    0.2916833162307739
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.9797844886779785,
+    4.8712663650512695
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_t0_3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.223488807678223,
+    -4.57725715637207
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.7841384410858154,
+    -4.14112663269043
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.7818244695663452,
+    1.4427769184112549
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.483940601348877,
+    4.476713180541992
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.97029972076416,
+    4.842577934265137
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.043580532073975,
+    5.037354946136475
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_iml_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.823540687561035,
+    -4.999412536621094
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7667295932769775,
+    -2.0770304203033447
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.883081912994385,
+    4.824358940124512
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_gpt_j"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.430833578109741,
+    -2.8895020484924316
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.531553268432617,
+    4.12805700302124
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.778356552124023,
+    -5.035249710083008
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.8230209350585938,
+    3.442722797393799
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.274892807006836,
+    -4.53889274597168
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.8938021659851074,
+    -4.230175971984863
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.08163595199585,
+    4.920627593994141
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_specified_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.318453311920166,
+    -4.734155654907227
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.326275587081909,
+    3.2153351306915283
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_specified_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0697126388549805,
+    5.008644104003906
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_topical_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.555403709411621,
+    4.4915385246276855
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.768071174621582,
+    -3.8633501529693604
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.994177222251892,
+    -2.5578248500823975
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.577539920806885,
+    4.449169635772705
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_flan_t5_large"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.20461368560791,
+    -4.5076985359191895
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.476780891418457,
+    -4.84378719329834
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.117145299911499,
+    -3.484537124633789
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.9966845512390137,
+    -4.379450798034668
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.142411231994629,
+    5.01909065246582
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.9679059982299805,
+    -4.276200294494629
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.609509468078613,
+    4.521111488342285
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.918903827667236,
+    4.77946138381958
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.33447265625,
+    4.386629104614258
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.58122444152832,
+    -4.888071537017822
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.7878880500793457,
+    3.5220625400543213
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6473188400268555,
+    2.7922043800354004
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.779242515563965,
+    -4.981464385986328
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.131337642669678,
+    -4.260739326477051
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_specified_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.9016504287719727,
+    3.839354991912842
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.598269462585449,
+    -2.983795166015625
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.162222385406494,
+    -2.474703311920166
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.167968273162842,
+    -3.584812879562378
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.720694065093994,
+    -3.920719623565674
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.818018436431885,
+    4.631497383117676
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.7508790493011475,
+    -3.724539279937744
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.272191047668457,
+    -4.594195365905762
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.401020050048828,
+    -2.912971019744873
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.775058746337891,
+    -4.930560111999512
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.4877095222473145,
+    -4.804211139678955
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.8801689147949219,
+    -2.3463051319122314
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.420621871948242,
+    4.367641448974609
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_specified_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8992366790771484,
+    0.7443714737892151
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "imdb_gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.464282512664795,
+    -4.723783493041992
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.373948097229004,
+    -4.829712867736816
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.7955169677734375,
+    4.687870979309082
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.7833333015441895,
+    -5.087802410125732
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.057319164276123,
+    5.033203125
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_specified_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.778454303741455,
+    4.750792503356934
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.75941801071167,
+    -4.2148332595825195
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.9594545364379883,
+    -4.136665344238281
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5492944717407227,
+    3.316157579421997
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.7443647384643555,
+    -5.015279769897461
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.485677719116211,
+    -4.697569370269775
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8085204362869263,
+    -1.4396312236785889
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_t0_11b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.697831153869629,
+    -4.888308048248291
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.970240354537964,
+    -4.1432108879089355
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.4951883554458618,
+    0.9715042114257812
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.088118076324463,
+    0.8094598054885864
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7477511167526245,
+    -1.9858652353286743
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.854514122009277,
+    -5.042202949523926
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.2239909172058105,
+    3.922725200653076
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.85073184967041,
+    4.705163478851318
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_specified_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.4545745849609375,
+    -4.7793965339660645
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.7514891624450684,
+    -1.10524320602417
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.2064104080200195,
+    -4.755673885345459
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.764130592346191,
+    4.751319408416748
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.056737899780273,
+    -4.260627746582031
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.320645570755005,
+    -3.7697041034698486
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.494757890701294,
+    -2.9283766746520996
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_flan_t5_xl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9133691787719727,
+    2.670459747314453
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_1.3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.217702865600586,
+    -4.505724906921387
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.48300313949585,
+    4.390305519104004
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_topical_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.30908203125,
+    4.186635971069336
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_1.3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.33864980936050415,
+    -0.8264557123184204
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.20150138437747955,
+    -0.6075128316879272
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_flan_t5_large"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1570597887039185,
+    -1.6800440549850464
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_flan_t5_xl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.667444229125977,
+    -5.063695907592773
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_flan_t5_large"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.108913421630859,
+    -4.393754959106445
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.5150504112243652,
+    -3.891972541809082
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.748408794403076,
+    -4.980601787567139
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_base"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.444657325744629,
+    -4.843383312225342
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.596558094024658,
+    -4.6988701820373535
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.7764763832092285,
+    -4.952497482299805
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.534055709838867,
+    2.145887613296509
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.80880069732666,
+    -4.910914421081543
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cnn_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.7701921463012695,
+    4.5500030517578125
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.3403778076171875,
+    -4.542365550994873
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_t0_3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7532498836517334,
+    -2.931699275970459
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4639387130737305,
+    3.3694162368774414
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_t0_3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.41677713394165,
+    -4.540414333343506
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.967470645904541,
+    -3.1241564750671387
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.3061163425445557,
+    3.2726707458496094
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.497244954109192,
+    -1.7037193775177002
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.4147047996520996,
+    -3.812713623046875
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0465922355651855,
+    5.0271830558776855
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.679238319396973,
+    -4.88055419921875
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.561191082000732,
+    -4.805522441864014
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.7387218475341797,
+    -3.9169678688049316
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5625766515731812,
+    -1.8572804927825928
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_specified_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2542598247528076,
+    3.3001961708068848
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_125m"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.751946449279785,
+    -4.9004716873168945
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.9390568733215332,
+    -2.4999680519104004
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.903418779373169,
+    3.782191038131714
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_350m"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.107062339782715,
+    -2.3204851150512695
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.469864368438721,
+    -4.81674861907959
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.978134870529175,
+    2.6711459159851074
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3723535537719727,
+    -2.6977105140686035
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.647846221923828,
+    -4.997804164886475
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_flan_t5_xl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.594782829284668,
+    3.6225593090057373
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -5.056427001953125,
+    4.972226142883301
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.14815616607666,
+    -4.517601013183594
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.994720220565796,
+    -2.190732002258301
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.707294225692749,
+    -1.978722333908081
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.935679912567139,
+    -5.083758354187012
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.67198371887207,
+    -5.022204399108887
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.439936637878418,
+    -4.647374153137207
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.975717544555664,
+    4.871214866638184
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_t0_3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0880987644195557,
+    -3.5051498413085938
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.7334389686584473,
+    3.6381235122680664
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_65B"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3775317668914795,
+    3.232731342315674
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_1.3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3439288139343262,
+    -1.7062959671020508
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_flan_t5_base"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.374605655670166,
+    -3.8122456073760986
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1173527240753174,
+    -1.301987648010254
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.075469970703125,
+    5.060399532318115
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.334054946899414,
+    -4.652500152587891
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.7615509033203125,
+    -5.061283111572266
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.032475471496582,
+    -4.584986686706543
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.12100887298584,
+    -4.491234302520752
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.145029067993164,
+    4.126631736755371
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.87059211730957,
+    -5.018746376037598
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.672575950622559,
+    -4.91076135635376
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.467315673828125,
+    3.165971279144287
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.68391752243042,
+    -4.054173469543457
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.560328483581543,
+    4.269725799560547
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.791484355926514,
+    -5.025890350341797
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.4600844979286194,
+    -0.9100934267044067
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.788576126098633,
+    4.766366004943848
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3013415336608887,
+    3.187671422958374
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.887594699859619,
+    -5.062890529632568
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.154207229614258,
+    -4.370849609375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.9889063835144043,
+    -4.328153610229492
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.443442344665527,
+    -4.624928951263428
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.8815733194351196,
+    1.3590295314788818
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_topical_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.8078765869140625,
+    4.584385871887207
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.9661058187484741,
+    -1.3649287223815918
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_flan_t5_base"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8215456008911133,
+    -2.934504985809326
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.8695828914642334,
+    3.530353307723999
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_13b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5578835010528564,
+    -1.6735310554504395
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.8023200035095215,
+    -4.245403289794922
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -5.07539176940918,
+    4.982930660247803
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9426674842834473,
+    2.490332841873169
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.162885665893555,
+    -4.444782733917236
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_flan_t5_base"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.775595664978027,
+    4.68356990814209
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5386478900909424,
+    -2.0378355979919434
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0014328956604,
+    5.070139408111572
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.590721368789673,
+    -3.980778694152832
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_base"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.496740818023682,
+    -4.680208683013916
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.3413369655609131,
+    -0.09987592697143555
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_flan_t5_base"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.079772710800171,
+    -3.658568859100342
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_t0_3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.159051895141602,
+    -4.567580699920654
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.258295059204102,
+    -4.605283737182617
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.2199089527130127,
+    0.6580684185028076
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_t0_3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.899949312210083,
+    2.329453468322754
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.210649490356445,
+    -4.477842330932617
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.439228534698486,
+    -4.787230014801025
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.872462749481201,
+    2.534656286239624
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7191057205200195,
+    -2.1750576496124268
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.469892501831055,
+    -4.696743011474609
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.999978542327881,
+    -4.376556873321533
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.8263039588928223,
+    -4.122978687286377
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.759425640106201,
+    -5.0170111656188965
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.406438827514648,
+    -4.73378324508667
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_specified_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3504798412322998,
+    -2.0002036094665527
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_t0_11b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8689492344856262,
+    0.4178823232650757
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.3884854316711426,
+    0.2511928081512451
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.8320046663284302,
+    -2.117736339569092
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_flan_t5_small"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.367583274841309,
+    -4.691178798675537
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3619401454925537,
+    3.364858388900757
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_6.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.571922302246094,
+    4.46184778213501
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.3062076568603516,
+    -3.9368138313293457
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.021001815795898,
+    -4.376160621643066
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_topical_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.39072322845459,
+    -3.6489250659942627
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3781557083129883,
+    3.309270143508911
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_specified_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.312961578369141,
+    4.061792373657227
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.6708136796951294,
+    -0.5263402462005615
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cnn_gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.612088203430176,
+    -4.921906471252441
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.622949600219727,
+    -4.737549781799316
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.7008776664733887,
+    -4.062450408935547
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.9978067874908447,
+    4.0054779052734375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.01734733581543,
+    4.963997840881348
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_GLM130B"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.341671884059906,
+    -0.6429375410079956
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.141332626342773,
+    -4.399357795715332
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.848149299621582,
+    4.844436168670654
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_flan_t5_large"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.736228942871094,
+    -5.114829063415527
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.10219144821167,
+    1.6047391891479492
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.7195215225219727,
+    -3.9417316913604736
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.784224033355713,
+    1.230440616607666
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.46900635957717896,
+    -0.009630866348743439
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.26669979095459,
+    -4.648032188415527
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.603639602661133,
+    -4.780024528503418
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cnn_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.093193054199219,
+    5.033415794372559
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.021409511566162,
+    -4.585003852844238
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_specified_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1015944480895996,
+    2.753126859664917
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_iml_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.591838836669922,
+    4.360321998596191
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_gpt_neox"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.623106479644775,
+    -4.893209457397461
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0332024097442627,
+    -2.6390066146850586
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.272836685180664,
+    -4.636222839355469
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_t0_11b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.264815330505371,
+    -1.7620792388916016
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.2872123122215271,
+    -0.6654068231582642
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.137458801269531,
+    -4.402997016906738
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5663881301879883,
+    -3.1475133895874023
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.711437702178955,
+    -4.92974853515625
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.345715880393982,
+    -1.6399550437927246
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.784764289855957,
+    2.803262710571289
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.464911460876465,
+    2.3611624240875244
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_gpt_j"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.441277027130127,
+    4.24412727355957
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.083839416503906,
+    -4.408389091491699
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.13802483677864075,
+    -0.18685859441757202
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.894639015197754,
+    -2.4440951347351074
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.0143558979034424,
+    -1.3503674268722534
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_specified_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.141836166381836,
+    -4.532623767852783
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.390716075897217,
+    -4.7733073234558105
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.247286796569824,
+    -4.476413726806641
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.39891242980957,
+    -4.686091423034668
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.563018321990967,
+    2.2976603507995605
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.107531547546387,
+    -4.293433666229248
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.608891010284424,
+    -4.8654632568359375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.3819894790649414,
+    -3.723228931427002
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_specified_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.5833444595336914,
+    -3.867218017578125
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.681285858154297,
+    3.333399772644043
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_6.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.269583225250244,
+    -3.5600197315216064
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.033919811248779,
+    3.603430986404419
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_13b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.547640800476074,
+    -3.861898899078369
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_2.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.439977169036865,
+    -4.771181106567383
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.3535819053649902,
+    -3.6386351585388184
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_flan_t5_large"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.426163196563721,
+    -4.743100643157959
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.562438011169434,
+    -4.917243003845215
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.542196750640869,
+    -4.833376884460449
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.32867151498794556,
+    0.35408228635787964
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_2.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.617980003356934,
+    -4.849112510681152
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.772380828857422,
+    -4.942814350128174
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.250707149505615,
+    -4.565858364105225
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8635153770446777,
+    2.4844002723693848
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_30B"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.290295600891113,
+    -4.466102600097656
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.917539596557617,
+    -5.032522201538086
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.949502944946289,
+    -4.395261764526367
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.2127501964569092,
+    0.8879451155662537
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.4333333373069763,
+    0.1279715597629547
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.3152055740356445,
+    -4.653660297393799
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.3077216148376465,
+    -4.657956123352051
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.591476917266846,
+    -4.951504230499268
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.464585304260254,
+    2.143301010131836
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_6.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.4033761024475098,
+    2.121730089187622
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_13b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.2791190147399902,
+    -3.6708483695983887
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.142989158630371,
+    -4.452253341674805
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.192263603210449,
+    -4.452125549316406
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_topical_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.0348663330078125,
+    3.9774632453918457
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.039549350738525,
+    5.02174186706543
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.043553352355957,
+    -4.408352851867676
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.9819793701171875,
+    -5.106781959533691
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_xl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.747247219085693,
+    4.693725109100342
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.86033296585083,
+    4.621488094329834
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.522883415222168,
+    -4.856587886810303
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.263624668121338,
+    -3.6027321815490723
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.859745025634766,
+    -5.023332595825195
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.398828029632568,
+    4.0847086906433105
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6631953716278076,
+    -3.2501559257507324
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_topical_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.758829593658447,
+    4.678716659545898
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.686512470245361,
+    -4.8955488204956055
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.033068656921387,
+    -4.142576217651367
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.641668319702148,
+    -4.890731334686279
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.532577037811279,
+    4.613656044006348
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "imdb_gpt4_para"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3825697898864746,
+    -2.982470989227295
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.700836658477783,
+    -3.8572354316711426
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_gpt4_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.962360382080078,
+    4.776578426361084
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_gpt_neox"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.8002166748046875,
+    4.795681953430176
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_topical_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.650925636291504,
+    4.697802543640137
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "imdb_gpt4"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.7011520862579346,
+    3.459341526031494
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.666237831115723,
+    -4.862828731536865
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.006986618041992,
+    4.870535373687744
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.7204136848449707,
+    -4.08441162109375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_7B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.066685676574707,
+    -4.257315635681152
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.066765308380127,
+    -3.6801304817199707
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.0566935539245605,
+    -4.4696855545043945
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_13b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.036694526672363,
+    4.929439544677734
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_large"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.809474468231201,
+    4.904667854309082
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cnn_gpt4_para"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.3401713371276855,
+    -2.7005834579467773
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.494633674621582,
+    -4.793985366821289
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.851410388946533,
+    -5.0295610427856445
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.969935894012451,
+    4.788540840148926
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.478915214538574,
+    -4.6720781326293945
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.852731704711914,
+    -5.141366958618164
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9538426399230957,
+    -3.344595432281494
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.133428692817688,
+    -1.2267518043518066
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "imdb_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.2291460037231445,
+    -4.545412063598633
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.1291511058807373,
+    -1.7270259857177734
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_topical_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.2316828966140747,
+    1.1910037994384766
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -4.558135986328125,
+    4.3117451667785645
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_human"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.245536804199219,
+    -4.5262932777404785
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_flan_t5_large"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.4323043823242188,
+    -3.8698225021362305
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.3212127685546875,
+    4.2332763671875
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.19597360491752625,
+    -0.580303430557251
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_topical_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.965718984603882,
+    3.812117099761963
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_2.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.63958740234375,
+    -4.837224006652832
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.889792442321777,
+    -5.093860149383545
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.668163299560547,
+    -4.868788242340088
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_30B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.6254105567932129,
+    -0.9525630474090576
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_small"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9962806701660156,
+    2.6352076530456543
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_topical_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.93508243560791,
+    -3.1365857124328613
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.3494582176208496,
+    -3.77312970161438
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.570932626724243,
+    -3.7062935829162598
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.093458652496338,
+    -3.5254106521606445
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.437290668487549,
+    -3.6294703483581543
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.202127456665039,
+    -4.599462985992432
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.3415141105651855,
+    -4.5421833992004395
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.437507152557373,
+    -2.812908172607422
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.7590227127075195,
+    -5.127879619598389
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.376170635223389,
+    -4.579283714294434
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.039427280426025,
+    5.018984794616699
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_opt_2.7b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.684587478637695,
+    4.643546104431152
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_t0_3b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.906471252441406,
+    -5.201512336730957
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.4395241737365723,
+    -3.738910675048828
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cnn_gpt4"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.8492259979248047,
+    -4.276679039001465
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.058269500732422,
+    5.015033721923828
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_topical_text-davinci-003"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.418465614318848,
+    -4.622066020965576
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.6933369636535645,
+    4.679452896118164
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.967598915100098,
+    -5.154922962188721
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0535101890563965,
+    4.975139617919922
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.739801406860352,
+    -4.938029766082764
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.7902231216430664,
+    -4.170136451721191
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.9982166290283203,
+    -4.331433296203613
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_t0_3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9427542686462402,
+    -3.1376688480377197
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    0.5685901045799255,
+    -1.0572354793548584
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.733635187149048,
+    -3.2788901329040527
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_opt_6.7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.586627960205078,
+    -4.8496270179748535
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_specified_text-davinci-003"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.722990036010742,
+    4.806079387664795
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.798051118850708,
+    3.516038179397583
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_7B"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.4870100021362305,
+    -4.658597946166992
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.753732204437256,
+    -5.036457538604736
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3464934825897217,
+    3.1605756282806396
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_13b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.817707538604736,
+    -5.063416004180908
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.445727825164795,
+    -4.653191089630127
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_350m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.5137674808502197,
+    -3.9459500312805176
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.404659271240234,
+    4.418939590454102
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_specified_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.179996013641357,
+    -4.428111553192139
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_specified_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.735207557678223,
+    -4.983274936676025
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_bloom_7b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.6644287109375,
+    -3.888394832611084
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_xxl"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.674983978271484,
+    -4.819170951843262
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.811383247375488,
+    -4.979611873626709
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.480309009552002,
+    1.9655423164367676
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.6784441471099854,
+    -3.9810192584991455
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_t0_3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.9197647571563721,
+    -1.3118419647216797
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.105923652648926,
+    -4.260566711425781
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_gpt4_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.424458980560303,
+    -4.72268009185791
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_t0_3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.4753217697143555,
+    -4.77716064453125
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_flan_t5_large"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.5180678367614746,
+    -3.9135496616363525
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_large"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.044676780700684,
+    -4.475501537322998
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.654761791229248,
+    -4.793300151824951
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.972196578979492,
+    -5.1683831214904785
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.974483013153076,
+    -4.260990142822266
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "yelp_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.652997016906738,
+    -4.842195510864258
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "dialogsum_human_para"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7912685871124268,
+    2.4323294162750244
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_gpt-3.5-trubo"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.561940908432007,
+    -3.913294792175293
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2518930435180664,
+    3.0300912857055664
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_flan_t5_small"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.6882476806640625,
+    4.601124286651611
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_text-davinci-002"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.866784572601318,
+    -5.09355354309082
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "imdb_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.015310287475586,
+    4.893489360809326
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.008234977722168,
+    -4.3926496505737305
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.553870677947998,
+    -4.946927547454834
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "hswag_machine_continuation_65B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.7578301429748535,
+    -4.945257186889648
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.7140747308731079,
+    -1.3324434757232666
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_continuation_flan_t5_base"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.273613929748535,
+    -4.593486785888672
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_13B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.7776618003845215,
+    -4.988253593444824
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.418792724609375,
+    -4.791245937347412
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.41459846496582,
+    -4.750454902648926
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.627069473266602,
+    -4.883030891418457
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.066825866699219,
+    -4.312032699584961
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_text-davinci-002"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9186811447143555,
+    -5.099730968475342
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.724199295043945,
+    -5.031754493713379
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_gpt_neox"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.740743637084961,
+    -4.920924186706543
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "xsum_machine_continuation_flan_t5_small"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.0085763931274414,
+    -3.2020180225372314
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "pubmed_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.991385459899902,
+    4.889152526855469
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_flan_t5_xl"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2405550479888916,
+    3.0118284225463867
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_iml_30b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.5451269149780273,
+    2.292912483215332
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_opt_350m"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.1569418907165527,
+    -3.5496976375579834
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.357126712799072,
+    -4.509739875793457
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "wp_machine_continuation_gpt_j"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.178060531616211,
+    -4.5361247062683105
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.3430721759796143,
+    -3.8029565811157227
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "roct_machine_continuation_opt_iml_30b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.675344944000244,
+    -4.984403610229492
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "cmv_machine_continuation_opt_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.361014366149902,
+    -4.789079666137695
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_human"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2447724342346191,
+    -1.6510510444641113
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_GLM130B"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.382912635803223,
+    -4.632580757141113
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "squad_machine_continuation_opt_iml_max_1.3b"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.972966432571411,
+    -4.3004279136657715
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "tldr_machine_continuation_opt_125m"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.190854072570801,
+    4.0539398193359375
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "sci_gen_machine_continuation_t0_11b"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.1097968816757202,
+    0.3370109796524048
+   ],
+   "meta": {
+    "corpus": "mage",
+    "id": null,
+    "src": "eli5_machine_specified_text-davinci-003"
+   },
+   "pred": 1
+  }
+ ],
+ "runtime_s": 119.13990211486816,
+ "schema": "aidisinfo.cross_corpus.v1",
+ "seed": 42,
+ "train_corpus": "roguegpt"
+}

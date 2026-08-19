@@ -1,0 +1,695 @@
+{
+  "bundle": "provenance-linkage-and-a-reproducible-benchmark-audit-sequence",
+  "generated_at": "2026-08-19T10:31:59.316731+00:00",
+  "layout": "Mirrors the source repository layout so the audit scripts run unmodified. Run them from the bundle root.",
+  "redistribution_note": "Prediction dumps are stripped of all verbatim corpus text. Only labels, predicted classes, logits and provenance markers are redistributed. Third-party corpora (RAID, M4, MAGE) and the restricted-access in-domain corpus are not included and must be obtained from their original sources.",
+  "fields_removed": [
+    "text_preview",
+    "text",
+    "content"
+  ],
+  "excluded": [
+    {
+      "path": "outreach/packages/redteam-statistics/data/participants-deidentified.csv",
+      "reason": "participant-level human-subject records; redistribution is an ethics decision outside the scope of this artifact"
+    },
+    {
+      "path": "outreach/packages/redteam-statistics/data/results.csv",
+      "reason": "item-level human judgments from the perception study; same reason"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "analysis/logo_identifiability.py",
+      "source_sha256": "111e67db15fe08298e232be14de66b3465ea36e83f86e8e1934716a6b54957db",
+      "sha256": "111e67db15fe08298e232be14de66b3465ea36e83f86e8e1934716a6b54957db",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "analysis/auroc_audit.py",
+      "source_sha256": "3dabbd187ce7dea1ddb6d0e03cb7a5708866d6bfc8b2084a845a53865a65df6c",
+      "sha256": "3dabbd187ce7dea1ddb6d0e03cb7a5708866d6bfc8b2084a845a53865a65df6c",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "analysis/t5_corpus_composition.py",
+      "source_sha256": "184b4ba2554d8c8acff3272f715b9627456d5628203cb579371d804dc8cbcde7",
+      "sha256": "184b4ba2554d8c8acff3272f715b9627456d5628203cb579371d804dc8cbcde7",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "analysis/judgegpt_analytical_set.py",
+      "source_sha256": "7366e51567e8cc60f52b815a2398ad4715d6b97694dae0a5386584e6c21ee5f2",
+      "sha256": "7366e51567e8cc60f52b815a2398ad4715d6b97694dae0a5386584e6c21ee5f2",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/triage/t1_mage_labels.py",
+      "source_sha256": "bbbe224bd527eff57725fb831c41a52c524572455c4b108026b95ed85cf891ce",
+      "sha256": "bbbe224bd527eff57725fb831c41a52c524572455c4b108026b95ed85cf891ce",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/triage/t1_fix_mage_labels.py",
+      "source_sha256": "24e4b0a854bd1f6e6a5424ac3f09cfba0e7c2b896a8d45b6cc6dc83efb5ad85b",
+      "sha256": "24e4b0a854bd1f6e6a5424ac3f09cfba0e7c2b896a8d45b6cc6dc83efb5ad85b",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/triage/t2_detection_checks.py",
+      "source_sha256": "61664e2cef2f6dcfc8a79254764eb4e82e8e3123ed75668c7d8ef3ca96ae0e6f",
+      "sha256": "61664e2cef2f6dcfc8a79254764eb4e82e8e3123ed75668c7d8ef3ca96ae0e6f",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/triage/t3_statistics_checks.py",
+      "source_sha256": "4ad581c0910e2627885c8e63e5bd88f1ebd735dd4602e7e90d0a07bd83c5b102",
+      "sha256": "4ad581c0910e2627885c8e63e5bd88f1ebd735dd4602e7e90d0a07bd83c5b102",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "analysis/recompute_arr_tables.py",
+      "sha256": "428a1600730367f52c12689c590cd23bccc50b135740a7cdc408174810365fa7"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/classifier-artifacts/results/_mcnemar__m4.json",
+      "source_sha256": "efcff91bf96aabd23094a32d7fddd4fda82dcba6288fb5a709903804bb21cf00",
+      "sha256": "629746191ae7e729e5219482a783a6e890aae1ffc6773e4f53c9aefbe3102541",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/_mcnemar__mage.json",
+      "source_sha256": "634e31abe6d10a1f98bae76c2f8057aafa95ba192d76a3166348c41f597dd807",
+      "sha256": "b445ecf957988131dbd404f93b85db51224a72c2a75b60e018870b3a40d724d0",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/_mcnemar__raid.json",
+      "source_sha256": "86901d40a3cba9a4f920a67b69f7a092757a43da522bc46d50f483f4ab74ded5",
+      "sha256": "7d9de76892969347eabe5ecde2012263718a15173896de23606c67b3ee8069bb",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/_mcnemar__roguegpt.json",
+      "source_sha256": "e4886909b19281793fb09ccf35191cfbdea3a40ca8b81738d807df6d722047d7",
+      "sha256": "37dc1a209862d4c5a371993c5f9874ed0ac2ab2cc119b65e0a90394b0b3012d8",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/m4_confusion_matrices.json",
+      "source_sha256": "76cec8d80188f699afb1d16b55920ac95b77b814667b5703dbff0df8418b4c11",
+      "sha256": "3e3c93b1e4556a457e1faf1c1c9dbff4661cb5e45a5ea5d61d473695c8ee9a11",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/mage_confusion_matrices.json",
+      "source_sha256": "1a6b6fd2b17fbad5dc20ea52b76d9c29b439ef77e95fa9f260168b1540c34018",
+      "sha256": "5a52afb84d3815d35ff66edb15d2bdd4e4d19b7a44abb14dcacba31ca728328b",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/raid_confusion_matrices.json",
+      "source_sha256": "3f25081f0a79d7890913cecd88758f565464ddaac825648888fd285a519b308d",
+      "sha256": "1a607604567b461d2958ad6d0324ff5877dcbe6278e55c39986c2017563212c0",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_confusion_matrices.json",
+      "source_sha256": "ab8f5cb60c60438ca8cdd27e0056df94cd08293cc14576f38a619ec326826d1e",
+      "sha256": "90b7d76ec5e68f34069ab2e6407317fc95b4c8e6f883be2922e8d83409c8017f",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_m4__bert-base__seed42.bootstrap.json",
+      "source_sha256": "d95c4c367721489d82434328e6c5a1c6f1724ffa87bbf04be998d4d4ddd1cea9",
+      "sha256": "8b465d0eef8d4d00a36c3ae825aff6d2f691df77aef50b65ed23f930bcce0eff",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_m4__bert-base__seed42.json",
+      "source_sha256": "5ed86474996cc6145183e7e79be486da75be31c99fb9d96621f6d368b8f5ffca",
+      "sha256": "774941797e5dfcd78c64281d92c31810da43967f7c3d9c9b17edc14d202782be",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_m4__bigbird__seed42.bootstrap.json",
+      "source_sha256": "bf685e4af2ea96c267a8b9de990df775b16104f6e442f62b8e9681eed062c800",
+      "sha256": "e2956558af42525b0fa31519d3d42775d998dd8efaa2250ae8ae7c21cec4ef36",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_m4__bigbird__seed42.json",
+      "source_sha256": "3bf51996cf78eb4826789c6eabebce511f1f4bcbde2b6019eaba9c4e3f58b09c",
+      "sha256": "7ec954bf2483390926fdd843b7a2526232bf80cf5dad515e4b1a488215143407",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_m4__longformer__seed42.bootstrap.json",
+      "source_sha256": "da44f3bbf8bcd6e42f2d6e6942aa20e10ad38aef5e54e5e813e9f11905f0b531",
+      "sha256": "20ab0187f00c06547936b31ef730bbdb50cecf444bc07b4a0d00bab1c8ebc7b1",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_m4__longformer__seed42.json",
+      "source_sha256": "7a05d2cc807cb548282558a47dc13252876b61ad59355eff16bf0e61ccc6c000",
+      "sha256": "209e48b2b931abbd77175fdac167acf4c845f78fc2bad5694e15f244cd3c9afc",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_mage__bert-base__seed42.bootstrap.json",
+      "source_sha256": "f2d8bc3557e1b1ff90f7d8ee7be62430428c131027dc4def1bd4cd1d00cef149",
+      "sha256": "00dd821c45b222c1a2328a1d3e80ffbbf28b4d8ac4c7a1231ab02e53b2ebb263",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_mage__bert-base__seed42.json",
+      "source_sha256": "0952d86a5f4742393672a4d6e1051fd5cacffbacd48ffc413f47001a31d829b2",
+      "sha256": "5a700baaf55d8f03cbdc718d1fea8020651ecad65dd68a313822be9f9cb83da2",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_mage__bigbird__seed42.bootstrap.json",
+      "source_sha256": "bd02823fe8edfc2525b82150dce5a8b3e6ff6d0484241a8cc0875975f8b2e61e",
+      "sha256": "0ae798aa5972682a3714f46a5535a6a2ee6ab3f47b283916745a7c73b2b11930",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_mage__bigbird__seed42.json",
+      "source_sha256": "fa398749f8a29985d6a9ca87a8e998877292165b490d3e1f186fcdf622f10849",
+      "sha256": "981e1ea40a8d138cb70294a13363bc24c5935a904163a2e1b343d9c3061afd2d",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_mage__longformer__seed42.bootstrap.json",
+      "source_sha256": "c4cffc05aa2be44f652950e831404525777e5eac30cb3eb49d2a2b2b2ce829b5",
+      "sha256": "ed9d9aed920d90da5204c5afd96c6822ce64fc7c4d41d27d361eddf13593ca8c",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_mage__longformer__seed42.json",
+      "source_sha256": "fb67d4eb783a0f254709eeea0397c89c8a11d4ca6e5e97972eaf9d363ba5c25f",
+      "sha256": "a08fec081accdd42d5ddbc2fe347dd5a7c0c607526b6116b5c1d0b0722064812",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_raid__bert-base__seed42.bootstrap.json",
+      "source_sha256": "44d970625d4022439affd553afe88536b5040206c5fecded87a2bc24d54df54b",
+      "sha256": "30081788112b4fef2a9e4f1d5064e00332497ee5fa968ffc236048e5ac7967b7",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_raid__bert-base__seed42.json",
+      "source_sha256": "06de8c8d7569b8710fe5a4399048b2959c57ce63f4c94f4e5569bbaa8882aeb1",
+      "sha256": "f3d29218de74f963c657088375555433255136c3e7dd447b00ea8f3703253852",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_raid__bigbird__seed42.bootstrap.json",
+      "source_sha256": "c1ee4de5f151a47b9abac72edd9b35807948bd73b65ca36904b21802806adaa4",
+      "sha256": "a38e46863d1200320a00b97be32e19bea8bd91c313827b50a2d5b4c8dda8ba3b",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_raid__bigbird__seed42.json",
+      "source_sha256": "6a58079ceb6bddaf5ede761d865b37abeb961c8dc999be2be0df2ab46fb6637a",
+      "sha256": "ef90bf46f2e0ea39808190c0fcee2e2c34cb1bddb71a2f67db0bbf57fe097a1d",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_raid__longformer__seed42.bootstrap.json",
+      "source_sha256": "27fce958e8ea0a9791c95bc4e860ee3ad571b29c5cb97b46ab61e0e345d50ec6",
+      "sha256": "35efc71d5c1c6c23adcd8961b0fe618fd8b8761ba245f0083d0bd0d36a02b463",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_raid__longformer__seed42.json",
+      "source_sha256": "7ed88eb5642f1812066a0fd89e4ec9e2d9e5d414da50adcc38a62f8909e0e07b",
+      "sha256": "9037abbd7d71df36dd4d4a049172390f93c6df3b18fa1e910d744dd4a473bbf6",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_roguegpt__bert-base__seed42.bootstrap.json",
+      "source_sha256": "c46761f949004b83a577c06d685308165180f99159e4d91418eed9d4feaaf712",
+      "sha256": "703ca21979f6598657a56ee2ba8a4addeaeb4502dd68f1bbf62e64ae5aacc0fd",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_roguegpt__bert-base__seed42.json",
+      "source_sha256": "3f9af01b42910fe0543122f0695fef93845ad7de8909a227b7545f55845c40f1",
+      "sha256": "6d4249a62b7d26e28046f95506ba2b3d2d83fff2c207b928c6791d859381f221",
+      "text_fields_removed": 492
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_roguegpt__bigbird__seed42.bootstrap.json",
+      "source_sha256": "30a6d5acdd2dfa6f898da8c665943661df757357ac507bbbe9cd37dc43df83a2",
+      "sha256": "725958ed94013389e73323f089189bfa10511105a68c9d17d22c31e66d51a7fd",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_roguegpt__bigbird__seed42.json",
+      "source_sha256": "5211dd363d9cc83754211e72bba88c1a117051db48bd70d5934d40ee99b2b34c",
+      "sha256": "6a0b33fba2f935795be0f1d46a11a7a3d97e84d015954c32af9dd3533e1302de",
+      "text_fields_removed": 492
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_roguegpt__longformer__seed42.bootstrap.json",
+      "source_sha256": "40de9157e70a2669abaa33edb1c3fc074f976df1222fe72489e88a8b57965494",
+      "sha256": "fbdd78fc208a936fda970a9afe38070929619119e926804289ad3224ec0da8b8",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/results/roguegpt_to_roguegpt__longformer__seed42.json",
+      "source_sha256": "7406cd30b792d8a7cb0b3e567fd6497f9af2b6c2a804c60344021a79a8af376f",
+      "sha256": "ee9a6f727132e11232a8c1a3be80737d45af289804bd1a59d3dd60961ac04559",
+      "text_fields_removed": 492
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bert-base-uncased.json",
+      "source_sha256": "fb82f645a237520eec8965ad71be83c7fc7737522784a2a72c389255a295c8d3",
+      "sha256": "339059fa2b4742b5967c06e84e131c503de747887b4ca9f997b9026434dc7412",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bert-base-uncased__balance-over.json",
+      "source_sha256": "2eaa944c61c684df5eb5fb56ac8ae191feed0cbc586a995d099dd9b510506088",
+      "sha256": "7cfd5584736253736c1b12a8c01956add939afe1e47c57a256131d5da83c3e13",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bert-base-uncased__balance-under.json",
+      "source_sha256": "46ed4cdd035d87ce8128887ffc00464251e59b2ac209ff53fc870d990968d251",
+      "sha256": "96dc7b2414511ca248a8ee8b76c410b538e57e6293094a8a7fdf091c46bfdaf8",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bert-base-uncased__balance-weighted.json",
+      "source_sha256": "8bd9dac49b6d07956a2a6ad828bc26cf76d4ff97091807c967fc82e4b5cede25",
+      "sha256": "ab64564b54b2c3c4ec88c5922595fee4c327982ab59c7653df6fb145b1aa40e7",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bert-base-uncased__seed123.json",
+      "source_sha256": "f0e317e3fd5120a503485a1f2700f291e760301159ebb2b2c685e2f05ff62ba6",
+      "sha256": "faadb7751f5932176e34dc9344bb3b1623c0b3304c107d755ac98a7e1df1f3db",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bert-base-uncased__seed2024.json",
+      "source_sha256": "13a21ec59d5352fa002d42050e505a2980f225ff7a541af59e1f81199864e219",
+      "sha256": "b53621991418ae87948bb9419620ade25d2eae33ccc67157da15a7abf8467cb4",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bigbird-roberta-base.json",
+      "source_sha256": "a7d607eae84b851c3d4c55192a3e119956c162c91bd3f5710e5c6418ed2c95e7",
+      "sha256": "dc02eec1eb55a8f78240b38630ee663e39f71c0a8d326145f27a8d3022c45800",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bigbird-roberta-base__seed123.json",
+      "source_sha256": "4188c54bc54ead5f053f40fe588567eba03ec6603f14bc76a8810271526bd445",
+      "sha256": "d950caba6887b50e93623a0641735af90637d62ebf6c049d759113e29c88f185",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/bigbird-roberta-base__seed2024.json",
+      "source_sha256": "04acef53af031a43488f6541dcb3ca9459565e1bfd7d1b7634c746935468f8e3",
+      "sha256": "ce24eb95a4f16beb44b79db672dca8617d286194cb2f10b192fd38ca72849d47",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/longformer-base-4096.json",
+      "source_sha256": "6d44afccf3b076745e3feeceedaae5f94cffa81966c66c0c5f5d9230a49cb2ad",
+      "sha256": "ff74cdb4235adaf9e67cff8cb1a6cff6b79e3ff4919d9f9802c6eed1abce6cd6",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/longformer-base-4096__seed123.json",
+      "source_sha256": "390dbc5c958f5095f9ce3aa5a709636b12d7ab4112b9c8364a53a9368fd3ada3",
+      "sha256": "bd27b25c61df817bcdaea7eaf91c6dde0927d6e4fb4dbdc8b6b418ef88978d66",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "data/classifier-artifacts/metrics/longformer-base-4096__seed2024.json",
+      "source_sha256": "28cf5c51da422b9cf39bd8966b33797d0e81be2717b753a2e0531dca6d9fd3d4",
+      "sha256": "d4c4d934752a44bc9371d7c95efab68f013fba338868f55d9268563335be97ff",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "analysis/classifier_leakage.json",
+      "source_sha256": "e4370f2b129d43625ce3398ef3860fb81d0c89d654003e12bef18e5c5fa3cd4b",
+      "sha256": "aab3b9936109fbe3fb72049303856ab8e6ad806759c0814525fe6cef895f5513",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "analysis/benchmark_audit.json",
+      "source_sha256": "00738b8534fe8a671a9346816223f09d3a94f7a34ae568b6942747cd09441f7b",
+      "sha256": "b0ec3a0158a25aa554e18c7a7a41edf591ff8dcc109449633d9fa539556b44ac",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/_mcnemar__m4.json",
+      "source_sha256": "efcff91bf96aabd23094a32d7fddd4fda82dcba6288fb5a709903804bb21cf00",
+      "sha256": "629746191ae7e729e5219482a783a6e890aae1ffc6773e4f53c9aefbe3102541",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/_mcnemar__mage.json",
+      "source_sha256": "634e31abe6d10a1f98bae76c2f8057aafa95ba192d76a3166348c41f597dd807",
+      "sha256": "b445ecf957988131dbd404f93b85db51224a72c2a75b60e018870b3a40d724d0",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/_mcnemar__raid.json",
+      "source_sha256": "86901d40a3cba9a4f920a67b69f7a092757a43da522bc46d50f483f4ab74ded5",
+      "sha256": "7d9de76892969347eabe5ecde2012263718a15173896de23606c67b3ee8069bb",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/_mcnemar__roguegpt.json",
+      "source_sha256": "e4886909b19281793fb09ccf35191cfbdea3a40ca8b81738d807df6d722047d7",
+      "sha256": "37dc1a209862d4c5a371993c5f9874ed0ac2ab2cc119b65e0a90394b0b3012d8",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/m4_confusion_matrices.json",
+      "source_sha256": "76cec8d80188f699afb1d16b55920ac95b77b814667b5703dbff0df8418b4c11",
+      "sha256": "3e3c93b1e4556a457e1faf1c1c9dbff4661cb5e45a5ea5d61d473695c8ee9a11",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/mage_confusion_matrices.json",
+      "source_sha256": "1a6b6fd2b17fbad5dc20ea52b76d9c29b439ef77e95fa9f260168b1540c34018",
+      "sha256": "5a52afb84d3815d35ff66edb15d2bdd4e4d19b7a44abb14dcacba31ca728328b",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/raid_confusion_matrices.json",
+      "source_sha256": "3f25081f0a79d7890913cecd88758f565464ddaac825648888fd285a519b308d",
+      "sha256": "1a607604567b461d2958ad6d0324ff5877dcbe6278e55c39986c2017563212c0",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_confusion_matrices.json",
+      "source_sha256": "ab8f5cb60c60438ca8cdd27e0056df94cd08293cc14576f38a619ec326826d1e",
+      "sha256": "90b7d76ec5e68f34069ab2e6407317fc95b4c8e6f883be2922e8d83409c8017f",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_m4__bert-base__seed42.bootstrap.json",
+      "source_sha256": "d95c4c367721489d82434328e6c5a1c6f1724ffa87bbf04be998d4d4ddd1cea9",
+      "sha256": "8b465d0eef8d4d00a36c3ae825aff6d2f691df77aef50b65ed23f930bcce0eff",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_m4__bert-base__seed42.json",
+      "source_sha256": "5ed86474996cc6145183e7e79be486da75be31c99fb9d96621f6d368b8f5ffca",
+      "sha256": "774941797e5dfcd78c64281d92c31810da43967f7c3d9c9b17edc14d202782be",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_m4__bigbird__seed42.bootstrap.json",
+      "source_sha256": "bf685e4af2ea96c267a8b9de990df775b16104f6e442f62b8e9681eed062c800",
+      "sha256": "e2956558af42525b0fa31519d3d42775d998dd8efaa2250ae8ae7c21cec4ef36",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_m4__bigbird__seed42.json",
+      "source_sha256": "3bf51996cf78eb4826789c6eabebce511f1f4bcbde2b6019eaba9c4e3f58b09c",
+      "sha256": "7ec954bf2483390926fdd843b7a2526232bf80cf5dad515e4b1a488215143407",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_m4__longformer__seed42.bootstrap.json",
+      "source_sha256": "da44f3bbf8bcd6e42f2d6e6942aa20e10ad38aef5e54e5e813e9f11905f0b531",
+      "sha256": "20ab0187f00c06547936b31ef730bbdb50cecf444bc07b4a0d00bab1c8ebc7b1",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_m4__longformer__seed42.json",
+      "source_sha256": "7a05d2cc807cb548282558a47dc13252876b61ad59355eff16bf0e61ccc6c000",
+      "sha256": "209e48b2b931abbd77175fdac167acf4c845f78fc2bad5694e15f244cd3c9afc",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_mage__bert-base__seed42.bootstrap.json",
+      "source_sha256": "f2d8bc3557e1b1ff90f7d8ee7be62430428c131027dc4def1bd4cd1d00cef149",
+      "sha256": "00dd821c45b222c1a2328a1d3e80ffbbf28b4d8ac4c7a1231ab02e53b2ebb263",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_mage__bert-base__seed42.json",
+      "source_sha256": "0952d86a5f4742393672a4d6e1051fd5cacffbacd48ffc413f47001a31d829b2",
+      "sha256": "5a700baaf55d8f03cbdc718d1fea8020651ecad65dd68a313822be9f9cb83da2",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_mage__bigbird__seed42.bootstrap.json",
+      "source_sha256": "bd02823fe8edfc2525b82150dce5a8b3e6ff6d0484241a8cc0875975f8b2e61e",
+      "sha256": "0ae798aa5972682a3714f46a5535a6a2ee6ab3f47b283916745a7c73b2b11930",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_mage__bigbird__seed42.json",
+      "source_sha256": "fa398749f8a29985d6a9ca87a8e998877292165b490d3e1f186fcdf622f10849",
+      "sha256": "981e1ea40a8d138cb70294a13363bc24c5935a904163a2e1b343d9c3061afd2d",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_mage__longformer__seed42.bootstrap.json",
+      "source_sha256": "c4cffc05aa2be44f652950e831404525777e5eac30cb3eb49d2a2b2b2ce829b5",
+      "sha256": "ed9d9aed920d90da5204c5afd96c6822ce64fc7c4d41d27d361eddf13593ca8c",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_mage__longformer__seed42.json",
+      "source_sha256": "fb67d4eb783a0f254709eeea0397c89c8a11d4ca6e5e97972eaf9d363ba5c25f",
+      "sha256": "a08fec081accdd42d5ddbc2fe347dd5a7c0c607526b6116b5c1d0b0722064812",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_raid__bert-base__seed42.bootstrap.json",
+      "source_sha256": "44d970625d4022439affd553afe88536b5040206c5fecded87a2bc24d54df54b",
+      "sha256": "30081788112b4fef2a9e4f1d5064e00332497ee5fa968ffc236048e5ac7967b7",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_raid__bert-base__seed42.json",
+      "source_sha256": "06de8c8d7569b8710fe5a4399048b2959c57ce63f4c94f4e5569bbaa8882aeb1",
+      "sha256": "f3d29218de74f963c657088375555433255136c3e7dd447b00ea8f3703253852",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_raid__bigbird__seed42.bootstrap.json",
+      "source_sha256": "c1ee4de5f151a47b9abac72edd9b35807948bd73b65ca36904b21802806adaa4",
+      "sha256": "a38e46863d1200320a00b97be32e19bea8bd91c313827b50a2d5b4c8dda8ba3b",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_raid__bigbird__seed42.json",
+      "source_sha256": "6a58079ceb6bddaf5ede761d865b37abeb961c8dc999be2be0df2ab46fb6637a",
+      "sha256": "ef90bf46f2e0ea39808190c0fcee2e2c34cb1bddb71a2f67db0bbf57fe097a1d",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_raid__longformer__seed42.bootstrap.json",
+      "source_sha256": "27fce958e8ea0a9791c95bc4e860ee3ad571b29c5cb97b46ab61e0e345d50ec6",
+      "sha256": "35efc71d5c1c6c23adcd8961b0fe618fd8b8761ba245f0083d0bd0d36a02b463",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_raid__longformer__seed42.json",
+      "source_sha256": "7ed88eb5642f1812066a0fd89e4ec9e2d9e5d414da50adcc38a62f8909e0e07b",
+      "sha256": "9037abbd7d71df36dd4d4a049172390f93c6df3b18fa1e910d744dd4a473bbf6",
+      "text_fields_removed": 500
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_roguegpt__bert-base__seed42.bootstrap.json",
+      "source_sha256": "c46761f949004b83a577c06d685308165180f99159e4d91418eed9d4feaaf712",
+      "sha256": "703ca21979f6598657a56ee2ba8a4addeaeb4502dd68f1bbf62e64ae5aacc0fd",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_roguegpt__bert-base__seed42.json",
+      "source_sha256": "3f9af01b42910fe0543122f0695fef93845ad7de8909a227b7545f55845c40f1",
+      "sha256": "6d4249a62b7d26e28046f95506ba2b3d2d83fff2c207b928c6791d859381f221",
+      "text_fields_removed": 492
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_roguegpt__bigbird__seed42.bootstrap.json",
+      "source_sha256": "30a6d5acdd2dfa6f898da8c665943661df757357ac507bbbe9cd37dc43df83a2",
+      "sha256": "725958ed94013389e73323f089189bfa10511105a68c9d17d22c31e66d51a7fd",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_roguegpt__bigbird__seed42.json",
+      "source_sha256": "5211dd363d9cc83754211e72bba88c1a117051db48bd70d5934d40ee99b2b34c",
+      "sha256": "6a0b33fba2f935795be0f1d46a11a7a3d97e84d015954c32af9dd3533e1302de",
+      "text_fields_removed": 492
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_roguegpt__longformer__seed42.bootstrap.json",
+      "source_sha256": "40de9157e70a2669abaa33edb1c3fc074f976df1222fe72489e88a8b57965494",
+      "sha256": "fbdd78fc208a936fda970a9afe38070929619119e926804289ad3224ec0da8b8",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/predictions/roguegpt_to_roguegpt__longformer__seed42.json",
+      "source_sha256": "7406cd30b792d8a7cb0b3e567fd6497f9af2b6c2a804c60344021a79a8af376f",
+      "sha256": "ee9a6f727132e11232a8c1a3be80737d45af289804bd1a59d3dd60961ac04559",
+      "text_fields_removed": 492
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bert-base-uncased.json",
+      "source_sha256": "fb82f645a237520eec8965ad71be83c7fc7737522784a2a72c389255a295c8d3",
+      "sha256": "339059fa2b4742b5967c06e84e131c503de747887b4ca9f997b9026434dc7412",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bert-base-uncased__balance-over.json",
+      "source_sha256": "2eaa944c61c684df5eb5fb56ac8ae191feed0cbc586a995d099dd9b510506088",
+      "sha256": "7cfd5584736253736c1b12a8c01956add939afe1e47c57a256131d5da83c3e13",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bert-base-uncased__balance-under.json",
+      "source_sha256": "46ed4cdd035d87ce8128887ffc00464251e59b2ac209ff53fc870d990968d251",
+      "sha256": "96dc7b2414511ca248a8ee8b76c410b538e57e6293094a8a7fdf091c46bfdaf8",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bert-base-uncased__balance-weighted.json",
+      "source_sha256": "8bd9dac49b6d07956a2a6ad828bc26cf76d4ff97091807c967fc82e4b5cede25",
+      "sha256": "ab64564b54b2c3c4ec88c5922595fee4c327982ab59c7653df6fb145b1aa40e7",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bert-base-uncased__seed123.json",
+      "source_sha256": "f0e317e3fd5120a503485a1f2700f291e760301159ebb2b2c685e2f05ff62ba6",
+      "sha256": "faadb7751f5932176e34dc9344bb3b1623c0b3304c107d755ac98a7e1df1f3db",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bert-base-uncased__seed2024.json",
+      "source_sha256": "13a21ec59d5352fa002d42050e505a2980f225ff7a541af59e1f81199864e219",
+      "sha256": "b53621991418ae87948bb9419620ade25d2eae33ccc67157da15a7abf8467cb4",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bigbird-roberta-base.json",
+      "source_sha256": "a7d607eae84b851c3d4c55192a3e119956c162c91bd3f5710e5c6418ed2c95e7",
+      "sha256": "dc02eec1eb55a8f78240b38630ee663e39f71c0a8d326145f27a8d3022c45800",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bigbird-roberta-base__seed123.json",
+      "source_sha256": "4188c54bc54ead5f053f40fe588567eba03ec6603f14bc76a8810271526bd445",
+      "sha256": "d950caba6887b50e93623a0641735af90637d62ebf6c049d759113e29c88f185",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/bigbird-roberta-base__seed2024.json",
+      "source_sha256": "04acef53af031a43488f6541dcb3ca9459565e1bfd7d1b7634c746935468f8e3",
+      "sha256": "ce24eb95a4f16beb44b79db672dca8617d286194cb2f10b192fd38ca72849d47",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/longformer-base-4096.json",
+      "source_sha256": "6d44afccf3b076745e3feeceedaae5f94cffa81966c66c0c5f5d9230a49cb2ad",
+      "sha256": "ff74cdb4235adaf9e67cff8cb1a6cff6b79e3ff4919d9f9802c6eed1abce6cd6",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/longformer-base-4096__seed123.json",
+      "source_sha256": "390dbc5c958f5095f9ce3aa5a709636b12d7ab4112b9c8364a53a9368fd3ada3",
+      "sha256": "bd27b25c61df817bcdaea7eaf91c6dde0927d6e4fb4dbdc8b6b418ef88978d66",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics/longformer-base-4096__seed2024.json",
+      "source_sha256": "28cf5c51da422b9cf39bd8966b33797d0e81be2717b753a2e0531dca6d9fd3d4",
+      "sha256": "d4c4d934752a44bc9371d7c95efab68f013fba338868f55d9268563335be97ff",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/bert-base-uncased__seed123__splits-grouped.json",
+      "source_sha256": "68362ac4dbf58e1aceb26b8ed8e4a1e698c220841b6b32320e3b577e2012e84e",
+      "sha256": "697abf99620382cbcfeb0f2cd768b9ac26bd318260746ff692ad039ec631b704",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/bert-base-uncased__seed2024__splits-grouped.json",
+      "source_sha256": "68a727feff91eddfb410681da3bdb2af99f54466eaa9334285ff9d86ad6e56b9",
+      "sha256": "25842f65e63876bfc8f9261d0d17bdcad798be8a213ec944597f72bde86b4b76",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/bert-base-uncased__seed42__splits-grouped.json",
+      "source_sha256": "4cd59777ede2ae70a0872ce481a3e8549f54f89a72795cddbf75126fbbdbc985",
+      "sha256": "e21004477833e3f5b1b5bd4963f86e7ca69919cb3b0d34b5f6ae3bd557c20d5d",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/bigbird__seed123__splits-grouped.json",
+      "source_sha256": "95956ac7a0e8e2cef4735098017fb3cdaa801a4550c164d5fd045ca3533f67b8",
+      "sha256": "004308da4c38fb20b922b0ceb5530d839a81435ab6cdbedbbd80794857d0733c",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/bigbird__seed2024__splits-grouped.json",
+      "source_sha256": "ac0c72649cd7cda87a6f728c68c4c60cd7556c38f46ddef2079296b60659b73f",
+      "sha256": "4adf3c1bd411a5f239620bf83aca33226d9f21c75ecd9cf01934626dbe9bcd0f",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/bigbird__seed42__splits-grouped.json",
+      "source_sha256": "e20726055d01300bf111fd4a0f03b97469fe7d2a4b163c60b5b5f88ce073ed32",
+      "sha256": "2215497c151c4585a50bc4bdb90edab6744324c969db7dc76fa29ad2eb3a0f62",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/longformer__seed123__splits-grouped.json",
+      "source_sha256": "ffd83dafe71d67399305b2db1a1902d3d4cc541ee748491f7739d1dfe9af3dfb",
+      "sha256": "84b3f3c071978d856a4f9d260b61ddf5918a397bb12a309f7d3d337dfbf115e5",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/longformer__seed2024__splits-grouped.json",
+      "source_sha256": "85d15b219031510001d8a9dba5efa03186e43a95a0d63694029bd63e72be7aba",
+      "sha256": "e84a962a58c13dbbc404368c54fd0da6bdc4f19ea21b6b156f9dbff18db4cda2",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/metrics/metrics-grouped/longformer__seed42__splits-grouped.json",
+      "source_sha256": "4a501c27b421d1201023d933395c1fc5bd1ead9bc20aeee782cfd17717da4445",
+      "sha256": "5cb7590f3f9575e91e1ea4d7bb6c05b9d04d0cbe8977e5609055b0f67420fc9b",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/results/baselines-grouped.json",
+      "source_sha256": "fbc501143c33802f9e925d02d10def4c9514960256920c6ff632eb6757c99588",
+      "sha256": "f185115e8cb6984f4ffa6808381def48d6f66faee5ca80f762ddb4d79e3f5921",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/results/classifier-dedup.json",
+      "source_sha256": "2e7c64f41177447c2443ef466b8c3889d1f15e9117b77cfed683a79c624def44",
+      "sha256": "1d40202a7e72119970b0e0961290990ccd83a661c3bd181be3e606ccbc3a87e1",
+      "text_fields_removed": 0
+    },
+    {
+      "path": "outreach/packages/redteam-detection/results/p2_9_matched.json",
+      "source_sha256": "dfe00073a1648dad8c095810e9d28e52ec3078090f7a514494a38f7dce9722a8",
+      "sha256": "49898fc32be65ac124068020694cc66c7a5d892dceba024f8d0f6c3b9d08f401",
+      "text_fields_removed": 0
+    }
+  ],
+  "summary": {
+    "scripts": 9,
+    "data_files": 102,
+    "text_fields_removed": 11952,
+    "excluded_files": 2
+  }
+}

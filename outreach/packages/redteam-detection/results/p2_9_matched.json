@@ -1,0 +1,101 @@
+{
+ "classifier_on_matched_items": {
+  "BERT": {
+   "accuracy": 0.9874213836477987,
+   "balanced_accuracy": 0.7468152866242038,
+   "fn": 1,
+   "fp": 1,
+   "human_items": 2,
+   "machine_items": 157,
+   "majority_baseline": 0.9874213836477987,
+   "n": 159,
+   "recall_human": 0.5,
+   "recall_machine": 0.9936305732484076,
+   "tn": 1,
+   "tp": 156
+  },
+  "BigBird": {
+   "accuracy": 0.9874213836477987,
+   "balanced_accuracy": 0.7468152866242038,
+   "fn": 1,
+   "fp": 1,
+   "human_items": 2,
+   "machine_items": 157,
+   "majority_baseline": 0.9874213836477987,
+   "n": 159,
+   "recall_human": 0.5,
+   "recall_machine": 0.9936305732484076,
+   "tn": 1,
+   "tp": 156
+  },
+  "Longformer": {
+   "accuracy": 0.9937106918238994,
+   "balanced_accuracy": 0.9968152866242038,
+   "fn": 1,
+   "fp": 0,
+   "human_items": 2,
+   "machine_items": 157,
+   "majority_baseline": 0.9874213836477987,
+   "n": 159,
+   "recall_human": 1.0,
+   "recall_machine": 0.9936305732484076,
+   "tn": 2,
+   "tp": 156
+  }
+ },
+ "coverage": {
+  "test": {
+   "human_items": 2,
+   "items": 159,
+   "judgments": 287,
+   "machine_items": 157
+  },
+  "train": {
+   "human_items": 20,
+   "items": 722,
+   "judgments": 1391,
+   "machine_items": 702
+  },
+  "validation": {
+   "human_items": 2,
+   "items": 147,
+   "judgments": 277,
+   "machine_items": 145
+  }
+ },
+ "human": {
+  "bootstrap_ci95": [
+   0.42171926910299,
+   0.5546515088593578
+  ],
+  "by_truth_class": {
+   "Human": {
+    "accuracy": 0.2,
+    "n": 5
+   },
+   "Machine": {
+    "accuracy": 0.48936170212765956,
+    "n": 282
+   }
+  },
+  "cluster_ci95": [
+   0.4219102724626957,
+   0.5549446555550231
+  ],
+  "cluster_se": 0.03393734262559373,
+  "participant_clustered_mean": 0.4884274640088594,
+  "pooled_accuracy": 0.4843205574912892
+ },
+ "matched_set": {
+  "human_items": 2,
+  "human_judgments_on_human_items": 5,
+  "items": 159,
+  "judgments": 287,
+  "judgments_per_item_max": 6,
+  "judgments_per_item_median": 1.0,
+  "machine_items": 157,
+  "participants": 172
+ },
+ "seed": 42,
+ "threshold": 0.5
+}

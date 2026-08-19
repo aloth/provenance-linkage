@@ -1,0 +1,19 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Applies to the derived data files in this repository: the sanitized prediction
+files under data/, outreach/, and analysis/, and the per-run metric files.
+
+You are free to share and adapt this material for any purpose, provided you
+give appropriate credit, provide a link to the license, and indicate if changes
+were made.
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution:
+  Loth A, Butt FS, Kappes M, Pahl M-O (2026). Reproducibility bundle for
+  "One Prediction Set, Two Reported Results: Provenance Linkage and a
+  Reproducible Benchmark-Audit Sequence for AI-Text Detection".
+
+NOTE: This license does NOT extend to the third-party corpora (RAID, M4, MAGE)
+or to the restricted-access in-domain RogueGPT corpus. No verbatim text from
+those resources is redistributed here; they retain their original terms.

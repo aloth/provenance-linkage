@@ -1,0 +1,5443 @@
+{
+ "batch_size": 2,
+ "checkpoint": "artifacts/models/longformer-base-4096",
+ "device": "mps",
+ "eval_corpus": "roguegpt",
+ "eval_notes": "in-domain test split (n=492)",
+ "eval_size": 492,
+ "generated_at": "2026-04-30T13:53:19.638986+00:00",
+ "label_distribution": {
+  "Human": 96,
+  "Machine": 396
+ },
+ "max_length": 4096,
+ "metrics": {
+  "accuracy": 0.9959349593495935,
+  "f1_machine": 0.9974747474747475,
+  "f1_macro": 0.9935290404040404,
+  "f1_weighted": 0.9959349593495935,
+  "precision_machine": 0.9974747474747475,
+  "precision_macro": 0.9935290404040404,
+  "recall_machine": 0.9974747474747475,
+  "recall_macro": 0.9935290404040404
+ },
+ "model_tag": "longformer",
+ "predictions": [
+  {
+   "label": 0,
+   "logits": [
+    5.017027378082275,
+    -5.197508811950684
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.0202717781066895,
+    -5.21398401260376
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.023562908172607,
+    -5.2077555656433105
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.912999629974365,
+    -5.105086803436279
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.7331416606903076,
+    -3.9761016368865967
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.903208255767822,
+    -4.935140132904053
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.995517253875732,
+    -5.206539154052734
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.004790782928467,
+    -5.189332008361816
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.015550136566162,
+    -5.1855692863464355
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.996352195739746,
+    -5.209819793701172
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.912999629974365,
+    -5.105086803436279
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.618044853210449,
+    -4.850588321685791
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.0254974365234375,
+    -5.198446750640869
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.8968734741210938,
+    -4.254209995269775
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.912999629974365,
+    -5.105086803436279
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.887959957122803,
+    -5.0796074867248535
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.022798538208008,
+    -5.205480098724365
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.029812335968018,
+    -5.214986324310303
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.99661111831665,
+    -5.196324825286865
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.823462009429932,
+    -4.97899055480957
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.012752056121826,
+    -5.178630352020264
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.8867106437683105,
+    -5.075299263000488
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.979467868804932,
+    -5.150622844696045
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.962745189666748,
+    -5.155371189117432
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.95696496963501,
+    -5.153435707092285
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.786994457244873,
+    -5.014011383056641
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.96364688873291,
+    -5.132312297821045
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.014486312866211,
+    -5.172034740447998
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.955402851104736,
+    -5.175312519073486
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.982051372528076,
+    -5.169758319854736
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.987410545349121,
+    -5.1585283279418945
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.887959957122803,
+    -5.0796074867248535
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.983129978179932,
+    -5.1555705070495605
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.976256847381592,
+    -5.191974639892578
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.781264781951904,
+    -5.013001441955566
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9242024421691895,
+    -5.094356060028076
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.96364688873291,
+    -5.132312297821045
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.936095714569092,
+    -5.120275020599365
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.986079692840576,
+    -5.1905999183654785
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.787686347961426,
+    -5.074496269226074
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.957901477813721,
+    -5.1454033851623535
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9242024421691895,
+    -5.094356060028076
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9621500968933105,
+    -5.177909851074219
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.952606678009033,
+    -5.134150981903076
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.793284893035889,
+    -5.133830547332764
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.916701316833496,
+    -5.127307891845703
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.907328128814697,
+    -5.136709690093994
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.940553665161133,
+    -5.124893665313721
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.993660926818848,
+    -5.204282283782959
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9579854011535645,
+    -5.187248706817627
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.008510112762451,
+    -5.186340808868408
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.895434856414795,
+    -5.140762805938721
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.004416465759277,
+    -5.211142063140869
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.957704067230225,
+    -5.192385673522949
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.893731594085693,
+    -5.081117153167725
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.948475360870361,
+    -5.151845932006836
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.963813781738281,
+    -5.166326522827148
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9903059005737305,
+    -5.203721523284912
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.918687343597412,
+    -5.140909194946289
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.963685035705566,
+    -5.150247573852539
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.904933929443359,
+    -5.152373790740967
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.931934833526611,
+    -5.101762771606445
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.901698112487793,
+    -5.09348726272583
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.999543190002441,
+    -5.207592010498047
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.946864604949951,
+    -5.151483058929443
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.991880893707275,
+    -5.179814338684082
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.855132579803467,
+    -5.15586519241333
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.865997791290283,
+    -5.10605001449585
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.886157035827637,
+    -5.046926498413086
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.952606678009033,
+    -5.134150981903076
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.997303485870361,
+    -5.205190181732178
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.955260276794434,
+    -5.1561279296875
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.979467868804932,
+    -5.150622844696045
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.925576210021973,
+    -5.145162105560303
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9614176750183105,
+    -5.142197132110596
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.993503093719482,
+    -5.193971157073975
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.0022807121276855,
+    -5.163960933685303
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.946198463439941,
+    -5.161052227020264
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    3.910712957382202,
+    -4.0694708824157715
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.170629024505615,
+    -4.434662342071533
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.823462009429932,
+    -4.97899055480957
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.993015766143799,
+    -5.150849342346191
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.974620819091797,
+    -5.1445136070251465
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.519857883453369,
+    -4.811728000640869
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.7090067863464355,
+    -4.926750183105469
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.997481822967529,
+    -5.121756076812744
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.875823497772217,
+    -5.095118045806885
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.979048252105713,
+    -5.128042697906494
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.746492385864258,
+    -4.959580898284912
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.94651460647583,
+    -5.125126361846924
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.920841693878174,
+    -5.156705379486084
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    5.031843185424805,
+    -5.176187038421631
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.1003248691558838,
+    0.9745463728904724
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.0777127742767334,
+    -2.0417544841766357
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.955615520477295,
+    -5.142405033111572
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    4.9551262855529785,
+    -5.1709184646606445
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.094612121582031,
+    5.162288665771484
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.154577732086182,
+    5.182726860046387
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.122344970703125,
+    5.179373264312744
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.090844631195068,
+    5.154177665710449
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0979719161987305,
+    5.163944244384766
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.079869747161865,
+    5.155420780181885
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.121873378753662,
+    5.140809059143066
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.106973648071289,
+    5.169612884521484
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.12064266204834,
+    5.14013147354126
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.156943321228027,
+    5.161949634552002
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.095893859863281,
+    5.118964672088623
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.127364635467529,
+    5.160016059875488
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.10800313949585,
+    5.150043964385986
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.129276752471924,
+    5.189655780792236
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.099940776824951,
+    5.157623767852783
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.140913486480713,
+    5.168018341064453
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.178291320800781,
+    5.184759140014648
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.880265712738037,
+    4.806671142578125
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.091228485107422,
+    5.110157489776611
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.142576694488525,
+    5.1788740158081055
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.129720211029053,
+    5.13124418258667
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1028547286987305,
+    5.137522220611572
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.070725917816162,
+    5.1290364265441895
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.057021617889404,
+    5.112457275390625
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.145671367645264,
+    5.200774192810059
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.145529270172119,
+    5.1779866218566895
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.072948932647705,
+    5.146477222442627
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.125227451324463,
+    5.182066440582275
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.133183002471924,
+    5.177111625671387
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.136263370513916,
+    5.162674427032471
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.13680362701416,
+    5.193694114685059
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.985515594482422,
+    4.97972297668457
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.049520254135132,
+    2.8249475955963135
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.445425987243652,
+    4.405675888061523
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.377251148223877,
+    4.334498405456543
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.778881549835205,
+    4.689243316650391
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.322475910186768,
+    4.3024444580078125
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0443243980407715,
+    5.0781989097595215
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.87827730178833,
+    4.824278831481934
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0263447761535645,
+    5.022712230682373
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8805625438690186,
+    2.7020254135131836
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.571794033050537,
+    4.576846599578857
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.005117893218994,
+    4.935042858123779
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.522387981414795,
+    4.56106424331665
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0198869705200195,
+    5.040205478668213
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.981425762176514,
+    5.024088382720947
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.763154029846191,
+    4.81724739074707
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.975496768951416,
+    4.952724456787109
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.482985973358154,
+    4.394674777984619
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.920010089874268,
+    4.925548076629639
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.9592413902282715,
+    4.957229137420654
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.822190761566162,
+    4.698102951049805
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.588122844696045,
+    4.430417537689209
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.107736110687256,
+    5.0805792808532715
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.704296588897705,
+    4.593568325042725
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5123534202575684,
+    3.3343396186828613
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.914145469665527,
+    4.99428653717041
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    4.523748874664307,
+    -4.7545390129089355
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.772511005401611,
+    4.751911640167236
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.113117694854736,
+    5.106167793273926
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.181437015533447,
+    5.170125484466553
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.144251346588135,
+    5.17972469329834
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.139963626861572,
+    5.1452555656433105
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.117116928100586,
+    5.130140781402588
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.165938854217529,
+    5.180685520172119
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.147685527801514,
+    5.1796464920043945
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.079233169555664,
+    5.084395408630371
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.198819637298584,
+    5.188640594482422
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.187905788421631,
+    5.174066066741943
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.182709217071533,
+    5.143266201019287
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.147695064544678,
+    5.151942253112793
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.132388591766357,
+    5.175060749053955
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.100244522094727,
+    5.140511989593506
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.109586238861084,
+    5.095251560211182
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.131234645843506,
+    5.138395309448242
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.119143009185791,
+    5.134981155395508
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1264729499816895,
+    5.138678073883057
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.140468120574951,
+    5.163177967071533
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.151548862457275,
+    5.115828990936279
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.098936557769775,
+    5.129723072052002
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.183462619781494,
+    5.1685051918029785
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.157565593719482,
+    5.174631595611572
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.155136585235596,
+    5.165933609008789
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1916422843933105,
+    5.1946210861206055
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.154302597045898,
+    5.141891956329346
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.137850284576416,
+    5.170645236968994
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.148958683013916,
+    5.163403034210205
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.997156620025635,
+    4.975387096405029
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.125878810882568,
+    5.097250938415527
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1612114906311035,
+    5.161618709564209
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.140941143035889,
+    5.151071071624756
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.847894191741943,
+    4.85833740234375
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.092355251312256,
+    5.102222919464111
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.997603416442871,
+    4.992761135101318
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1045613288879395,
+    5.147225856781006
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.088748455047607,
+    5.068612098693848
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.060041904449463,
+    5.087176322937012
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.994911193847656,
+    4.9358062744140625
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1276535987854,
+    5.165907382965088
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.954763889312744,
+    4.939359188079834
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.9791083335876465,
+    4.959451198577881
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.990347862243652,
+    4.977253437042236
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.149531841278076,
+    5.140712261199951
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.976170063018799,
+    4.971506595611572
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.08999490737915,
+    5.124166011810303
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.134042263031006,
+    5.0723490715026855
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.01702880859375,
+    5.0132575035095215
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.027963161468506,
+    5.086610317230225
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.08922815322876,
+    5.11407995223999
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.070985317230225,
+    5.0900139808654785
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.086727142333984,
+    5.099874019622803
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.084802150726318,
+    5.084091663360596
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1226806640625,
+    5.082990646362305
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.04596471786499,
+    5.115176677703857
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.839486598968506,
+    4.821802616119385
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0484185218811035,
+    5.094182014465332
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.051689147949219,
+    5.084394931793213
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.024613857269287,
+    5.043467044830322
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.073441505432129,
+    5.053176403045654
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.078991413116455,
+    5.079308032989502
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.105640888214111,
+    5.119954586029053
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1031317710876465,
+    5.104388236999512
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.05877161026001,
+    5.071208477020264
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.137765407562256,
+    5.099668979644775
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.100509166717529,
+    5.096911907196045
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.125824451446533,
+    5.090029239654541
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.156239032745361,
+    5.106954574584961
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.082702159881592,
+    5.127124309539795
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.098795413970947,
+    5.0988078117370605
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.082577228546143,
+    5.118811130523682
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0801591873168945,
+    5.073869705200195
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.110328197479248,
+    5.111953258514404
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.018016338348389,
+    5.0791168212890625
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.128239154815674,
+    5.11103630065918
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.068958759307861,
+    5.0810370445251465
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0631422996521,
+    5.0940632820129395
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.006127834320068,
+    5.086331367492676
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.086798667907715,
+    5.132562160491943
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.086114406585693,
+    5.095240116119385
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1034255027771,
+    5.124815940856934
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.10371732711792,
+    5.033021450042725
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.968740940093994,
+    4.951406002044678
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.100703716278076,
+    5.122185230255127
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.081773281097412,
+    5.095470905303955
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.049978733062744,
+    5.109868049621582
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.08941125869751,
+    5.110658168792725
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.088691711425781,
+    5.14252233505249
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.049966335296631,
+    5.035576820373535
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.056154727935791,
+    5.10161828994751
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.093018531799316,
+    5.113254070281982
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.050980091094971,
+    5.10744047164917
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0869269371032715,
+    5.065733432769775
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.952837944030762,
+    5.047842979431152
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.099671840667725,
+    5.139455318450928
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.096083641052246,
+    5.073913097381592
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.133732795715332,
+    5.108846187591553
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.007233142852783,
+    4.9877705574035645
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.900391101837158,
+    5.068231582641602
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.060830593109131,
+    5.105065822601318
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.084558486938477,
+    5.114290714263916
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.082165241241455,
+    5.095398426055908
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.099658489227295,
+    5.1201395988464355
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.122776985168457,
+    5.1142706871032715
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.120382785797119,
+    5.092731952667236
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.924429416656494,
+    4.934183120727539
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.011882305145264,
+    5.080779075622559
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.837884426116943,
+    4.812225818634033
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.124456405639648,
+    5.1199846267700195
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.177816390991211,
+    5.171375274658203
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0955986976623535,
+    5.0958099365234375
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.103200435638428,
+    5.119126796722412
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.088047981262207,
+    5.113860130310059
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.048403739929199,
+    5.097459316253662
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.12771463394165,
+    5.103979110717773
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.110823154449463,
+    5.132099628448486
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.099735736846924,
+    5.1065778732299805
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.065186977386475,
+    5.061953067779541
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.134275913238525,
+    5.118621349334717
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.104570388793945,
+    5.093934535980225
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.09711217880249,
+    5.118021488189697
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.143955707550049,
+    5.145596981048584
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1144585609436035,
+    5.100704669952393
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.15688943862915,
+    5.087350368499756
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.150568008422852,
+    5.147339344024658
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.099664211273193,
+    5.114240646362305
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.107974052429199,
+    5.127529144287109
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.082255840301514,
+    5.094161033630371
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.094536304473877,
+    5.099948406219482
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.046735763549805,
+    5.08317232131958
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.115586757659912,
+    5.086599826812744
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.050800800323486,
+    5.097653865814209
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.096258640289307,
+    5.11871862411499
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1034111976623535,
+    5.0913190841674805
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.13090181350708,
+    5.138940334320068
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.112607955932617,
+    5.1295270919799805
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.100769519805908,
+    5.122953414916992
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.099517345428467,
+    5.108256816864014
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0348286628723145,
+    5.086470127105713
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.11415433883667,
+    5.088418960571289
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.09499979019165,
+    5.095994472503662
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.097135066986084,
+    5.0717997550964355
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.097070217132568,
+    5.03678560256958
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.931700229644775,
+    5.025588512420654
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.063354015350342,
+    5.06570291519165
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.05935525894165,
+    4.988978862762451
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.142332077026367,
+    5.124017238616943
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.122251510620117,
+    5.105400562286377
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.154259204864502,
+    5.07896089553833
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0824360847473145,
+    5.036835193634033
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.140822887420654,
+    5.08519983291626
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.093564987182617,
+    5.062719345092773
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.131760120391846,
+    5.1054911613464355
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.109277725219727,
+    5.135717391967773
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.085041046142578,
+    5.087326526641846
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.090216159820557,
+    5.125171184539795
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.102157115936279,
+    5.097056865692139
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.023838520050049,
+    5.037327289581299
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.101541996002197,
+    5.084716320037842
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.992883205413818,
+    4.878279685974121
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0562005043029785,
+    5.047047138214111
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.103297710418701,
+    5.155246257781982
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.137692928314209,
+    5.156620979309082
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.095482349395752,
+    5.153693675994873
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.090752601623535,
+    5.1336350440979
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.09008264541626,
+    5.154754161834717
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.143915176391602,
+    5.149631977081299
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.069806098937988,
+    5.119258403778076
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.146973133087158,
+    5.13977575302124
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.078962802886963,
+    5.134679317474365
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.104211330413818,
+    5.142757892608643
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.147580623626709,
+    5.142279148101807
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.105527877807617,
+    5.138384819030762
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0861735343933105,
+    5.104791164398193
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1318182945251465,
+    5.155985355377197
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.135693073272705,
+    5.155460834503174
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.044952869415283,
+    5.1226582527160645
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.102559566497803,
+    5.149952411651611
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.140674114227295,
+    5.170843601226807
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.12007474899292,
+    5.123716831207275
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.084658145904541,
+    5.12131929397583
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.131038188934326,
+    5.145174026489258
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.073848247528076,
+    5.135100841522217
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.152284622192383,
+    5.145020008087158
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.09428596496582,
+    5.139216423034668
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.112823963165283,
+    5.124972820281982
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.9658203125,
+    4.905070781707764
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1263556480407715,
+    5.096828460693359
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0568718910217285,
+    5.037094593048096
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.990532875061035,
+    5.018818378448486
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.075901985168457,
+    5.055444240570068
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.03957986831665,
+    5.090807914733887
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.152048110961914,
+    5.152380466461182
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1671462059021,
+    5.142409801483154
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.12022066116333,
+    5.1311469078063965
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0723700523376465,
+    5.094918727874756
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.123445510864258,
+    5.103373050689697
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.095138072967529,
+    5.100768089294434
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.073060989379883,
+    5.088620185852051
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.107625484466553,
+    5.087451457977295
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.064067363739014,
+    5.053077220916748
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.101364612579346,
+    5.127346515655518
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.098299026489258,
+    5.101486682891846
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.121747970581055,
+    5.114578723907471
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.129022121429443,
+    5.033092975616455
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.097814083099365,
+    5.08271598815918
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.161776065826416,
+    5.1600823402404785
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.877843379974365,
+    4.867221832275391
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.043855667114258,
+    4.987891674041748
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.956386566162109,
+    4.89790678024292
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.116923809051514,
+    5.118780612945557
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.11128568649292,
+    5.1556596755981445
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.070711135864258,
+    5.095012187957764
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.102891445159912,
+    5.116985321044922
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.155719757080078,
+    5.130629539489746
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.148374080657959,
+    5.157821178436279
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.134846210479736,
+    5.154149532318115
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.149894714355469,
+    5.135726451873779
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.163509845733643,
+    5.146696090698242
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.122114658355713,
+    5.153563022613525
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.052586078643799,
+    5.1174092292785645
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.167781352996826,
+    5.1427388191223145
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1625752449035645,
+    5.18378210067749
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.149425983428955,
+    5.139345645904541
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.173645496368408,
+    5.168636798858643
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.182103157043457,
+    5.161261081695557
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.092794895172119,
+    5.1367926597595215
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.198017120361328,
+    5.14998197555542
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.144668102264404,
+    5.092331409454346
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.171525478363037,
+    5.145290851593018
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.189193248748779,
+    5.140442371368408
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.101776123046875,
+    5.108168125152588
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.165980815887451,
+    5.148802280426025
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.150022029876709,
+    5.129968166351318
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.145312786102295,
+    5.147073268890381
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.155993938446045,
+    5.149441719055176
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.134361267089844,
+    5.153809547424316
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.160866737365723,
+    5.1895833015441895
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.134792804718018,
+    5.110715866088867
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.141985893249512,
+    5.129024982452393
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.14484977722168,
+    5.168425559997559
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.157829284667969,
+    5.163750171661377
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.111637115478516,
+    5.125746250152588
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1393208503723145,
+    5.122929096221924
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.164729595184326,
+    5.1559014320373535
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.144943714141846,
+    5.130160331726074
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.064476013183594,
+    5.108887195587158
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.166039943695068,
+    5.164805889129639
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.107733249664307,
+    5.129578590393066
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.144556522369385,
+    5.1450514793396
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.142172336578369,
+    5.174691677093506
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.125637531280518,
+    5.156546115875244
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.142138481140137,
+    5.166782855987549
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.104821681976318,
+    5.146300792694092
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.107938289642334,
+    5.158412456512451
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1342997550964355,
+    5.17436408996582
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.159698963165283,
+    5.159906387329102
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1206536293029785,
+    5.127664089202881
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.108193874359131,
+    5.1371541023254395
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.151861190795898,
+    5.1860175132751465
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.050534725189209,
+    5.120273113250732
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.145921230316162,
+    5.163767337799072
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.127190113067627,
+    5.160542964935303
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.11647367477417,
+    5.1500372886657715
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.159395694732666,
+    5.181543827056885
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.123720645904541,
+    5.150668144226074
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.094608306884766,
+    5.150367259979248
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.112605094909668,
+    5.135488986968994
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.117090702056885,
+    5.131314277648926
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.090052604675293,
+    5.12684965133667
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.139308452606201,
+    5.185774326324463
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.157572269439697,
+    5.151869297027588
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1056294441223145,
+    5.127499103546143
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.137196063995361,
+    5.159602165222168
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0110087394714355,
+    5.024087429046631
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.00756311416626,
+    5.013143062591553
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0915141105651855,
+    5.096879005432129
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.897888660430908,
+    4.826273441314697
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.117852687835693,
+    5.147339344024658
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.999674320220947,
+    5.001049518585205
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.535208225250244,
+    2.4074203968048096
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.858358383178711,
+    4.850149631500244
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.015904903411865,
+    5.0233564376831055
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.0874433517456055,
+    5.111856937408447
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1224684715271,
+    5.154139041900635
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.713407039642334,
+    4.725766658782959
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.105183124542236,
+    5.08566427230835
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.975067615509033,
+    5.0054802894592285
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.039295673370361,
+    5.023993015289307
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.116206645965576,
+    5.1582536697387695
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.821505069732666,
+    4.751589298248291
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.997308731079102,
+    5.039554119110107
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.087320804595947,
+    5.0576252937316895
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.117387294769287,
+    5.142106056213379
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.084021091461182,
+    5.0855278968811035
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.925730228424072,
+    4.891252517700195
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.850418567657471,
+    4.786281108856201
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.060871124267578,
+    5.097970008850098
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -4.485498905181885,
+    4.238305568695068
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.175753116607666,
+    5.148725986480713
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.122823238372803,
+    5.148717403411865
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.15047550201416,
+    5.154649257659912
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1245551109313965,
+    5.155874252319336
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.156609058380127,
+    5.169066905975342
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.136136531829834,
+    5.155858516693115
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.198886871337891,
+    5.168359279632568
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.191768169403076,
+    5.187702655792236
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.16365909576416,
+    5.175979137420654
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.172280788421631,
+    5.184875965118408
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1579718589782715,
+    5.1338114738464355
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.166946887969971,
+    5.186460018157959
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.207746982574463,
+    5.166977405548096
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.163070201873779,
+    5.171990871429443
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.120527744293213,
+    5.148794651031494
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.102269649505615,
+    5.139307975769043
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.175295829772949,
+    5.18339204788208
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.108047008514404,
+    5.149064540863037
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.103438854217529,
+    5.121881484985352
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.09699010848999,
+    5.1127400398254395
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.18829870223999,
+    5.182320594787598
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.150561809539795,
+    5.186812877655029
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.109126567840576,
+    5.157222747802734
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.171131610870361,
+    5.166191577911377
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.173515796661377,
+    5.178822040557861
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1936774253845215,
+    5.185827732086182
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.159672737121582,
+    5.170013904571533
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.096767902374268,
+    5.154538631439209
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1058030128479,
+    5.129465103149414
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.143824100494385,
+    5.128770351409912
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.136945724487305,
+    5.16991662979126
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.159048557281494,
+    5.1835036277771
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.15398645401001,
+    5.16061544418335
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.1580376625061035,
+    5.170600414276123
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.128744125366211,
+    5.143913745880127
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.153003692626953,
+    5.163817882537842
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.136960506439209,
+    5.166318416595459
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -5.146793842315674,
+    5.171082973480225
+   ],
+   "meta": {
+    "corpus": "roguegpt"
+   },
+   "pred": 1
+  }
+ ],
+ "runtime_s": 99.72534108161926,
+ "schema": "aidisinfo.cross_corpus.v1",
+ "seed": 42,
+ "train_corpus": "roguegpt"
+}

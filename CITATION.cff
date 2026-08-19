@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this bundle, please cite the accompanying paper."
+title: >-
+  Reproducibility bundle for "One Prediction Set, Two Reported Results:
+  Provenance Linkage and a Reproducible Benchmark-Audit Sequence for
+  AI-Text Detection"
+authors:
+  - family-names: Loth
+    given-names: Alexander
+    orcid: "https://orcid.org/0009-0003-9327-6865"
+  - family-names: Butt
+    given-names: Fatima Sajid
+  - family-names: Kappes
+    given-names: Martin
+    orcid: "https://orcid.org/0000-0002-8768-8359"
+  - family-names: Pahl
+    given-names: Marc-Oliver
+    orcid: "https://orcid.org/0000-0001-5241-3809"
+version: 1.0.0
+date-released: "2026-08-19"
+license: MIT

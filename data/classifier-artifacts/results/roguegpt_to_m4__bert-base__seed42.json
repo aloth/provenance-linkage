@@ -1,0 +1,7531 @@
+{
+ "batch_size": 16,
+ "checkpoint": "artifacts/models/bert-base-uncased",
+ "device": "mps",
+ "eval_corpus": "m4",
+ "eval_notes": "M4 split=dev, raw=261758, sampled=500",
+ "eval_size": 500,
+ "generated_at": "2026-04-30T10:49:14.851491+00:00",
+ "label_distribution": {
+  "Human": 33,
+  "Machine": 467
+ },
+ "max_length": 256,
+ "metrics": {
+  "accuracy": 0.504,
+  "f1_machine": 0.651685393258427,
+  "f1_macro": 0.3952871410736579,
+  "f1_weighted": 0.6178408239700375,
+  "precision_machine": 0.9469387755102041,
+  "precision_macro": 0.5126850740296118,
+  "recall_machine": 0.49678800856531047,
+  "recall_macro": 0.5514243073129583
+ },
+ "model_tag": "bert-base",
+ "predictions": [
+  {
+   "label": 1,
+   "logits": [
+    2.7140870094299316,
+    -3.262238025665283
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f58d8d62-d692-46b2-b1d7-4b1a8d290638",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.532746434211731,
+    1.7763454914093018
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6d5f54a0-0409-4895-b614-27f28734c3b7",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8305509090423584,
+    -3.5062992572784424
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6ecfb39b-30fa-4e92-94c5-4df0249d372a",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4619908332824707,
+    -2.8522491455078125
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b0930c46-549a-4971-a4c7-631774b5e8e4",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6010475158691406,
+    -3.2490782737731934
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "28e58f73-a77b-4b4a-86fe-b8cb9c664a8a",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.612117290496826,
+    2.9116029739379883
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5588efc1-fcad-4a7b-8c39-95726aa6e1fd",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.392676830291748,
+    4.122927665710449
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "39d0b78b-ad16-4c72-8f50-444b3c5f13a2",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3588709831237793,
+    3.9885919094085693
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "db6e95b5-e503-4ad9-86c9-3189e5c80954",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.6801486015319824,
+    -3.164485454559326
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8aa86107-f9d1-4bad-98f8-6aad136665b9",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0888378620147705,
+    3.8425822257995605
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6854fb23-cc22-48ef-bcce-63aab8dc0fbc",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6529903411865234,
+    -3.253788471221924
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "92082120-9b4a-48cc-b5a7-3f58168a329a",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.10812395811080933,
+    0.9025658369064331
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "735d92b7-db25-4fd8-bff2-97c5804e00e1",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.093561053276062,
+    -1.2092912197113037
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6fd2cd3b-c21f-47e9-9e11-44fde4417a92",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.770559072494507,
+    3.1861681938171387
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0833f659-b17e-4f21-83df-bbfbaa584b52",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1242246627807617,
+    3.6008057594299316
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b4d75f2d-0e94-4122-8d99-7743c1ef01ae",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.35288143157959,
+    3.6904234886169434
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bbe46839-8a66-4649-ad4e-14c0cf685a82",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.7434258460998535,
+    3.584484815597534
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "03a2250a-b6c5-4f0e-af1b-a4d9cafd1ecb",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3384947776794434,
+    2.519542932510376
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9bbb9d06-40ca-4c4e-b855-b47571144105",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7730698585510254,
+    -3.508666515350342
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "95b83e3a-2712-44f2-9682-299b901eeb8d",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.727332592010498,
+    -3.3537378311157227
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c3332861-bec4-4728-9872-1c3653010d19",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.4583137035369873,
+    1.7030282020568848
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "414d8dfb-76b3-4c56-973d-383549f4724a",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3243627548217773,
+    -2.743161201477051
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5bb0124b-86a5-4d81-9b50-ab64014e9578",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5682787895202637,
+    -3.1957342624664307
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "97799249-8ce5-4725-8076-37b45cfb5f37",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6326907873153687,
+    -2.1324446201324463
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9d7b7586-6c4c-41fc-b4d1-a6bee1cc8d81",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4151206016540527,
+    -2.901618480682373
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0536417a-1068-48bf-a010-68c198d1c71f",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.249782085418701,
+    3.566539764404297
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e58df0f8-bf95-4f7c-9d3a-11dafdf1247f",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.44866377115249634,
+    -0.0658496841788292
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "12ebcaaa-bbe4-4193-b905-3d0d5e7f620f",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.8502421379089355,
+    -3.590444803237915
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "cbd7226b-727b-4598-8428-e4994fdbb012",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.697124719619751,
+    3.0249600410461426
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0a5c000e-7b99-4fbc-807b-eb5f26ca8857",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.2195072174072266,
+    -2.8308615684509277
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3aad7967-ffbe-45fd-a5fc-b3ccab15d3cc",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.904054641723633,
+    3.4783682823181152
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "35fdc800-8c61-4b4c-8218-1f10b9f1a139",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.9327123761177063,
+    1.6323761940002441
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9642546c-f2c4-4e41-a7ff-e47eaf6b56b1",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5852317810058594,
+    -3.114537477493286
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f5268ae4-97b1-446b-a95a-be82e6f29d98",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3524653911590576,
+    3.8959290981292725
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "693e92c7-cb5e-4712-a409-c8fb43bc304b",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4493343830108643,
+    -2.864696502685547
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d0b3b97c-827d-460d-b0c8-0f57102395b3",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.723598599433899,
+    -2.2310874462127686
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4244ec3b-4701-4edb-ae3d-6356e3f8937a",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.781667709350586,
+    -3.5012855529785156
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7ad1c071-d21c-4947-bed7-f53a1e3988fe",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7886276245117188,
+    3.159367084503174
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "56f0edf0-2e14-410a-a534-18179fcb0012",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.864614725112915,
+    -3.525942802429199
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f359bfa7-1382-49cd-acc0-a87b94c8be76",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.283782958984375,
+    -1.5123512744903564
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6d5ff38b-b34c-463f-81a2-fe15c7cce87d",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6779515743255615,
+    3.132758855819702
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d0030f3a-fe32-4fb8-bf32-b475c5e24533",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.080686092376709,
+    -2.5975797176361084
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6714ef54-045b-49f6-aed5-b7df5b7929e3",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.78549861907959,
+    -3.551239013671875
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e25729ca-b56d-4450-8b63-6aa55a4c11af",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.406939744949341,
+    4.0007452964782715
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c7d7e46a-dfd5-42b3-9228-c98f052ccbdc",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2357068061828613,
+    3.9751973152160645
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "675d6f3f-e3b5-41df-9745-ebae17c7e3ea",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.0494471788406372,
+    -0.5906736850738525
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "885ccd1a-6a20-4f53-81df-a84fd9f28b15",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.539175033569336,
+    -2.9279017448425293
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "78f916ad-2058-4ced-a5c4-4ab08aa90ba4",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.553903818130493,
+    -3.1590757369995117
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4a484822-62a9-4166-ad04-b8bc19a5d6e6",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.6642165184020996,
+    -3.3691964149475098
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b930f577-bc6b-4577-be85-ec24b009bbdb",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.322016716003418,
+    3.872739791870117
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d5337b3b-8718-401e-a739-aa2088805c91",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8942484855651855,
+    3.3090760707855225
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "14ce84c7-e5a2-482e-a8c8-0a851a8581a6",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.337954044342041,
+    4.066031455993652
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f8e1dd9e-c1c2-4b03-82a2-300a7439203a",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.51889967918396,
+    2.7923803329467773
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7f3bdb5d-ecaf-4ace-8967-af790d4579ea",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.579627752304077,
+    -3.053946018218994
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0279a998-8eaf-445f-80cd-8229b1fc95ee",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6219968795776367,
+    -3.228424549102783
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "628455af-c4f0-47ab-bb9c-ca41cc0985e1",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.560826539993286,
+    -3.2757787704467773
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7c77f6b7-95d2-4e5e-bc9b-ea7abe2adda4",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.300780773162842,
+    2.60994291305542
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3773e646-7e29-4f79-adf5-2e179d05c791",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.6227948665618896,
+    4.11777400970459
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "47fe74cd-ea44-4038-b0cb-418f4005178c",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.79426646232605,
+    -3.406722068786621
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9e6bde40-0604-491b-8c6d-69b842c882cb",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8033628463745117,
+    -3.4019711017608643
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "82d78d4a-de42-4d17-a42a-48333e626077",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.896636962890625,
+    -3.623891592025757
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d21f1bf5-c448-4542-b6d1-e03916b8e21e",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7659459114074707,
+    -3.397287368774414
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7601417f-fb7f-48bc-bd7f-e05d6e96930d",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4196207523345947,
+    -3.0419535636901855
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c3b711db-7721-4dc9-89ca-265f86250926",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0948402881622314,
+    -2.5475893020629883
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c2d06f45-aa10-463a-b7ab-79d70166327a",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.7112476825714111,
+    -2.101053237915039
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "aeb3e809-4c92-41f5-8f5c-732567813f28",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.5733392238616943,
+    -0.24009597301483154
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9acce91c-da3f-449e-863e-dabe5ff0b93e",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.5389642715454102,
+    1.0686239004135132
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7cd2c167-af29-4818-952f-633e12186208",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.44582200050354,
+    4.038990497589111
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1fe2c77b-e4e4-4639-afd1-a8174189310c",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5607776641845703,
+    4.133912563323975
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "313849c1-a4b8-45b5-9e97-3b4d315cad59",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.0909082889556885,
+    -1.5374252796173096
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a1fc33d2-ff43-4541-bb5a-31acbbc5c624",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4350948333740234,
+    3.954028844833374
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "54484023-6b04-4d4e-9b4e-a944967f6192",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.5197982788085938,
+    3.2505619525909424
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d6ed2bff-6072-4828-9e19-a014ad287c84",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.4342997074127197,
+    -1.9645885229110718
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5ddf683a-735a-479e-8f31-40236faf17e8",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.6177778244018555,
+    2.084041118621826
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "793a7f6b-d67c-40b0-98ca-d64a9d88f36c",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6479830741882324,
+    2.9133927822113037
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "66ef4150-ee95-4a69-b442-412609f6c254",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.37395256757736206,
+    -0.39666295051574707
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a4200993-9ae0-4bb8-960d-2154072b54fc",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4492852687835693,
+    4.0435590744018555
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "74d251a2-f969-4115-bdfc-b587e264df92",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7840728759765625,
+    3.089387893676758
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4d9d7d48-59ca-4b15-afe1-d7cd01f18e00",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.472013235092163,
+    4.126260757446289
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0e38ab95-316e-45a0-848d-641816d84be0",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8397524356842041,
+    -1.228782057762146
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e568d165-105d-4824-abd5-571f6329761e",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.551360607147217,
+    4.224770545959473
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "87230bcf-8a4d-4b44-8b75-35baf3199094",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.825190782546997,
+    -3.4866833686828613
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "27bf73dd-cce9-4e87-8c42-00285b30e8d8",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7019710540771484,
+    -3.43121600151062
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8115829c-d4be-461a-867d-11d2e0d1b9e4",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.710684299468994,
+    4.228695869445801
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e6e67e28-1549-42d6-8ab2-2a88e57d637d",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4402263164520264,
+    -3.136056423187256
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c2bf69ea-367b-4c7c-9d66-61a606dff05e",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.437376022338867,
+    3.992417573928833
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "db458195-cec1-4bab-8f48-22322c26bfba",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7488555908203125,
+    -3.4215917587280273
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "dedfa858-c414-4478-b8e0-580682cfe12b",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.0093894004821777,
+    -1.279236912727356
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bae9a05f-cac4-4a14-9537-827c6bb9510b",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.72880482673645,
+    -3.416931629180908
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "023e4df3-9be5-4f84-9343-37e9e6eb4006",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.69771671295166,
+    -3.293978214263916
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "695e3a9d-93e3-44ef-aa51-97c5b430eac2",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7771267890930176,
+    -3.559145450592041
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "86394709-d9fa-4f46-beed-405000d53ab7",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.476881504058838,
+    3.9965338706970215
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ffc3b525-45cd-4d50-b3ef-0a60bcb50fc4",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.733128547668457,
+    -3.3512964248657227
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8ddb6640-6790-45bb-9264-bc6fcb7b6e1f",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3689675331115723,
+    3.891329765319824
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "10bd2310-9fa2-421f-b189-5e396e8154a7",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4335269927978516,
+    -2.982243537902832
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ec341120-80e6-4777-9349-5486d41d47f8",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7796790599822998,
+    -2.271059989929199
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d190e09d-65d9-4369-a9ab-bcf40b12180b",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4956212043762207,
+    4.072524070739746
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2bea7d46-4903-4b5e-9849-b705de787328",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8108389377593994,
+    -3.4053292274475098
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6db8d33c-f68c-4399-b9c6-468ae909260e",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8329765796661377,
+    3.323324680328369
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8e755a73-23ce-415d-a825-580105c7a4ed",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.456105947494507,
+    -2.9692578315734863
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f31f96cd-d532-42f3-964b-5f90989a0aa3",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.85921573638916,
+    3.2740323543548584
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "89039f50-b791-4cb0-a311-94a5756a4c60",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.794229030609131,
+    -3.4184820652008057
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5d1d83a8-a66c-4c1b-917f-b154bc5f8093",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3966407775878906,
+    4.041820049285889
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6c0a255c-d2e8-4b43-ac99-d27f23cbdfa2",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5209579467773438,
+    -2.9702610969543457
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e74f253e-fa42-42c9-ba5e-a6ab5ada181b",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4230000972747803,
+    -2.7507920265197754
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e3063bc6-6212-4707-919e-0f3ac5000920",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.658642530441284,
+    -3.209599494934082
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9132c3ab-806d-4978-a01f-e70642153ddb",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9023244380950928,
+    -3.638108968734741
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e1923c29-809d-4232-be3a-2fd05b72a690",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.487945318222046,
+    4.085679531097412
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2e0bfbec-2f39-4151-a56f-17e31464a16c",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.387972354888916,
+    2.852634906768799
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3ab2a10b-9e37-4a35-b282-29b676750d2b",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.708280324935913,
+    -3.287540912628174
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b90352f1-7830-433d-bffe-c8df12310b5b",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.562047004699707,
+    -2.9963831901550293
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4c8e86f7-8c03-48a9-802e-29e1554c9acf",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5496866703033447,
+    -3.059480905532837
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "cb772de5-feec-43d4-81c9-fb1cb468e6e6",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.873899459838867,
+    -3.6482105255126953
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4c004dcb-b7c3-4e26-bca9-9aeac332c1d3",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.4215432405471802,
+    -0.12277514487504959
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "677c4bfd-0459-44bd-8edd-e005b7fe95ea",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.199772357940674,
+    3.8934881687164307
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fb31fef3-d912-41ee-aef5-5ec282179917",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.877202033996582,
+    -3.593820095062256
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a4d72613-72ce-4abb-98cc-c335ba47e380",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.312896728515625,
+    -1.501371145248413
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3c1f7c71-8044-4429-bc3f-ee32f7cb5a01",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.9237732887268066,
+    2.3697004318237305
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "17917e33-30e6-419c-ba8f-4256af9773e5",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5806655883789062,
+    4.192808628082275
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8374f707-e352-45a8-8968-8fc165e2bf14",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.2297465801239014,
+    -2.674806594848633
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1ba03a6a-522d-4970-8ad7-850f462df628",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6355865001678467,
+    -3.24189829826355
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "51b37022-d46c-44f6-b3c9-1a6c8d0e5961",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4848790168762207,
+    4.138162136077881
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7c6c739a-abdb-49d9-a4d7-5a60bb5a7507",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.086585521697998,
+    -2.717329263687134
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e27cd1b9-4f4f-4c97-96a2-f372d9ed9def",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.373228073120117,
+    3.81467342376709
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c53840ff-399a-4f7f-9a77-3f518358e4a8",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.060508966445923,
+    3.5385396480560303
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b674dd85-d8fe-421c-8957-a0c80a5c1add",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3567535877227783,
+    3.9294891357421875
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9a05f6c0-a947-4a34-9021-766ce5ba8e24",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.67777156829834,
+    -3.2155442237854004
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1a24fae5-9f7a-4fe9-820b-b0ab26b7a73e",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.0771422386169434,
+    2.414151668548584
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d3b330d7-a002-420e-a978-a8defa8f26c6",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.304112434387207,
+    -1.4065537452697754
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6919946c-3fc1-4c6b-878f-147b0cc7da59",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.030472755432129,
+    3.405003547668457
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4ee0f601-cf8b-4a21-b7b4-2a7f291e8e07",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.387592315673828,
+    -2.691110372543335
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d654d279-8e17-43ec-9513-5aa3956eb910",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.216534376144409,
+    3.813457489013672
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "72ed0718-e393-409e-be11-718624d8d778",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7202646732330322,
+    -3.388611316680908
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "459be5d2-8f84-43a7-9e02-ff6686452e9a",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4519004821777344,
+    4.150006294250488
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "da3e4963-9661-4bf8-8e64-4a7d5aadc6dc",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.478188991546631,
+    4.1378889083862305
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a4efd135-333d-432f-99bb-cba6b545a9cb",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.458284854888916,
+    -3.1381192207336426
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bf38996c-7a7b-4570-ad95-96a12235795c",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.8504070043563843,
+    2.824023485183716
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d8edb525-d727-47d7-8ae6-4c2a760f9ad1",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.4813967943191528,
+    2.021934986114502
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5b018971-3de4-4ec7-8b02-03538d183649",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.2562732696533203,
+    1.5458242893218994
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "07cc0e62-38dc-4d43-a28b-d80ced920c9c",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6575958728790283,
+    -3.357966661453247
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d5e1b789-91e4-4ba3-9aad-4f9d5d8cf76f",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.9589853286743164,
+    2.4143447875976562
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8f32ae52-be05-4e2c-b21a-941865349d69",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.581261157989502,
+    4.131340026855469
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "45e9e769-8cb6-4975-9227-17b55573b02c",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9423632621765137,
+    3.2720701694488525
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c38fb01d-6e3a-422b-8ece-44d8835587aa",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.605559825897217,
+    -3.2563071250915527
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "592bdf50-74be-4e6a-8fae-62cc93856084",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3727360963821411,
+    -1.4253180027008057
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ffcf2b24-4942-4f12-b060-a1b67bafbd45",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.258836507797241,
+    3.7823336124420166
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ea2ea957-6db1-4752-ab95-4d6ad9b2ac6a",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.988006591796875,
+    3.458488941192627
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "aa0913d9-252b-4559-af81-8e3e7fad45e2",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.462141275405884,
+    -3.0485117435455322
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0d7dfb77-b99b-4eea-ae56-ff5114abacb0",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.6846954822540283,
+    -3.230250358581543
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d3d0189a-fee7-4c5f-893e-7bfea8727476",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7896316051483154,
+    -3.494490146636963
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "82ac3c7e-e5ff-4f5e-9c8f-4d094456f2c4",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3057446479797363,
+    3.0764002799987793
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ea2195db-98e8-43f8-ac3b-5e18ab04bf48",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7204322814941406,
+    -3.3068034648895264
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3c3004c5-4a6a-4386-b9f2-69f94e15f848",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5842337608337402,
+    -2.030122756958008
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5cd3bea6-ef33-47be-9300-092a7d5a90aa",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.232083797454834,
+    1.6603004932403564
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2508d7f9-33a9-481c-80ac-1e67527f0d34",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7505972385406494,
+    3.0941991806030273
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "aa58b12e-5580-4b5a-a01f-eb31a7c9733e",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.074779987335205,
+    -2.7135887145996094
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "70513a74-2847-4f3e-aa36-168f0855e3b0",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1023759841918945,
+    3.736269950866699
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6d27f444-8cba-4e20-bf22-b1fbc3748cda",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.8141069412231445,
+    -2.2692313194274902
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "afc6ae20-ef55-4998-9fdf-cbd2bf7fb009",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.218997001647949,
+    3.576857566833496
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8a9e3b00-2651-4282-835d-a425f608d525",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.9596664905548096,
+    -2.336334466934204
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "18415a9a-6d0e-49e5-a6c3-f9c1dc4c09f9",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.980246067047119,
+    3.698671340942383
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c49a2d39-5340-4869-9e7f-c30759df6cbd",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.5205349922180176,
+    4.061787128448486
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "34a5d882-158f-4fff-81cb-a21437baffb4",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6556005477905273,
+    3.2185444831848145
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0ad1328c-4805-4761-8e31-5e11f2e545d9",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7089431285858154,
+    -1.7509642839431763
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "73c33127-3abd-4cac-84d7-32331b231636",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6162004470825195,
+    -3.158539295196533
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "cc22d864-2292-4a62-8668-786b2ad935f6",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1042141914367676,
+    3.606403112411499
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "352c5661-cd73-40fc-8439-037715a12632",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.641387939453125,
+    -3.159219264984131
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ef3de9cb-e0f5-45af-8a27-3a41f5bc3671",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5784292221069336,
+    -3.1114232540130615
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ee8faeef-041c-46cd-b5a1-c24a49420204",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1024303436279297,
+    3.674074649810791
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "399b6620-75f6-4778-8bf0-89b968cf8282",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.155032157897949,
+    3.677069664001465
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6af76acc-a0a8-4129-83e9-06a370325481",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6291451454162598,
+    -3.212204933166504
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c8e6b793-32e7-4223-9b5a-5f99c8481004",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.1973512172698975,
+    -2.689643383026123
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1ba58831-9eeb-4ee4-8700-10f68804a5fa",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.4791150093078613,
+    -1.8149924278259277
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d4fee3ba-907e-4f01-b8bf-b21b21b50f0d",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.196063756942749,
+    3.8719606399536133
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "dcf6f80b-52ba-43ed-89aa-383a989c7111",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.344984769821167,
+    3.93391752243042
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9381cbc5-37e1-4629-9165-9a1d9da49c84",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.410151720046997,
+    3.8910045623779297
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "042fdf37-89f3-483f-b16e-f5cc622ad7f6",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.532116413116455,
+    3.9692118167877197
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3dc9172a-7852-4289-825f-d50361783f21",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8590664863586426,
+    3.299315929412842
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f1455516-56f1-40d2-922f-c8dee4928365",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7462856769561768,
+    -3.356200695037842
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e7fd6b78-3a60-4bf9-8130-4d426225f008",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3422482013702393,
+    3.909592866897583
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4ad54a76-93ac-4434-af17-055ac6965e0c",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.735058069229126,
+    -3.500002861022949
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "cf5ff0f6-25c0-424d-be04-58b6907b40e9",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4187958240509033,
+    4.093679904937744
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8acd478d-ccbe-4e17-b793-9f663e083cd1",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.5483109951019287,
+    3.371072292327881
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6a94f894-5de3-42ef-a61a-95ef700b3766",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.903256416320801,
+    -3.580442190170288
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "be7523f6-4207-4262-8e27-9f66051facdc",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.36478853225708,
+    3.853858470916748
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "affe742d-04ad-4075-a8f2-cdba3d37c838",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.0898561477661133,
+    2.2754015922546387
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f3adabbb-2328-4e1d-bcee-cd9ea2002081",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.459482431411743,
+    2.6860365867614746
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7f18e030-a28f-41c4-8ab0-864d80f4e2a0",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.362978458404541,
+    3.9570438861846924
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e93ad186-ffe5-4ef6-8f6f-0e483fa24991",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.796297550201416,
+    -3.4236912727355957
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b9e956f6-cb92-4585-882a-55d9ce48af5c",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4760749340057373,
+    -3.0800018310546875
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d6361804-b0c0-4578-9ee8-450409fe5f39",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3550238609313965,
+    -2.949978828430176
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "45ae54e3-e445-48be-b303-c80d8b00fc02",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.25606998801231384,
+    -0.04312186688184738
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "80cc7e8f-aded-4c74-bc38-1c3abb74fc30",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4917421340942383,
+    4.085096836090088
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7ebe41b5-d643-4f1b-b607-320f26cf5c03",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6010067462921143,
+    -3.0584468841552734
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2c596405-73cd-46b2-aff8-990155fd6e18",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.051680564880371,
+    3.5875914096832275
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "056b819d-4b97-472d-993c-1bf2990b5042",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2147016525268555,
+    3.5802669525146484
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1575c5b5-9355-4a5e-a162-06e3dd73d476",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.34704852104187,
+    2.9726178646087646
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "218aff65-6be3-41cd-8c4d-057f1a3aacb1",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.580031633377075,
+    -3.1313228607177734
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b27472ff-654a-42a5-9a66-41ce94a4220d",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.843489646911621,
+    -3.564830780029297
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "cd683181-11d0-45aa-943c-712c29117503",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4095160961151123,
+    4.136167526245117
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "629e6276-2636-4ab0-9f46-b4e261c597dc",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8620569705963135,
+    3.569523334503174
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "62a787e6-31a3-4d5c-9f1a-42ea877c6787",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.1036128997802734,
+    1.326492428779602
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b9674879-f470-4d49-9ce4-8b147adbb5a2",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.8911443948745728,
+    -2.375256061553955
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bad05b5b-ba36-4e84-b2ec-24160bb903f5",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.519035816192627,
+    3.017777919769287
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f86ee497-2435-4a62-843c-50ddef45a87d",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6227195262908936,
+    -3.0593323707580566
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9db1617b-0342-4b9e-9a6d-89390f9072c1",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.488065719604492,
+    4.140748023986816
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "aaea4e6d-f04d-4dc3-b019-98fb49b435af",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5572328567504883,
+    4.171398639678955
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b06cbdd9-6e05-415c-9b9a-625f9cf91668",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.305935859680176,
+    -2.690420627593994
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fdbb992e-a996-46d5-9703-2915ad00b021",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3852407932281494,
+    4.094099521636963
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6feac7d6-0b29-42eb-bed1-55b22b0ac8a7",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2528905868530273,
+    3.8108575344085693
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f45d6b07-bc9e-4163-bb2e-cd79749d0bc2",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.007277727127075,
+    3.524416208267212
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d188d597-9d06-4a32-8a46-5f4f4f8d1bec",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.905855894088745,
+    -3.6773011684417725
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "34dab088-ae1c-4909-88a9-622cc61a02b1",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3772835731506348,
+    3.988081455230713
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "949c8708-93f2-4ece-9da3-e09c94f81ac5",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5820305347442627,
+    -1.9724351167678833
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1b332f8b-d7ef-44d4-b4e1-f78c1ad964bc",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2928647994995117,
+    -1.6846776008605957
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6ebccb4d-583a-4b1f-98ad-40c63d1d7e02",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.545031189918518,
+    2.242800235748291
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "07f56fe3-ec33-4dec-9a18-d17a16a05661",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9808154106140137,
+    3.4165072441101074
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f8695937-feb4-4e93-8fd3-d731603ebaf8",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5232350826263428,
+    1.7124354839324951
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b5b9078f-cca8-4e76-a084-f7a3d8337eff",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8165063858032227,
+    -3.3760430812835693
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "558f71b1-01ae-4a80-8bb9-3062166d9253",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.009709025733172894,
+    -0.14899608492851257
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6a76e6cb-d585-4903-9208-3665dbf47667",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.6882052421569824,
+    4.321229934692383
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "dd8b1a1c-95a3-448d-a995-ae01d4e07a82",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3909735679626465,
+    4.030644416809082
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9f6665ac-4799-41d8-836e-8634b48669fa",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.9118953943252563,
+    -2.473008155822754
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9dfc38b0-9f04-45ed-b2d4-49174ca1c9c6",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8272154927253723,
+    -1.1470885276794434
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3c1e1de8-3a7d-4cc3-888e-336c67b770ba",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8682519197463989,
+    1.0782980918884277
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7aa022d6-72b5-4e5f-9987-7451372c9e5f",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.333296775817871,
+    3.946504592895508
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "93083ba4-674e-46bc-801a-4597d379b9ab",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.013132333755493,
+    -2.433785915374756
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "387f0e1d-97e9-4ef9-8305-37580b299903",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.673100471496582,
+    -3.3200809955596924
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "38a775e7-d16d-4d18-91c4-fcff96ebb68f",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.868889570236206,
+    2.388993263244629
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3386a016-203c-4bbd-9614-2d8b16a020f4",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.547079563140869,
+    4.100597858428955
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "53e2bfe1-e174-472d-aa58-0033e3f11675",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.760124683380127,
+    -3.344254970550537
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a19f5d74-d128-4cf7-9252-a91fa95f75fa",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0252938270568848,
+    -2.3038113117218018
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "decb9f59-48ab-4f45-8c3b-f73d3727f45a",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7364556789398193,
+    -3.3297204971313477
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ed688e95-2083-4cad-a4a7-4ca21572bf60",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.2328591346740723,
+    -2.6652824878692627
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "95274304-5c52-4afc-8fa5-ddcc3736ea25",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.070705771446228,
+    -1.426008701324463
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d4112388-85fe-4175-a315-4b04c75f153d",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.673784613609314,
+    2.1408209800720215
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d7317105-ccc0-4a2a-bb5f-7262cba76d3d",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1362874507904053,
+    2.738450050354004
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "85f28138-898f-4cd9-ace0-3d01afec813e",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9175171852111816,
+    -3.6437058448791504
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0d615da2-6c53-4a3c-8837-e7fb7008780d",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.564626932144165,
+    -2.8904354572296143
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "79096860-61d0-4724-bb50-de2352305d9c",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7289600372314453,
+    -3.3814644813537598
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "95ebac9d-e156-4fe5-9124-7f6d2d70cf50",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4804415702819824,
+    4.002633571624756
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c7d38c57-26f4-4231-a894-0b06d72f2be3",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.37365415692329407,
+    -0.49131298065185547
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1811cc97-8035-445c-9823-21f9302d2431",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.278125286102295,
+    1.5498183965682983
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "53bafc06-809e-4762-b9ce-f6a91a822808",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.857775926589966,
+    -3.5402936935424805
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "81bfd601-a735-4ed1-a90c-63f471273e72",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.126805543899536,
+    3.700328826904297
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "be361704-2394-4178-a582-ac750e8ebedd",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.979873776435852,
+    -2.537558078765869
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b8a5d824-dd36-4468-a0b1-d9e6229c5b5f",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.189634084701538,
+    3.8394157886505127
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3fd64b10-680b-4916-ad7b-e91b362b40f7",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2941665649414062,
+    3.8394086360931396
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2ee41af2-0a7f-400f-a469-eead803f1c7e",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.469529628753662,
+    4.184349536895752
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e6a352f7-b663-42c9-83b2-f178ab5829d0",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4127941131591797,
+    4.021398544311523
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f72c55e0-6120-45c8-8533-1b5c2baebef8",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    1.5490353107452393,
+    -1.95279860496521
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c0221f1f-b3a9-4d87-8575-dc44bb229c9e",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5864205360412598,
+    1.800182580947876
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "025c085c-85d3-4497-9ed0-35b56c6c315d",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.8743125200271606,
+    2.7789909839630127
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bd56d326-75dc-46de-b4f0-f6925b82a140",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3139243125915527,
+    3.9808146953582764
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5e866db1-d1c4-4151-a52e-b08fd7de26ac",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    0.028705360367894173,
+    0.4377637505531311
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3d392370-9b96-4ea7-8e9c-9610f4e33d88",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.5612494945526123,
+    1.2383304834365845
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5b4f8b48-f296-4d6e-aa8d-d8a273d2fdae",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.5663304328918457,
+    4.239490032196045
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "577eca29-d294-49c6-bbb2-096452a226f6",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.016013741493225,
+    1.8370020389556885
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "51009d35-a7ae-431e-aff4-c689a4f483fe",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -1.867872953414917,
+    2.3352129459381104
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "179c6f70-3fcc-4f67-96cf-513a5b57b48b",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5231194496154785,
+    4.168399810791016
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "afb7c664-a296-4b5d-b046-640c6ea97f07",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.201315402984619,
+    3.7430872917175293
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7b4fe493-9be6-45ef-b342-b5947219809a",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.1630539894104004,
+    3.6394729614257812
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ea534a5f-1d15-43f0-bf64-888a45aaab58",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.582742691040039,
+    -3.2590084075927734
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6d13e187-920b-4ac6-802f-4a31404bda36",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3706741333007812,
+    3.8585658073425293
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a0a40e1b-de7e-424b-ad22-d025f14a6fed",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.808302164077759,
+    -3.5794854164123535
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e6e58f21-e915-4f45-8039-96038d0a9c98",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.8991055488586426,
+    -3.661648750305176
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b0d3ac46-b083-4a5f-8df3-6b622da6d41c",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3985836505889893,
+    -2.89314341545105
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "13d88317-06bc-4b70-8667-4ab9227cb82c",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.841608762741089,
+    -3.5563111305236816
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "53278dae-174c-4f8a-989e-540b639d9b38",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6845184564590454,
+    -1.8289635181427002
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "067df53f-d694-4913-949c-ac4111a85b48",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.6125769019126892,
+    0.9769858121871948
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2f8358a9-b614-45c4-abaa-f959821f235d",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.860069751739502,
+    -3.623507499694824
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "52cd6bf8-d01a-49c6-bdc4-23dbf1efd99e",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.538869857788086,
+    -2.805389404296875
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "41eb83ef-daf0-4ee4-bf83-8a489efcb159",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.439307928085327,
+    4.104936599731445
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2e552cb8-a3e8-475b-99fe-9c0bea12461e",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.512437343597412,
+    -2.9820773601531982
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "80aa470f-a27a-4fc8-b1c5-c11d51b24f97",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.8514130115509033,
+    2.5753655433654785
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0a257d01-8d83-49d1-84c1-67851872063d",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7209393978118896,
+    -3.2546050548553467
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "335f5fc0-9919-4084-89fb-c36e9394d1f4",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.35429048538208,
+    1.6137309074401855
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1829562a-8ab0-4faf-9ea8-a33b76244ded",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.9536571502685547,
+    2.3688478469848633
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e4351749-6295-4747-8b2c-96e0b9167c81",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7898921966552734,
+    -3.540334701538086
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9e25f29a-88f3-40b2-9446-8c04c3927c59",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.50799560546875,
+    4.1036601066589355
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "53e647bb-c196-4c56-bd4c-59c498700968",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.1212279796600342,
+    1.3352253437042236
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "34c27355-364a-4e70-b174-06a77605b614",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.990950107574463,
+    3.7136707305908203
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a582b23b-7cde-4c2e-afc1-f731112fec64",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.374004364013672,
+    3.782240867614746
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d2187f5c-99bb-4aca-a3e6-7be36ed701a1",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0392966270446777,
+    -2.5233969688415527
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "12a98c2c-89e2-4910-9adc-c57af2d767a9",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.069828748703003,
+    3.7552051544189453
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4635af21-76b4-4211-836b-2d86a12e634c",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.8157997131347656,
+    -2.3258001804351807
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bc65aedd-82f4-4dd1-a210-b50e9af76580",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5683059692382812,
+    4.235973834991455
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0c102107-aa7a-4908-8a8b-eae9acbbee76",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.4042019844055176,
+    3.073849678039551
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8b44af60-b992-418a-b3e0-d20fe9f52831",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7147390842437744,
+    -3.3904902935028076
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "caf38fe5-bca6-4df1-b19f-e98e8e7aba0d",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8215863704681396,
+    -3.565946578979492
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "99c90a75-f417-4008-83f7-3a570c9d0e8b",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6116831302642822,
+    -2.1451544761657715
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fec38b62-5f86-4a2e-970d-93b55f287e50",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5656605958938599,
+    1.6018775701522827
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d9d1659f-bc7c-4c7b-aecf-e1f5a285f4d5",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0541255474090576,
+    -3.8972625732421875
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3eb30dce-aa54-4af1-8ba8-cccf1e412e64",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0552401542663574,
+    -3.8632242679595947
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3776d2d6-6cfb-437d-a514-375246f7a27c",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.1826179027557373,
+    2.3310630321502686
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2786371e-809f-44cc-8800-3d4cae0eeb52",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3520429134368896,
+    3.865110397338867
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "69153b19-c427-4a49-8dd8-d735746a5843",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6963553428649902,
+    -3.413271188735962
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5c4d8999-d9cd-444f-90db-a5b2ba4844bb",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.033456563949585,
+    3.5454821586608887
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "38a33498-4b78-474e-9727-e496ce38bdf7",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.7992498874664307,
+    3.189889669418335
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ca098311-b6a3-4d22-93cf-e646a0a94439",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6682143211364746,
+    -3.3439102172851562
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7d831867-41dc-43ef-9109-fff337eac249",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.792008399963379,
+    -3.4101881980895996
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "07516c27-cc84-452b-8adb-d92593084c4b",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.73773455619812,
+    -3.287329912185669
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "87ad0aea-45d4-4444-af7b-e64006eabf28",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7324628829956055,
+    -3.389909505844116
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "115856bd-2eda-4840-8414-07bfe1b59425",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6415953636169434,
+    -3.116398334503174
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e1c4b057-c3a2-43fd-b57b-0ab5ec462874",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4466941356658936,
+    -2.7616961002349854
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2dcb2f80-b794-4804-b869-d10557b10800",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8587541580200195,
+    -3.5682642459869385
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4fe62876-d11b-4d64-9d77-cfab9d8e7d0d",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3757500648498535,
+    -2.937147617340088
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "130b554b-ff02-4cc7-adcd-d9bbda75f470",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3041868209838867,
+    3.8033668994903564
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6b92ac55-cc39-495d-bb5d-e3e586baad1b",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6153937578201294,
+    -2.163832664489746
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a3fb83c0-4710-4bfd-b821-760d8cf5c582",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9088134765625,
+    -3.724928379058838
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9ed470c0-7363-4ade-b1d7-4578a4712a9a",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5945773124694824,
+    -3.111582040786743
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3820be69-675c-4b4a-ba68-f9bdffa78ba1",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.749088764190674,
+    -3.257225513458252
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ed7defce-5669-46f6-bea8-d955ffdd57b6",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8947508335113525,
+    -3.650559425354004
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5a2314a5-5baa-4bc7-940b-cd3b9d00a1b8",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8099453449249268,
+    -3.4554388523101807
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "01d3628f-93b7-448b-9d9c-8678d760117d",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.44222408533096313,
+    0.5842733383178711
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c6630d6d-162d-4dda-a3db-a08e1ecaa141",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.741182327270508,
+    -3.3427627086639404
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "44e8eea2-4029-4366-8eac-a8906710f6ad",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8815817832946777,
+    3.617522716522217
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0dfc0e56-1c7c-41b3-921f-5a0950ff262b",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.5482735633850098,
+    4.258303642272949
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "36ddcd57-f2b7-4884-a9d7-35f74457d5bc",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5908269882202148,
+    1.8079400062561035
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0d8f625a-868b-44fd-864f-c3caa48e8ed9",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.6713995933532715,
+    -3.3925280570983887
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a955f80b-cfdf-4844-816f-12f96f761b48",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.87699556350708,
+    3.4399611949920654
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "61ce046a-01c5-4d46-b8af-15b0bd087cbe",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3118457794189453,
+    -0.984147310256958
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "88a5709a-0546-4a58-9f8c-e9aeb6cebb3b",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5591211318969727,
+    -1.631489872932434
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "32341323-fdc9-4cd2-95db-a4dc2037e12d",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.5653087496757507,
+    -0.4259246587753296
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "66ae16de-9523-476c-901d-171a65e848db",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0369186401367188,
+    -2.435157537460327
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d72c9b46-d4fa-410e-8316-b7af301cce03",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.8535006046295166,
+    3.2583727836608887
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "dbb09ff3-c325-48a3-80e8-fa9449330bd9",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.356459140777588,
+    -2.8620738983154297
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8c15372c-554a-4e12-be07-e3bb0e5555b8",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    -2.674543857574463,
+    3.3346118927001953
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "73ebcf7a-5c78-4ff2-b4e6-77451fad0ad9",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.05061427131295204,
+    0.21533527970314026
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fd1bc49e-879b-403c-85e7-36754592adc5",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6472549438476562,
+    -3.12660551071167
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "48c61695-dccc-471f-baf7-6abc791cd555",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.359297275543213,
+    -1.3617489337921143
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5ef57f93-f168-4353-b03d-a053eb70c1df",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.007509822491556406,
+    0.7602258324623108
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9a6ac736-a837-4f49-8ddb-25f9df931dc7",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.391541004180908,
+    4.01119327545166
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f0215702-03df-43b9-abe8-bd27f7c6e9bf",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0351741313934326,
+    3.4498112201690674
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a656039e-bca4-4832-a554-be6a00a0fdfe",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.2030386924743652,
+    2.5378928184509277
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "85e99e44-5263-462e-96f8-82868608b449",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.5830488204956055,
+    -1.5580414533615112
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fa9284bf-88de-43ee-ab7a-36c096e1eb32",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.0074477195739746,
+    -1.2567486763000488
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a580ce94-a3f9-4509-8bd9-e69642a5fc3b",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3759102821350098,
+    4.064659595489502
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e05332a0-0bb5-457d-9d6a-dcd458e952c5",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.654745101928711,
+    -3.3904061317443848
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7e09fe2b-76c7-47c4-b39f-6dae8db7d69b",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.9140608310699463,
+    -0.7408449649810791
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "59fdc45e-8cf0-4060-a3d8-8bbe7b5db8ea",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9000349044799805,
+    -3.634807586669922
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3a7ee0e0-2974-4e2a-aaf0-8654e6389e33",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.461822986602783,
+    -3.086026668548584
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bc550e51-9a4b-44e7-a5af-05d18b2ce5e8",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7961840629577637,
+    -3.375727891921997
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fde28fa8-f3b8-4f3d-a344-fac2d6025a9a",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7860641479492188,
+    -3.4302914142608643
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "64aa04ed-5f2f-4bb4-a21f-5b1ef8b30095",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7468186616897583,
+    -2.018543004989624
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "29d136ce-9a21-41ac-aa8b-9d871fd7d815",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.836534023284912,
+    3.340266466140747
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7d551cf0-51bf-43ef-88bd-fd9f69379164",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8170108795166016,
+    -3.4916906356811523
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "60331982-1a1f-4056-a3e4-e429df73edc2",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.6658992767333984,
+    2.004763603210449
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d78720cb-8c16-411a-ab6e-af8708f1358e",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.572869300842285,
+    4.1599040031433105
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4611a8f1-cc82-4b40-80e5-bd3ff7242ea8",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.9852879643440247,
+    1.2934422492980957
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ea5b38f5-38e6-4c26-986e-0cd825b0050e",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.4915865659713745,
+    0.20715828239917755
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e770e69d-a470-4c8c-8a16-a7933778376a",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.960205554962158,
+    -3.699650526046753
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e1945a2c-eb5e-4e29-bace-83a12b21bdba",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.167522430419922,
+    3.8000876903533936
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "280a3309-652c-4072-a61a-18d2b7bb3e1c",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4022397994995117,
+    -2.773776054382324
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "450decaa-fa54-4f56-8129-f770c9e3e1c3",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.592250943183899,
+    -1.671427845954895
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "05d9318e-1c31-4138-95e0-2aa0cb6d01d5",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.406186580657959,
+    -3.0197768211364746
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bb8c5d51-6c6b-42bf-994b-095f89230a1e",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.790683627128601,
+    -2.0857412815093994
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6a1defbe-8c66-41e8-9d62-be2260e4239d",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4192943572998047,
+    -2.9049277305603027
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "96eed40b-b89a-41b9-b80b-b3b97a0b4437",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6656076908111572,
+    3.3065297603607178
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1f13be14-c758-41a2-b726-9c0a180b6d10",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.8828098773956299,
+    -2.149419069290161
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e8385bea-f98c-4920-a915-f67f8881847f",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3510560989379883,
+    -2.7139551639556885
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c4fdefac-4973-427c-8e11-043d8802e39b",
+    "language": "en",
+    "model": "opt_125m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.500846028327942,
+    -1.80702805519104
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d184e72c-4a8b-4800-a49c-22034e9a2ed0",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.530027389526367,
+    4.087357044219971
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3a589fa3-bed2-427b-89fc-f278ab951d56",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    3.0225064754486084,
+    -3.7871081829071045
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e9fa45ca-ad02-49b7-855f-ab62a89d613a",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.472707986831665,
+    4.143560409545898
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2da4007a-8924-41e0-9e00-453c332e77b2",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6861319541931152,
+    -3.4657037258148193
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ecd1f1b5-0dd6-4189-9afe-4afeefa19361",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.568063259124756,
+    -3.1160144805908203
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e0e764e9-1dbc-4ff5-b415-5d978087cdb9",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6960222721099854,
+    3.178286075592041
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "614ce1ee-c03b-4d0e-9acf-ac0e9942176e",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.7302013635635376,
+    -1.9936022758483887
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d08b832b-1fdb-45bc-98d5-faf07f79944a",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.4908089637756348,
+    -1.89396333694458
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "283af7ae-83b9-4078-9438-81b644845ba8",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1560449600219727,
+    3.606477975845337
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3f7b24c5-4fc7-4779-9394-77696f8ef14c",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8266921043395996,
+    -3.4440805912017822
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ea8cc8de-a0cc-42d6-ad30-aa06238b9b54",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6350269317626953,
+    2.991777181625366
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5f07b6cf-ae86-4816-9e43-f3afee425fd2",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0677378177642822,
+    3.7217350006103516
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "835ebdba-2634-4a5a-8be2-369b8ce15b7a",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.910830497741699,
+    3.675930976867676
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e066c98b-1add-4f5e-948e-5509d74bc6d0",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.07197409868240356,
+    0.16219381988048553
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "31ff6063-a68a-4755-bad9-4c81e14ca4fd",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.080105781555176,
+    3.612060070037842
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b5a4399d-f86d-487b-90d0-0a40a2b549bc",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.825420618057251,
+    -3.5044360160827637
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "eafcdc67-7338-4f2d-8a3e-be67432343d8",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.029716730117798,
+    -2.6123318672180176
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3501aa12-0370-4aa9-b3d5-a4bdc0d4b315",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.7204771041870117,
+    -3.391935348510742
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b9ac6d12-cd0d-4071-81de-1b659674aece",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.160707712173462,
+    3.609278440475464
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a2e5f7b5-a1e9-4fc6-9a7b-77ffe5376328",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.466146945953369,
+    -3.0355565547943115
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b99bb85a-faec-43b0-85ac-2c28e5f951ac",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6307480335235596,
+    -3.2968552112579346
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2125a2e7-171f-4b41-81ff-08ce10b1fae2",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.829792022705078,
+    -3.419923782348633
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1dd7549e-3e97-4b89-8084-916fb36b1679",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.18106746673584,
+    -2.82248854637146
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d6c0d9a3-3c70-49d6-97df-135eea6cd873",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.889516592025757,
+    3.410231113433838
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "62bd2a28-8e6e-415d-af41-d1193781e061",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8255839347839355,
+    -3.5080151557922363
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "688c0a66-46ba-4e78-82e1-ff75f19e13f3",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.923600673675537,
+    3.1557655334472656
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7eb5605b-fb6c-4673-ae28-c87988793157",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4794836044311523,
+    -2.885728359222412
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "53458353-b25e-4505-ae3a-5a8623ba91c6",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.489121437072754,
+    4.222415447235107
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "220a3662-d39a-43b9-9cc4-911505adf2d2",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1910393238067627,
+    3.944225549697876
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "eb342bdf-e2bb-4604-aa19-6509763a1f61",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.5983736515045166,
+    -3.317991256713867
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "29c980ce-902d-42a7-9f5b-f44eace49626",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.094120740890503,
+    -1.3338406085968018
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "175c9b53-8f8c-47d2-b864-e1e420aea61a",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2310194969177246,
+    3.5593957901000977
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e83bf639-884b-42ee-8f40-fceb470b9971",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2449862957000732,
+    3.9139151573181152
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "30f660b3-468d-4848-ba10-d3c45a5f00ad",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.6529531478881836,
+    4.306148529052734
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "216c0e17-20b0-452a-8257-43f11cdb8cf9",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.049036741256714,
+    3.8176188468933105
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7e55bc65-7147-4c18-a4b3-ad1561f428f4",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.864753246307373,
+    -2.152019500732422
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1ef3d459-b699-483b-9374-65a03c5b4234",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.915991187095642,
+    -2.309112071990967
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5d6e43b2-e536-4af7-b74c-b7517b84f2a4",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.176675796508789,
+    3.875410795211792
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a587b586-b716-4230-b4a8-e827b37b76c9",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1177022457122803,
+    3.750554084777832
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3363ee32-66a7-4e4e-bed3-91d3160579e4",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.305534839630127,
+    4.015358924865723
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "2ef57bbb-6382-476c-b34e-a37c5fe42fa8",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1319315433502197,
+    3.7025489807128906
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9d891234-c787-4e72-b9ca-c074461808fe",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.862752676010132,
+    -3.6774566173553467
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0ecb483b-d7ab-42ef-9a28-99c9505434b9",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.3764965534210205,
+    -2.9955921173095703
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0619ec2d-856e-4d1a-a17e-cdb55fb8e47b",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.2338712215423584,
+    2.018132448196411
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "01957ac4-2c80-4fc1-8068-50afa1e207da",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0829713344573975,
+    -2.3743505477905273
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4545a93f-f989-4a91-9664-97eb571b5d02",
+    "language": "en",
+    "model": "opt_2.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0772881507873535,
+    3.4962196350097656
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6fd25ffb-a730-4033-bf32-6ab44c0da3ab",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.3690111637115479,
+    -1.5846054553985596
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0482e841-a5c8-40bb-9665-cea6435bcb2c",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.9089438915252686,
+    -3.674135684967041
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "88d6e60c-e4c4-45a9-9024-81887c4bc977",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2323074340820312,
+    3.8154804706573486
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bf34413d-675f-4fa3-8ef9-34bece925b63",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -0.19427543878555298,
+    0.5048669576644897
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6405d5ac-ae96-4b5d-9d95-e2083f1c992f",
+    "language": "en",
+    "model": "human",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.044234275817871,
+    -2.340294361114502
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b36be467-38e1-4fa4-a981-2a574e7fb55a",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.170419692993164,
+    3.7169649600982666
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "7aea3bba-e0be-461e-b181-38786bf4318d",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7159252166748047,
+    -3.390712261199951
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ae469380-608b-4481-ae08-d2e9d98ba7fb",
+    "language": "en",
+    "model": "opt_6.7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.20468656718730927,
+    -0.00923672504723072
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "78db1dfa-23c8-4f57-83ef-b5e6cd27b657",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.277214765548706,
+    3.712993621826172
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8abdcdac-a1eb-4edf-9444-f052250bbc8e",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.04970121383667,
+    3.765111207962036
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "086b779c-3c13-4cc6-9c44-f16688f3410d",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.454197406768799,
+    4.048426151275635
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "bc1226f3-5b18-49f7-bacb-ad3fbcc19a4f",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6245028972625732,
+    -2.039398193359375
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a417826d-b6ab-4486-95ba-3c86f8e10316",
+    "language": "en",
+    "model": "opt_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.128905773162842,
+    3.631201982498169
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ac17b088-fca1-4091-9f48-bc367657e32d",
+    "language": "en",
+    "model": "text-davinci-003",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.46564117074012756,
+    0.6111252307891846
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "98f320de-d7d3-468e-850a-935567945020",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.686936378479004,
+    -3.3390867710113525
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d8971fbd-58f6-4fdd-a19b-19af981d5e47",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0353832244873047,
+    3.6678924560546875
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c999eb0d-685d-4d5e-b5fe-699e1473df2b",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.3837883472442627,
+    3.0197174549102783
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "601a6876-32a7-4641-848a-9275092738e1",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6116268634796143,
+    -3.120429515838623
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ac9154e8-4b51-4c5c-b6f6-54aaa1e025b0",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.582561492919922,
+    4.245154857635498
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d73f9ca6-bf4b-40f7-a621-d62e0e660ec9",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4215266704559326,
+    -2.909309148788452
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "377b1bd7-7e26-4940-8635-27330042d14a",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.8246146440505981,
+    -0.42579904198646545
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b2210cbe-5fe0-4929-98d7-401c27aedf94",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4594833850860596,
+    -2.951563835144043
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1a383efb-cef8-4705-89de-b13060e4a694",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7597389221191406,
+    -3.3648109436035156
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c2beb949-44b8-4c25-9d8a-49f7f5cbfef3",
+    "language": "en",
+    "model": "65B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.720883846282959,
+    -3.422515630722046
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a4912da8-1241-44b6-b79a-3d2efe5f1731",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2821083068847656,
+    3.6802680492401123
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e3f3fec4-78bc-40d5-b89e-98f389ce59ab",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.831716775894165,
+    3.3918581008911133
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1c722ad1-4ab2-4632-b9ec-9bbf23f66f9a",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.614715576171875,
+    -3.227921485900879
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "315823e0-148f-4374-854e-9a7652410c79",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2156691551208496,
+    -1.3414452075958252
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "97d7039f-89cf-4948-9505-9c71d938409b",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6222476959228516,
+    -1.704492211341858
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e807266e-6cb4-46ae-8009-7cb52e97f344",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.509077548980713,
+    -2.0553555488586426
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "71ba4ad1-14e8-444b-b8dd-3d108689492e",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.7194018363952637,
+    2.272334575653076
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b1cbf5cf-96a7-4c88-9801-e594a3d7c4d0",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.2545452117919922,
+    -1.5218336582183838
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5ddd003d-364b-4efc-85ef-9e6e17c44a6d",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2855887413024902,
+    3.758917808532715
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c2f6cc10-143a-4410-91f5-2b469f6de791",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7437710762023926,
+    -3.4018325805664062
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5bdec54a-e4ee-486e-855f-7da13ee71041",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.1747395992279053,
+    3.636803150177002
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "28796e5b-16db-48f0-a740-a7a604eef12b",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.0823025703430176,
+    2.1931278705596924
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5c9c671a-2d67-477a-84f6-580daf4c114d",
+    "language": "en",
+    "model": "mixtral-8x7b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.811589479446411,
+    3.040064811706543
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "afed0b01-4359-495b-8326-43ea6d851d97",
+    "language": "en",
+    "model": "llama3-8b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0777814388275146,
+    3.644578218460083
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "8cbb47f7-35d3-4e50-b19e-ab71b1affae4",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.240227699279785,
+    -2.6484103202819824
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "974c596a-aea2-4b6a-a8cd-ceb1f172a6d6",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6569786071777344,
+    -3.3168210983276367
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1f614293-6124-400b-b744-3c53af616a14",
+    "language": "en",
+    "model": "7B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    1.6836879253387451,
+    -2.1329474449157715
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0f2179f7-2dbd-4ce7-bb81-05496eac3697",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3253555297851562,
+    3.9789481163024902
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4c2e5a35-215e-412a-a2c1-085fb2247d13",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2646992206573486,
+    4.079041004180908
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d5982f37-9eb5-4f74-a91f-4d8dda987334",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.9186959266662598,
+    3.1928553581237793
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fea9a010-ec99-4e2f-af56-fec25b41ea65",
+    "language": "en",
+    "model": "llama3-70b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8950533866882324,
+    -3.6741390228271484
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0f67fcd5-61ac-4662-9a7a-cff33697ae2e",
+    "language": "en",
+    "model": "gpt_j",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8969035148620605,
+    -3.548970937728882
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1c780094-68d4-454d-a8e2-6efcb1eeaf01",
+    "language": "en",
+    "model": "gpt_neox",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0556113719940186,
+    3.549528121948242
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1bb6f769-f74c-418e-bd42-afea78bbdb08",
+    "language": "en",
+    "model": "bloom_7b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6395628452301025,
+    -3.324399948120117
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "201f6c63-dad4-4fe6-a1f9-2ed502ffed8f",
+    "language": "en",
+    "model": "opt_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.8050384521484375,
+    -3.475977659225464
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "864699f7-b478-412f-87cb-d275dce21aac",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.700961112976074,
+    -3.383251428604126
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "4a13a95f-cc6e-45ac-8334-4c31ad4d49bd",
+    "language": "en",
+    "model": "30B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0984597206115723,
+    3.6462507247924805
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "572e9669-e84f-4c49-942b-5fb98c432cb5",
+    "language": "en",
+    "model": "gpt4o",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.728473663330078,
+    -3.3495211601257324
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5a57ce01-bd51-4ecc-b198-d5f20e12d5d3",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.538760185241699,
+    4.177717685699463
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3b7417a8-b199-4ffa-bf91-4888a2cbc60b",
+    "language": "en",
+    "model": "flan_t5_large",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7812118530273438,
+    -3.442178249359131
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "894508d6-fb03-4526-88be-afefa11eb74e",
+    "language": "en",
+    "model": "GLM130B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.31089192628860474,
+    0.7385653257369995
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "f7158de3-fbc3-48b5-a258-4a874d7b4d40",
+    "language": "en",
+    "model": "t0_11b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.8424743413925171,
+    0.9125933647155762
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "db2709df-b19e-4b30-9a50-ee6aa6acd65f",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.964146852493286,
+    -3.77573299407959
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "1dde7dba-6231-48a2-89df-2f4a1e2896d9",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.7152351140975952,
+    -0.4671519696712494
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fd275bd1-02f8-4b52-9901-ae62e9380b3e",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.13850000500679016,
+    0.22576121985912323
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "e58b0ae3-5c05-4911-91cc-02b847137cdf",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.784447193145752,
+    3.2095515727996826
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0d58855c-aede-47d0-9f48-56d5ddecd2d5",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.207836627960205,
+    3.9166083335876465
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ab757965-8607-4b5f-932f-b1c9cc576153",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.368256092071533,
+    4.043143272399902
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "dff6e2e7-6c60-48a1-947c-b60b73ae18cc",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -0.958770751953125,
+    1.1172418594360352
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "221e98a9-5a22-40a6-b1ba-ed943c767329",
+    "language": "en",
+    "model": "cohere",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.373800754547119,
+    -2.9564971923828125
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "d26738a2-3065-4304-83db-2be75ac814db",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.226893663406372,
+    1.4862877130508423
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6e502eb6-a631-427a-9729-474dab9f3648",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6806302070617676,
+    -3.326021909713745
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "71db14e8-af57-4b0e-a3a7-90b775869556",
+    "language": "en",
+    "model": "opt_iml_30b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.0938172340393066,
+    -2.6669387817382812
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a0675dd0-7fc6-4500-9b5c-09d778298fa3",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.6532835960388184,
+    -3.3268840312957764
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ec696a18-34aa-40d7-a8ea-f19dec5a9dff",
+    "language": "en",
+    "model": "t0_3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.68265438079834,
+    -3.471257209777832
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "49db6a95-4fe7-4c93-bed3-5d5213ed4f8e",
+    "language": "en",
+    "model": "opt_13b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.742439031600952,
+    -3.390627384185791
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3bd3e75f-65de-4a64-b2f2-35ec32e306e0",
+    "language": "en",
+    "model": "flan_t5_xl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.4856998920440674,
+    -3.0207297801971436
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6d34b195-c5f5-4b8f-ac14-f3c9faaef4a8",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3483810424804688,
+    3.88631534576416
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "9998a7b2-ba2d-4193-a19f-66f774e08993",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.869811534881592,
+    3.371792793273926
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5ed628be-7d80-4a63-ab80-148160be2975",
+    "language": "en",
+    "model": "davinci",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.3504958152770996,
+    3.984562635421753
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "55090b55-d302-40d6-bb78-c72909a14a72",
+    "language": "en",
+    "model": "gemma-7b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    -3.4292261600494385,
+    4.005847454071045
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "268dac60-bd88-4daa-9d2f-0ec0f7c7b39a",
+    "language": "en",
+    "model": "human",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6753809452056885,
+    2.939969062805176
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "cb496c81-9f76-4bef-b609-e21ec640ac40",
+    "language": "en",
+    "model": "gpt-35",
+    "source": "hc3"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2548649311065674,
+    3.8525514602661133
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "3818d46a-a459-44dd-b578-ba9776bada90",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.2552051544189453,
+    3.8345210552215576
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "70b83c22-c3e9-49fa-9282-563378bd447e",
+    "language": "en",
+    "model": "opt_iml_max_1.3b",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4347054958343506,
+    4.058745861053467
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "a871a358-c9a1-4eb1-b002-354b5aeac769",
+    "language": "en",
+    "model": "gpt-3.5-turbo",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    0.6474854946136475,
+    -0.5329263806343079
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "53e6aa10-820b-4fb4-a59a-055409fcb002",
+    "language": "en",
+    "model": "gpt4",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.17799711227417,
+    -2.450624704360962
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "b3b6b8f1-be61-4b05-b8cb-270f7ccf4e2f",
+    "language": "en",
+    "model": "gemma2-9b-it",
+    "source": "m4gt"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.0752735137939453,
+    3.5565433502197266
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "c02d8388-a01c-43a2-907c-735b7040d7a1",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.9700112342834473,
+    2.3425893783569336
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "62eb6ead-dbe2-4020-98cb-54c4a4378c05",
+    "language": "en",
+    "model": "bloomz",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.7636523246765137,
+    -3.3881044387817383
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "fb9349ae-ecff-48e4-ac5b-8535525f576b",
+    "language": "en",
+    "model": "13B",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.0589325428009033,
+    1.7727150917053223
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "76b9d18e-7972-4c85-8d88-7b514ae1d308",
+    "language": "en",
+    "model": "text-davinci-002",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 0,
+   "logits": [
+    2.4852182865142822,
+    -3.153214454650879
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "0d3af9f7-a6a5-4de3-bd1d-96e99e51c7e0",
+    "language": "en",
+    "model": "human",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    2.335813522338867,
+    -2.7702436447143555
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "ceecab46-0941-4e05-b91e-4680504762fb",
+    "language": "en",
+    "model": "flan_t5_xxl",
+    "source": "mage"
+   },
+   "pred": 0
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.5614385604858398,
+    2.429009437561035
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "5c762b4b-69f7-4dcc-87c4-3d24af7dc477",
+    "language": "en",
+    "model": "flan_t5_small",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -1.8637292385101318,
+    2.415006160736084
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "30adca37-3b51-45d6-8dfd-a6b6be898385",
+    "language": "en",
+    "model": "flan_t5_base",
+    "source": "mage"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.130655288696289,
+    3.6692237854003906
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "957b426b-08f4-438b-84bf-4f08acf065da",
+    "language": "en",
+    "model": "dolly-v2-12b",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -2.6046142578125,
+    2.8911690711975098
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "313aa7a9-ad97-4f0d-bb78-027f1ac6facc",
+    "language": "en",
+    "model": "dolly",
+    "source": "m4gt"
+   },
+   "pred": 1
+  },
+  {
+   "label": 1,
+   "logits": [
+    -3.4710440635681152,
+    4.083944320678711
+   ],
+   "meta": {
+    "corpus": "m4",
+    "id": "6309f885-6196-4555-ac4e-50a46987750f",
+    "language": "en",
+    "model": "opt_350m",
+    "source": "mage"
+   },
+   "pred": 1
+  }
+ ],
+ "runtime_s": 12.319303274154663,
+ "schema": "aidisinfo.cross_corpus.v1",
+ "seed": 42,
+ "train_corpus": "roguegpt"
+}
