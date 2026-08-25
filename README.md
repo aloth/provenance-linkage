@@ -166,6 +166,18 @@ The in-domain corpus consumed by the audit is archived separately:
 }
 ```
 
+## Related Projects
+
+This bundle audits an evaluation built on artifacts from a wider research program:
+
+| Project | Description |
+|:---|:---|
+| [RogueGPT](https://github.com/aloth/RogueGPT) | Controlled stimulus generator; its corpus is the in-domain material audited here |
+| [JudgeGPT](https://github.com/aloth/JudgeGPT) | Perception platform; `judgegpt_analytical_set.py` consumes its data |
+| [CRED-1](https://github.com/aloth/cred-1) | Open multi-signal domain credibility dataset |
+| [verification-crisis](https://github.com/aloth/verification-crisis) | Expert survey on GenAI disinformation threats and countermeasures |
+| [Origin Lens](https://github.com/aloth/origin-lens) | iOS app for C2PA content credentials and EXIF verification |
+
 ## Licence
 
 Scripts: MIT. Derived metric and prediction files: CC BY 4.0. Neither licence
