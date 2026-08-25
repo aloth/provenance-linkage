@@ -19,3 +19,50 @@ authors:
 version: 1.0.0
 date-released: "2026-08-19"
 license: MIT
+type: dataset
+doi: "10.5281/zenodo.22011220"
+repository-code: "https://github.com/aloth/provenance-linkage"
+url: "https://doi.org/10.5281/zenodo.22011220"
+keywords:
+  - reproducibility
+  - benchmark-audit
+  - provenance
+  - AI-text-detection
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22011220
+    description: "Zenodo archive (version v1.0.0)"
+  - type: doi
+    value: 10.5281/zenodo.22011219
+    description: "Zenodo concept DOI (always resolves to the latest version)"
+references:
+  - type: article
+    title: >
+      One Prediction Set, Two Reported Results: Provenance Linkage and a
+      Reproducible Benchmark-Audit Sequence for AI-Text Detection
+    authors:
+      - family-names: Loth
+        given-names: Alexander
+      - family-names: Butt
+        given-names: Fatima Sajid
+      - family-names: Kappes
+        given-names: Martin
+      - family-names: Pahl
+        given-names: Marc-Oliver
+    year: 2026
+    notes: "Manuscript submitted to Language Resources and Evaluation"
+  - type: data
+    title: >
+      RogueGPT Stimulus Corpus: A Multilingual LLM-Generated News Dataset
+    authors:
+      - family-names: Loth
+        given-names: Alexander
+      - family-names: Kappes
+        given-names: Martin
+      - family-names: Pahl
+        given-names: Marc-Oliver
+    publisher:
+      name: Zenodo
+    year: 2026
+    version: "1.1.0"
+    doi: "10.5281/zenodo.21904524"

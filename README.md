@@ -122,6 +122,50 @@ prints a verdict.
 | `auroc_audit.py` | Step 7, threshold-free discrimination |
 | `judgegpt_analytical_set.py` | analytical-set filtering, reported in Limitations |
 
+## Citation
+
+If you use this bundle, please cite the manuscript and the archived bundle:
+
+```bibtex
+@article{loth2026provenancelinkage,
+  author  = {Loth, Alexander and Butt, Fatima Sajid and
+             Kappes, Martin and Pahl, Marc-Oliver},
+  title   = {One Prediction Set, Two Reported Results: Provenance
+             Linkage and a Reproducible Benchmark-Audit Sequence
+             for {AI}-Text Detection},
+  year    = {2026},
+  note    = {Manuscript submitted to Language Resources and Evaluation}
+}
+```
+
+```bibtex
+@misc{loth2026benchmarkauditdata,
+  author    = {Loth, Alexander and Butt, Fatima Sajid and
+               Kappes, Martin and Pahl, Marc-Oliver},
+  title     = {Reproducibility bundle for ``One Prediction Set, Two
+               Reported Results: Provenance Linkage and a Reproducible
+               Benchmark-Audit Sequence for {AI}-Text Detection''},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v1.0.0},
+  doi       = {10.5281/zenodo.22011220},
+  note      = {Concept DOI 10.5281/zenodo.22011219 always resolves to the latest version}
+}
+```
+
+The in-domain corpus consumed by the audit is archived separately:
+
+```bibtex
+@dataset{loth2026roguegptdata,
+  author    = {Loth, Alexander and Kappes, Martin and Pahl, Marc-Oliver},
+  title     = {{RogueGPT} Stimulus Corpus: A Multilingual {LLM}-Generated News Dataset},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.1.0},
+  doi       = {10.5281/zenodo.21904524}
+}
+```
+
 ## Licence
 
 Scripts: MIT. Derived metric and prediction files: CC BY 4.0. Neither licence
