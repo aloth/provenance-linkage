@@ -16,8 +16,8 @@ authors:
   - family-names: Pahl
     given-names: Marc-Oliver
     orcid: "https://orcid.org/0000-0001-5241-3809"
-version: 1.0.0
-date-released: "2026-08-19"
+version: 1.0.1
+date-released: "2026-09-01"
 license: MIT
 type: dataset
 doi: "10.5281/zenodo.22011220"
@@ -57,12 +57,9 @@ references:
     authors:
       - family-names: Loth
         given-names: Alexander
-      - family-names: Kappes
-        given-names: Martin
-      - family-names: Pahl
-        given-names: Marc-Oliver
+        orcid: "https://orcid.org/0009-0003-9327-6865"
     publisher:
       name: Zenodo
     year: 2026
-    version: "1.1.0"
-    doi: "10.5281/zenodo.21904524"
+    version: "1.2.0"
+    doi: "10.5281/zenodo.22225536"
