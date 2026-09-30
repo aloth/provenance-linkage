@@ -161,8 +161,8 @@ The in-domain corpus consumed by the audit is archived separately:
   title     = {{RogueGPT} Stimulus Corpus: A Multilingual {LLM}-Generated News Dataset},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {1.2.0},
-  doi       = {10.5281/zenodo.22225536},
+  version   = {1.2.1},
+  doi       = {10.5281/zenodo.23053786},
   note      = {Concept DOI 10.5281/zenodo.18703137 always resolves to the latest version}
 }
 ```
